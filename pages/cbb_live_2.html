@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#dfe2eb","surface-bright":"#353940","secondary-container":"#00e3fd","surface-tint":"#ffb5a0","surface-container-lowest":"#0a0e14","on-surface":"#dfe2eb","surface-dim":"#10141a","on-tertiary-fixed-variant":"#633f00","primary-fixed-dim":"#ffb5a0","on-primary-fixed-variant":"#862200","on-surface-variant":"#e4beb4","surface-container":"#1c2026","primary-fixed":"#ffdbd1","on-secondary-container":"#00616d","tertiary-container":"#c68300","surface-container-low":"#181c22","on-secondary-fixed":"#001f24","secondary":"#bdf4ff","on-secondary":"#00363d","outline":"#ab8980","tertiary-fixed":"#ffddb4","surface-container-high":"#262a31","surface":"#10141a","primary":"#ffb5a0","background":"#10141a","secondary-fixed-dim":"#00daf3","on-primary-fixed":"#3b0900","on-secondary-fixed-variant":"#004f58","secondary-fixed":"#9cf0ff","error":"#ffb4ab","on-error-container":"#ffdad6","on-tertiary":"#452b00","tertiary":"#ffb952","on-tertiary-container":"#3c2500","tertiary-fixed-dim":"#ffb952","primary-container":"#ff5722","inverse-primary":"#b02f00","on-primary":"#5f1500","on-tertiary-fixed":"#291800","surface-variant":"#31353c","outline-variant":"#5b4039","inverse-surface":"#dfe2eb","surface-container-highest":"#31353c","inverse-on-surface":"#2d3137","on-error":"#690005","error-container":"#93000a","on-primary-container":"#541200"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem",gutter:"1rem",margin:"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"body-lg":["Space Grotesk"],"display-score-mobile":["Oswald"],"title-lg":["Space Grotesk"],"headline-md":["Oswald"],"body-sm":["Space Grotesk"],"headline-xl":["Oswald"],"body-md":["Space Grotesk"],"display-score":["Oswald"],"headline-xl-mobile":["Oswald"],"label-numeric":["Oswald"],"label-caps":["Space Grotesk"],"headline-lg":["Oswald"],"title-md":["Space Grotesk"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-score-mobile":["48px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"700"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-score":["80px",{lineHeight:"84px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"700"}],"label-numeric":["15px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex items-center gap-space-sm"><span class="font-title-lg text-title-lg tracking-tight uppercase text-on-surface">CBB-Live 赛事管理中台</span><span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed text-body-sm font-label-caps uppercase tracking-wider">SUPER ADMIN / 赛事组委会</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-3 py-1 rounded bg-surface-container text-body-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">calendar_month</span><span class="font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="hidden lg:flex items-center gap-3 px-3 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span><span class="font-label-caps text-body-sm text-secondary tracking-wider uppercase">WS PUSH: ACTIVE</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-1 font-label-numeric text-body-sm text-on-surface-variant"><span>延迟:</span><span class="text-secondary font-bold">18ms</span></div></div><div class="relative flex items-center justify-center w-9 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-numeric text-[10px] font-bold">4</span></div><div class="flex items-center gap-space-sm pl-2"><div class="hidden md:flex flex-col text-right"><span class="font-title-md text-body-md text-on-surface font-semibold leading-tight">张主任</span><span class="font-body-sm text-body-sm text-on-surface-variant">(超级管理员) · 体育教学部</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 flex flex-col py-space-md shadow-[1px_0_12px_rgba(0,0,0,0.3)]"><div class="px-space-md mb-3"><div class="px-3 py-1.5 rounded bg-surface-container text-body-sm text-on-surface-variant flex items-center justify-between"><span class="font-label-caps tracking-wider uppercase">CORE NAVIGATION</span><span class="material-symbols-outlined text-[14px]">tune</span></div></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="dashboard" href="cbb_live_0.1.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">dashboard</span><span class="font-body-md text-body-md">数据看板</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="season-config" href="cbb_live_2.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">emoji_events</span><span class="font-body-md text-body-md">赛季赛制</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="schedule-management" href="cbb_live_g_finals_01.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">event_available</span><span class="font-body-md text-body-md">赛程排期</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="teams-and-rosters" href="cbb_live_5.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">groups</span><span class="font-body-md text-body-md">球队球员</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-console" href="cbb_live_30_live_ops.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">sports_score</span><span class="font-body-md text-body-md">比赛操控</span></div><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-caps text-[10px]">LIVE</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-and-media" href="cbb_live_30_live_ops.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">live_tv</span><span class="font-body-md text-body-md">直播与内容</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="audit-center" href="cbb_live_call_audit_reports.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">fact_check</span><span class="font-body-md text-body-md">审核中心</span></div><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-numeric text-[11px] font-bold">5</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="honors-and-awards" href="cbb_live_referee_evaluation_credit.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">military_tech</span><span class="font-body-md text-body-md">荣誉评选</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="export-reports" href="cbb_live_pdf.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">analytics</span><span class="font-body-md text-body-md">报表中心</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="system-logs" href="cbb_live_2.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] transition-colors">terminal</span><span class="font-body-md text-body-md">系统配置与日志</span></div></a></nav><div class="mt-auto px-space-md pt-space-sm border-t border-surface-container"><div class="p-3 rounded bg-surface-container flex items-center justify-between text-body-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">shield</span><span>安全等级二级</span></div><span class="font-label-caps text-[10px] text-secondary">SECURED</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><main class="relative pt-16 bg-surface flex-1 w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg text-on-surface">
+<!-- Top Navigation Sub-Bar & Breadcrumbs & Quick Filter Switcher -->
+<div class="flex flex-col gap-space-md lg:flex-row lg:items-center lg:justify-between bg-surface-container-low px-space-lg py-space-md rounded-xl shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant font-label-caps uppercase tracking-wider">
+<span>赛事运营中台</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-fixed">赛程编排与场地排期中心</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-secondary font-label-caps text-[10px]">SCHEDULE CALENDAR v2.4</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-1">
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-[18px]">workspace_premium</span>
+<span class="font-title-md text-title-md tracking-tight">2026学年秋季联赛</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-caps text-[11px] text-secondary-fixed">进行中</span>
+</div>
+<!-- Gender Tabs -->
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-title-md text-body-sm shadow-sm transition-colors">男子组 (Men's)</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-title-md text-body-sm transition-colors">女子组 (Women's)</button>
+</div>
+<!-- Stage Filter Dropdown -->
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-lg text-body-sm text-on-surface">
+<span class="text-on-surface-variant font-label-caps text-[11px]">阶段:</span>
+<span class="font-semibold text-primary">淘汰赛决胜周 (Finals / Playoff)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Global Operations Group -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright text-on-surface px-3 py-2 rounded-lg text-body-sm font-semibold transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">auto_awesome</span>
+<span>智能排程算法</span>
+</button>
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright text-on-surface px-3 py-2 rounded-lg text-body-sm font-semibold transition-all">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span>添加场次</span>
+</button>
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright text-on-surface px-3 py-2 rounded-lg text-body-sm font-semibold transition-all" title="导出PRD规范赛程表 (2026学年秋季联赛_赛程_20260915.xlsx)">
+<span class="material-symbols-outlined text-[18px] text-tertiary">download</span>
+<span>导出 Excel</span>
+</button>
+<button class="relative flex items-center gap-1.5 bg-primary-container hover:bg-inverse-primary text-on-primary px-4 py-2 rounded-lg text-body-sm font-bold shadow-lg transition-all">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+<span>发布并广播变动</span>
+<span class="flex items-center justify-center h-4 px-1.5 rounded-full bg-error-container text-on-error font-label-numeric text-[11px] font-bold">3</span>
+</button>
+</div>
+</div>
+<!-- Quality Control & Conflict Monitor Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-body-sm font-bold">场地与赛制冲突检测</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/20 text-secondary-fixed text-[10px] font-label-caps">PASSED</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">3片场地与裁判轮班零时间重叠 (PRD §十.2)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-body-sm font-bold">体能与背靠背预警</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container/30 text-tertiary text-[10px] font-label-caps">ACKNOWLEDGED</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">经管学院 48H 连续出战 · 领队已签字确认</span>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-body-sm font-bold">待推送变动广播</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary text-[10px] font-label-caps font-bold">3 PENDING</span>
+</div>
+<span class="text-body-sm text-on-surface-variant truncate">季军赛顺延30分钟通知已生成 (覆盖2队领队+38名在册球员)</span>
+</div>
+</div>
+</div>
+<!-- Studio View Switcher Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest p-1 rounded-xl">
+<div class="flex items-center gap-1">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container text-primary font-bold text-body-sm shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">calendar_view_week</span>
+<span>场地交互日历工作台 (Venue Time-Grid)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-body-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>淘汰赛对阵树 (Bracket Tree)</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-body-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>场次列表与质检台</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-body-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+<span>调度审计留痕 (Audit Logs)</span>
+</button>
+</div>
+<!-- Calendar Scale & Week Selector -->
+<div class="flex items-center gap-2 pr-2">
+<div class="flex items-center bg-surface-container-high rounded-lg p-0.5">
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container text-body-sm">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 font-label-numeric text-body-sm font-semibold tracking-wide">2026年9月第3周 (09/14 - 09/20) 决战周</span>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container text-body-sm">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-body-sm font-semibold hover:bg-surface-bright">本周</button>
+<div class="flex items-center bg-surface-container rounded-lg p-0.5 text-body-sm text-on-surface-variant">
+<button class="px-2 py-1 rounded bg-surface-bright text-on-surface font-semibold">1小时</button>
+<button class="px-2 py-1 rounded hover:text-on-surface">30分</button>
+</div>
+</div>
+</div>
+<!-- Main Multi-Column Interactive Work Area: Calendar vs Edit Drawer Split -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Center Arena Grid (8 Cols on xl) -->
+<div class="xl:col-span-8 flex flex-col space-y-space-md">
+<!-- Venue Calendar Board Header -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">stadium</span>
+<span class="font-headline-md text-headline-md tracking-tight">场馆时序图 (Multi-Venue Interactive Grid)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[10px]">DRAG &amp; DROP ACTIVE</span>
+</div>
+<div class="flex items-center gap-3 text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-primary-container"></span> 淘汰赛/焦点战</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-secondary-container"></span> 女篮半决赛</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-surface-variant"></span> 已锁定终局</span>
+</div>
+</div>
+<!-- Time Grid Table Representation -->
+<div class="grid grid-cols-12 bg-surface-container-lowest rounded-lg p-space-sm gap-2">
+<!-- Time Axis Column (1.5 cols) -->
+<div class="col-span-2 flex flex-col space-y-3 pt-12 text-on-surface-variant font-label-numeric text-body-sm">
+<div class="h-28 flex flex-col justify-start px-2">
+<span class="text-primary font-bold">14:00 - 16:00</span>
+<span class="text-[11px] text-on-surface-variant">下午赛段</span>
+</div>
+<div class="h-32 flex flex-col justify-start px-2">
+<span class="text-primary font-bold">16:30 - 18:30</span>
+<span class="text-[11px] text-on-surface-variant">黄金傍晚档</span>
+</div>
+<div class="h-36 flex flex-col justify-start px-2">
+<span class="text-primary-container font-bold">19:00 - 21:30</span>
+<span class="text-[11px] text-primary">晚间黄金巅峰档</span>
+</div>
+</div>
+<!-- Venues Grid (10 cols split among 3 venues) -->
+<div class="col-span-10 grid grid-cols-3 gap-3">
+<!-- Venue A: Main Arena -->
+<div class="flex flex-col space-y-3 bg-surface-container-low/60 rounded-lg p-2">
+<!-- Venue Header Card -->
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-md text-primary font-bold truncate">邱德拔·中央主球场</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container/20 text-primary-fixed text-[10px] font-label-caps">MAIN</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant text-[11px]">
+<span>4K多机位</span>
+<span>·</span>
+<span>3800座</span>
+<span>·</span>
+<span class="text-secondary font-semibold">排期 4 场</span>
+</div>
+</div>
+<!-- Time Slot 1: Afternoon Bronze match (Editable / Selected) -->
+<div class="relative bg-surface-container-high rounded-lg p-3 shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">drag_indicator</span>
+<span class="font-label-numeric text-tertiary font-bold">09-20 15:30 - 17:30</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-[10px]">待开打 (EDITABLE)</span>
+</div>
+<div class="font-title-md text-body-md font-bold mb-1 text-on-surface">季军争夺战 (Bronze Final)</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-2 py-1.5 rounded text-body-sm mb-2">
+<span class="font-bold text-on-surface truncate">经管学院</span>
+<span class="font-label-numeric font-bold text-on-surface-variant">VS</span>
+<span class="font-bold text-on-surface truncate">土木工程</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">sports</span>
+<span>主裁: 刘振国</span>
+</span>
+<span class="text-primary font-semibold">推迟30分已核准</span>
+</div>
+</div>
+<!-- Empty Drag-over Slot Indicator -->
+<div class="h-28 rounded-lg bg-surface-container-highest/20 flex flex-col items-center justify-center p-2 text-center text-on-surface-variant hover:bg-primary-container/5 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary/70 text-[20px] mb-1">move_down</span>
+<span class="text-body-sm text-[11px] font-semibold text-primary">释放场次至此自动校验冲突</span>
+<span class="text-[10px] text-on-surface-variant">17:45 - 18:45 (赛前场地净空期)</span>
+</div>
+<!-- Time Slot 3: Grand Final Key Match -->
+<div class="relative bg-gradient-to-br from-surface-container to-surface-container-high rounded-lg p-3 shadow-xl">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary-container rounded-l-lg"></div>
+<div class="flex items-center justify-between text-body-sm mb-1.5 pl-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-numeric text-primary font-bold text-[14px]">09-20 19:00 - 21:30</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-caps text-[10px] font-bold">KEY FINALS</span>
+</div>
+<div class="pl-1">
+<div class="font-headline-md text-title-lg tracking-tight text-on-surface mb-1">秋季联赛男子总决赛 (Finals)</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/80 px-2 py-2 rounded-lg mb-2">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-bold text-primary-fixed">计算机·飞鹰</span>
+</div>
+<span class="font-display-score text-headline-md text-primary-container px-2">VS</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-secondary-fixed">自动化·战车</span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">live_tv</span> 4K直播就绪
+                    </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">门票已约满 (3800)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Venue B: Training Gym East -->
+<div class="flex flex-col space-y-3 bg-surface-container-low/60 rounded-lg p-2">
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-md text-on-surface font-bold truncate">邱德拔·东区副馆</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant text-[10px] font-label-caps">COURT 2</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant text-[11px]">
+<span>备用场地</span>
+<span>·</span>
+<span>热身区</span>
+<span>·</span>
+<span class="text-on-surface-variant">排期 2 场</span>
+</div>
+</div>
+<!-- Past Archived Match Card -->
+<div class="relative bg-surface-container rounded-lg p-3 opacity-80">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">lock</span>
+<span class="font-label-numeric text-on-surface-variant">09-14 19:30</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[10px]">已归档 (LOCKED)</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold mb-1">半决赛 G1 (已终局)</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-2 py-1.5 rounded font-label-numeric text-body-sm mb-1">
+<span>计算机学院</span>
+<span class="font-bold text-primary">78 : 75</span>
+<span>经管学院</span>
+</div>
+<span class="text-[10px] text-on-surface-variant">数据已冻结，技术统计已入库</span>
+</div>
+<!-- Empty Slot -->
+<div class="h-32 rounded-lg bg-surface-container/30 flex flex-col items-center justify-center p-2 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] mb-1">sports_basketball</span>
+<span class="text-body-sm text-[11px]">空置热身时段</span>
+<span class="text-[10px] text-on-surface-variant">预留给总决赛队伍适应场地</span>
+</div>
+<!-- Another Archived Card -->
+<div class="relative bg-surface-container rounded-lg p-3 opacity-80">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">lock</span>
+<span class="font-label-numeric text-on-surface-variant">09-15 19:30</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[10px]">已归档 (LOCKED)</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold mb-1">半决赛 G2 (已终局)</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-2 py-1.5 rounded font-label-numeric text-body-sm mb-1">
+<span>自动化学院</span>
+<span class="font-bold text-secondary">82 : 80</span>
+<span>土木工程</span>
+</div>
+<span class="text-[10px] text-on-surface-variant">技术统计终审完成</span>
+</div>
+</div>
+<!-- Venue C: Fengyu Arena (Women's Match专用) -->
+<div class="flex flex-col space-y-3 bg-surface-container-low/60 rounded-lg p-2">
+<div class="bg-surface-container p-2.5 rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-md text-secondary-container font-bold truncate">风雨操场·1号室内馆</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/10 text-secondary text-[10px] font-label-caps">WOMEN'S</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant text-[11px]">
+<span>女篮半决赛</span>
+<span>·</span>
+<span>1200座</span>
+<span>·</span>
+<span class="text-secondary font-semibold">排期 2 场</span>
+</div>
+</div>
+<!-- Women Match 1 -->
+<div class="relative bg-surface-container-high rounded-lg p-3 shadow-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-label-numeric text-secondary font-bold">09-20 14:00 - 16:00</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/20 text-secondary font-label-caps text-[10px]">女篮季军赛</span>
+</div>
+<div class="font-title-md text-body-md font-bold mb-1">外语学院 vs 生命科学院</div>
+<div class="bg-surface-container-lowest p-2 rounded text-body-sm flex items-center justify-between text-on-surface-variant mb-1">
+<span>女篮排位战</span>
+<span class="font-label-caps text-secondary text-[10px]">直播机位已就位</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">录入员: 陈晨 (双机位互备)</span>
+</div>
+<!-- Women Final Match -->
+<div class="relative bg-surface-container-high rounded-lg p-3 shadow-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-label-numeric text-secondary font-bold">09-20 16:30 - 18:30</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] font-bold">女篮总决赛</span>
+</div>
+<div class="font-title-md text-body-md font-bold mb-1">医学部 vs 国际关系学院</div>
+<div class="bg-surface-container-lowest p-2 rounded text-body-sm flex items-center justify-between mb-1">
+<span class="text-primary-fixed font-bold">卫冕冠军战</span>
+<span class="font-label-numeric text-secondary">预计观赛 1200人</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">主裁: 马跃华 (国家级女篮特邀)</span>
+</div>
+<!-- Night Empty Interval -->
+<div class="h-32 rounded-lg bg-surface-container/20 flex flex-col items-center justify-center p-2 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] mb-1">nights_stay</span>
+<span class="text-body-sm text-[11px]">闭馆维保时段</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Knockout Tournament Bracket Visual Editor (PRD §四.7 对阵生成算法) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">account_tree</span>
+<span class="font-headline-md text-headline-md tracking-tight">淘汰赛对阵树可视化编辑 (Knockout Bracket Tree)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-body-sm text-on-surface-variant">遵循 PRD §四.7 交叉对阵规则: A1 vs B2, B1 vs A2</span>
+<button class="px-2.5 py-1 bg-surface-container-high hover:bg-surface-bright rounded text-body-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>重新校验晋级资格</span>
+</button>
+</div>
+</div>
+<!-- SVG Flow Lines and Interactive Nodes -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg overflow-x-auto">
+<!-- Flow Line Connectors Background SVG -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none stroke-outline-variant/60" fill="none" stroke-width="2">
+<!-- Semi 1 to Final -->
+<path d="M 280 85 H 340 V 170 H 400"></path>
+<!-- Semi 2 to Final -->
+<path d="M 280 255 H 340 V 170 H 400"></path>
+<!-- Semi Losers to Bronze Final -->
+<path class="stroke-on-surface-variant/40" d="M 280 85 H 310 V 360 H 400" stroke-dasharray="4 4"></path>
+<path class="stroke-on-surface-variant/40" d="M 280 255 H 310 V 360 H 400" stroke-dasharray="4 4"></path>
+</svg>
+<div class="relative grid grid-cols-12 gap-6 min-w-[760px] items-center">
+<!-- Column 1: Semi-Finals Round (Cols 1-4) -->
+<div class="col-span-4 flex flex-col space-y-12">
+<div class="text-on-surface-variant font-label-caps uppercase text-[11px] mb-2 flex items-center gap-2">
+<span>ROUND 1 · 半决赛 (CROSS BRACKET)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<!-- Bracket Match 1 -->
+<div class="bg-surface-container rounded-lg p-3 shadow-md space-y-2 relative">
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-numeric">
+<span>KO-01 · 09-14 19:30</span>
+<span class="text-secondary font-bold">已完赛</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-high px-2 py-1.5 rounded">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="px-1 rounded bg-primary-container/30 text-primary-fixed text-[10px] font-bold">A1</span>
+<span class="font-title-md text-body-sm font-bold truncate">计算机学院</span>
+</div>
+<span class="font-label-numeric text-primary font-bold">78 (胜出)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-2 py-1.5 rounded opacity-70">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="px-1 rounded bg-surface-bright text-on-surface-variant text-[10px]">B2</span>
+<span class="font-title-md text-body-sm truncate">经济管理学院</span>
+</div>
+<span class="font-label-numeric">75</span>
+</div>
+</div>
+<!-- Bracket Match 2 -->
+<div class="bg-surface-container rounded-lg p-3 shadow-md space-y-2 relative">
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-numeric">
+<span>KO-02 · 09-15 19:30</span>
+<span class="text-secondary font-bold">已完赛</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-high px-2 py-1.5 rounded">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="px-1 rounded bg-secondary-container/30 text-secondary text-[10px] font-bold">B1</span>
+<span class="font-title-md text-body-sm font-bold truncate">自动化学院</span>
+</div>
+<span class="font-label-numeric text-secondary font-bold">82 (胜出)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-2 py-1.5 rounded opacity-70">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="px-1 rounded bg-surface-bright text-on-surface-variant text-[10px]">A2</span>
+<span class="font-title-md text-body-sm truncate">土木工程学院</span>
+</div>
+<span class="font-label-numeric">80</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Finals & Bronze Playoff (Cols 5-12) -->
+<div class="col-span-8 flex flex-col space-y-10 pl-6">
+<!-- Grand Finals Node -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="text-primary font-label-caps uppercase text-[11px] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px]">emoji_events</span>
+<span>2026 年度总决赛 (GRAND FINALS · 冠军争夺)</span>
+</div>
+<span class="font-label-numeric text-body-sm text-tertiary">9月20日 19:00 · 邱德拔主场</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-4 shadow-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-display-score text-title-lg font-bold">A</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md font-bold">计算机学院·飞鹰</span>
+<span class="text-body-sm text-[11px] text-on-surface-variant">淘汰赛1号种子</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-primary/15 text-primary text-[10px] font-bold">主队更衣室A</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-display-score text-title-lg font-bold">B</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md font-bold">自动化学院·战车</span>
+<span class="text-body-sm text-[11px] text-on-surface-variant">淘汰赛2号种子</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary/15 text-secondary text-[10px] font-bold">客队更衣室B</span>
+</div>
+</div>
+<div class="mt-3 pt-3 border-t border-surface-container flex flex-wrap items-center justify-between text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-4">
+<span>跳球执裁: <b>王建(国际级裁判)</b></span>
+<span>推流机位: <b>CAM-01 / CAM-04 (8K)</b></span>
+</div>
+<button class="text-primary hover:text-primary-fixed font-semibold flex items-center gap-1 text-[12px]">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+<span>调整对阵规则或执裁裁判</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bronze Medal Match Node -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="text-on-surface-variant font-label-caps uppercase text-[11px] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px]">military_tech</span>
+<span>三四名排位决战 (BRONZE MEDAL MATCH)</span>
+</div>
+<span class="font-label-numeric text-body-sm text-on-surface-variant">9月20日 15:30 (顺延确认)</span>
+</div>
+<div class="bg-surface-container rounded-lg p-3 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-body-sm font-semibold">经济管理学院 (KO-01负者)</span>
+</div>
+<span class="font-bold text-on-surface-variant text-body-sm">VS</span>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-body-sm font-semibold">土木工程学院 (KO-02负者)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary text-body-sm font-label-caps text-[11px]">当前在右侧抽屉编辑中</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Schedule Change & Push Notification Inspector Drawer (4 Cols on xl) -->
+<div class="xl:col-span-4 flex flex-col space-y-space-md">
+<!-- Inspector Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl space-y-space-md sticky top-20">
+<!-- Header with Live Match Tag -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">tune</span>
+<span class="font-title-lg text-title-lg tracking-tight">场次排期与通知抽屉</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-[11px] font-bold">DRAWER: ACTIVE</span>
+</div>
+<!-- Target Match Info Banner -->
+<div class="bg-surface-container rounded-lg p-3 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider">SELECTED MATCH</span>
+<span class="font-label-numeric text-[11px] text-primary">GAME-ID: #2026-F03</span>
+</div>
+<div class="font-headline-md text-title-md text-on-surface font-bold">男子组三四名决赛: 经管 vs 土木</div>
+<div class="text-body-sm text-[12px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span>邱德拔体育馆·中央主球场 (3800座)</span>
+</div>
+</div>
+<!-- Form Edit Fields -->
+<div class="space-y-3">
+<!-- Time Adjustment -->
+<div class="space-y-1">
+<label class="block font-label-caps text-[11px] text-on-surface-variant uppercase">开赛与散场时段 (Time Slot)</label>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-3 py-2 rounded-lg text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<input class="bg-transparent font-label-numeric font-semibold text-on-surface w-full focus:outline-none" type="text" value="2026-09-20 15:30"/>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-3 py-2 rounded-lg text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">event_seat</span>
+<input class="bg-transparent font-label-numeric text-on-surface-variant w-full focus:outline-none" type="text" value="17:30 (预计)"/>
+</div>
+</div>
+<span class="text-[11px] text-primary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[13px]">info</span>
+<span>由原计划 15:00 顺延 30 分钟，以规避裁判组体测轮换</span>
+</span>
+</div>
+<!-- Venue Assignment -->
+<div class="space-y-1">
+<label class="block font-label-caps text-[11px] text-on-surface-variant uppercase">指派场地 (Assigned Court)</label>
+<div class="relative">
+<select class="w-full bg-surface-container-highest text-on-surface px-3 py-2 rounded-lg text-body-sm font-semibold appearance-none focus:outline-none">
+<option selected="">邱德拔体育馆 · 中央主球场 (带超清大屏转播)</option>
+<option>邱德拔体育馆 · 东区副馆 (训练馆)</option>
+<option>风雨操场 · 1号室内馆</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Locker Room Allocation -->
+<div class="grid grid-cols-2 gap-2">
+<div class="space-y-1">
+<label class="block font-label-caps text-[11px] text-on-surface-variant uppercase">主队更衣室</label>
+<input class="w-full bg-surface-container-highest text-on-surface px-3 py-1.5 rounded-lg text-body-sm focus:outline-none" type="text" value="经管: 南侧102室"/>
+</div>
+<div class="space-y-1">
+<label class="block font-label-caps text-[11px] text-on-surface-variant uppercase">客队更衣室</label>
+<input class="w-full bg-surface-container-highest text-on-surface px-3 py-1.5 rounded-lg text-body-sm focus:outline-none" type="text" value="土木: 北侧105室"/>
+</div>
+</div>
+<!-- Referee & Operator Dispatching -->
+<div class="space-y-1">
+<label class="block font-label-caps text-[11px] text-on-surface-variant uppercase">执裁主裁 / 记录台录入员</label>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-3 py-1.5 rounded-lg text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">sports</span>
+<input class="bg-transparent text-on-surface text-body-sm w-full focus:outline-none" type="text" value="刘振国 (国家一级)"/>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-3 py-1.5 rounded-lg text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">keyboard</span>
+<input class="bg-transparent text-on-surface text-body-sm w-full focus:outline-none" type="text" value="王强 (已锁定)"/>
+</div>
+</div>
+</div>
+<!-- PRD §十七 Notification Dispatch Checklist -->
+<div class="bg-surface-container p-3 rounded-lg space-y-2">
+<div class="flex items-center justify-between text-body-sm font-bold">
+<span class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>自动化联动通知 (NotifyService)</span>
+</span>
+<span class="text-[10px] text-secondary font-label-caps">38 USERS</span>
+</div>
+<label class="flex items-start gap-2 text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="mt-1 rounded bg-surface-container-highest text-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-[12px]">向 <b>经管学院/土木学院</b> 2位领队及16名在册球员推送短信提醒与跳球时间变更</span>
+</label>
+<label class="flex items-start gap-2 text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="mt-1 rounded bg-surface-container-highest text-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-[12px]">触发 <b>CBB-Live 赛事移动端/小程序</b> 站内弹窗与赛程订阅者提醒</span>
+</label>
+<label class="flex items-start gap-2 text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="mt-1 rounded bg-surface-container-highest text-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-[12px]">公开发布变动公告并在对阵详情页展示：“因裁判轮休微调30分钟”</span>
+</label>
+</div>
+</div>
+<!-- Action Drawer Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary-container hover:bg-inverse-primary text-on-primary font-title-md text-body-md font-bold shadow-lg flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>保存排期修改并即刻全网广播</span>
+</button>
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-body-sm font-semibold transition-colors">
+            放弃未保存的排期微调
+          </button>
+</div>
+</div>
+<!-- Schedule Edit Audit Logs Snippet (PRD §九.42 schedule_edit_logs) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-3">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">terminal</span>
+<span class="font-title-md text-body-md font-bold">排期留痕日志 (Audit Logs)</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">REALTIME DB</span>
+</div>
+<div class="space-y-2.5">
+<!-- Log 1 -->
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-2.5 rounded-lg text-body-sm">
+<div class="flex items-center justify-between text-[11px]">
+<span class="font-label-numeric text-primary font-bold">2026-09-15 11:20:14</span>
+<span class="px-1 rounded bg-surface-container text-secondary text-[10px]">WS广播成功</span>
+</div>
+<div class="text-[12px] text-on-surface">
+<span class="text-primary-fixed font-bold">张主任(超管)</span> 将男篮总决赛由 19:30 调整为 19:00。
+            </div>
+<div class="text-[11px] text-on-surface-variant truncate">
+              受影响: 计算机(飞鹰) &amp; 自动化(战车) 领队已回执确认
+            </div>
+</div>
+<!-- Log 2 -->
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-2.5 rounded-lg text-body-sm">
+<div class="flex items-center justify-between text-[11px]">
+<span class="font-label-numeric text-on-surface-variant">2026-09-14 16:30:42</span>
+<span class="px-1 rounded bg-surface-container text-on-surface-variant text-[10px]">执裁更替</span>
+</div>
+<div class="text-[12px] text-on-surface">
+<span class="text-on-surface font-semibold">李管理</span> 更换半决赛 KO-02 主裁判为国家级裁判张强。
+            </div>
+</div>
+<!-- Log 3 -->
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-2.5 rounded-lg text-body-sm">
+<div class="flex items-center justify-between text-[11px]">
+<span class="font-label-numeric text-on-surface-variant">2026-09-13 09:15:00</span>
+<span class="px-1 rounded bg-surface-container text-tertiary text-[10px]">算法调度</span>
+</div>
+<div class="text-[12px] text-on-surface">
+              系统自动化完成小组赛排名积分比对，生成淘汰赛 4 强对阵树。
+            </div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-body-sm text-[12px] transition-colors flex items-center justify-center gap-1">
+<span>查看全部 28 条排期与冲突日志</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-4 px-gutter-desktop shadow-[0_-1px_6px_rgba(0,0,0,0.2)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-body-sm text-on-surface-variant"><div class="flex items-center gap-3 font-body-sm"><span>Campus Basketball Association CBB-Live Administration System V2.0</span><span class="hidden md:inline-block w-1 h-1 rounded-full bg-on-surface-variant/40"></span><span class="hidden md:inline-block">Security Level 2</span></div><div class="flex items-center gap-2 font-label-caps text-[11px]"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-secondary">DB SYNC ACTIVE · 节点已就绪</span></div></div></footer></div></body></html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#00e3fd","surface-variant":"#31353c","surface-container-lowest":"#0a0e14","on-primary-fixed-variant":"#862200","on-tertiary-container":"#3c2500","primary":"#ffb5a0","primary-fixed":"#ffdbd1","tertiary-container":"#c68300","on-secondary-fixed-variant":"#004f58","surface-tint":"#ffb5a0","surface-container":"#1c2026","surface":"#10141a","background":"#10141a","on-primary":"#5f1500","error":"#ffb4ab","on-secondary-fixed":"#001f24","surface-container-high":"#262a31","on-surface-variant":"#e4beb4","outline-variant":"#5b4039","on-tertiary":"#452b00","on-primary-container":"#541200","inverse-primary":"#b02f00","inverse-on-surface":"#2d3137","on-surface":"#dfe2eb","on-background":"#dfe2eb","surface-bright":"#353940","inverse-surface":"#dfe2eb","secondary-fixed-dim":"#00daf3","tertiary":"#ffb952","secondary-fixed":"#9cf0ff","on-tertiary-fixed-variant":"#633f00","surface-container-low":"#181c22","surface-container-highest":"#31353c","on-secondary-container":"#00616d","surface-dim":"#10141a","primary-fixed-dim":"#ffb5a0","primary-container":"#ff5722","on-primary-fixed":"#3b0900","tertiary-fixed-dim":"#ffb952","secondary":"#bdf4ff","on-tertiary-fixed":"#291800","error-container":"#93000a","on-secondary":"#00363d","outline":"#ab8980","on-error":"#690005","tertiary-fixed":"#ffddb4","on-error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"1.5rem","margin-desktop":"2.5rem","gutter":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2.5rem"},"fontFamily":{"display-score-mobile":["Oswald"],"label-caps":["Space Grotesk"],"body-md":["Space Grotesk"],"title-lg":["Space Grotesk"],"headline-md":["Oswald"],"headline-xl-mobile":["Oswald"],"display-score":["Oswald"],"headline-lg":["Oswald"],"body-sm":["Space Grotesk"],"label-numeric":["Oswald"],"headline-xl":["Oswald"],"body-lg":["Space Grotesk"],"title-md":["Space Grotesk"]},"fontSize":{"display-score-mobile":["48px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"0.01em","fontWeight":"700"}],"display-score":["80px",{"lineHeight":"84px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-numeric":["15px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-margin md:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="CBB-Live Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEoxwcYFcZSalXSzifAZ-Xl9UP0DApSWCWxnL0FJygpXtov_RQqhOwTeZE423e9FFg0ZXUOve0W-BB0fgXJqLHkUu_Owrn1rPOwLjS9Psx30bj79cOB2YBAVcuRpomZoFkxjd8nDzxHLkTbUpRKujVqNftbjO2l3qAohkB9coPEOsdCqI3RLPpOduSP4Edom8UIVGTHTVxnTeubEkgArOEPmoHMDxv-4O2mdJaQTEVPQeh_2T8SA5bdw8"/><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-wider uppercase text-on-surface">CBB-LIVE</span><span class="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-caps text-label-caps uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>2024-2025 校园联赛季</span></div></div><nav class="flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-title-md"><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded-lg" data-path="login" href="cbb_live_student_login.html">登录账号</a><a aria-current="page" class="transition-colors px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-title-md" data-path="register" href="cbb_live_student_registration.html">新用户注册</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded-lg" data-path="verify-identity" href="cbb_live_student_registration.html">学籍认证</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-desktop py-space-lg">
+<!-- Top Micro Announcement Pill -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">CBB-LIVE 2024-2025 认证通行体系 • PRD V2.0 §七.14 COMPLIANT</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm text-on-surface-variant font-label-caps text-label-caps tracking-widest uppercase">
+<span class="text-tertiary">高校体育联合会审核专线</span>
+<span>/</span>
+<span>SECURE GATEWAY</span>
+</div>
+</div>
+<!-- Main Asymmetric Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Varsity Visual & Privileges Deck (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Athletic Hero Deck Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md">
+<!-- Ambient Court Radial Glow -->
+<div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary-container/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-label-caps text-label-caps uppercase tracking-wider">
+                CAMPUS BASKETBALL LIVE
+              </span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">
+                HUD v2.4.9
+              </span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-wide">
+                实名认证 · 登场开赛
+              </div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                依照高校大学生篮球锦标赛组委会纪律规范，系统实行<strong class="text-primary font-semibold">「教务学籍与管理员双重审核制」</strong>，构建阳光合规的校园高水平赛事网络。
+              </p>
+</div>
+<!-- Visual Graphic Container -->
+<div class="relative h-44 w-full rounded-lg overflow-hidden bg-surface-container-high">
+<div class="bg-cover bg-center w-full h-full mix-blend-luminosity opacity-40" data-alt="Dynamic shot of college basketball players competing in a modern dark stadium under bright orange spotlights, volumetric haze, sleek jersey numbers, cinematic motion blur, dramatic sports photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDkq58sdskoOJCba-Ki1poW7COa9jxjaknZmA1V74apgMZLt0B_Sed5_HXGiHsICW7xHbIco2hjRB1dow8HwzKhWFf86OQSXjjipOaKDmbwsdcUPrispsPCGXkV6IArgMFGvOJCKawR5kX4wam5-fG-WN_sMIfqEBM2vKDDjWtX1ilVxaUUAFXqGL_hdiD5NgTADjUCqUp74QUf2r55koLmYBCGmlmsvQIHueIc36fSiQcQM440KI6JQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/50 to-transparent"></div>
+<!-- Match Telemetry Overlay Vector Inside Visual -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between p-2 rounded bg-surface/90 backdrop-blur-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">sports_basketball</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface">实名数据通道就绪</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">对接 18 所高校男子/女子正赛名单</span>
+</div>
+</div>
+<span class="font-headline-md text-headline-md text-primary-container">SYS:ON</span>
+</div>
+</div>
+<!-- Privileges Checklist -->
+<div class="flex flex-col gap-space-sm pt-2">
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-on-surface-variant">认证用户专属权益 (ACCESS PRIVILEGES)</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container/70">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">radar</span>
+<span>毫米级半场热区与实时投篮点雷达</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container/70">
+<span class="material-symbols-outlined text-tertiary text-[18px]">how_to_vote</span>
+<span>全场最佳 (MVP) 官方公投表决权</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container/70">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">notifications_active</span>
+<span>犯规出场 / 关键压哨实时推送</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded bg-surface-container/70">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">sports</span>
+<span>选拔报名直通校队/各院系先发名单</span>
+</div>
+</div>
+</div>
+<!-- Workflow Summary Micro Graph -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">审核流程时序 (SLA)</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">预计耗时 ≤ 2H</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container w-1/3"></div>
+<div class="bg-tertiary w-1/3 opacity-80"></div>
+<div class="bg-secondary-fixed w-1/3 opacity-30"></div>
+</div>
+<div class="flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>1.提交学籍</span>
+<span>2.教务核验</span>
+<span>3.赋权发牌</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Help Notice Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-title-md text-title-md text-on-surface">学籍真实性提醒</span>
+<span>请务必使用本人真实学号与教务登记姓名注册。根据《高校学生体育竞赛管理办法》，借用或伪造学籍认证者，组委会将通报所在院系并取消观赛及参赛资格。</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Registration & Audit Flow Card (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-md md:p-space-lg shadow-xl relative overflow-hidden">
+<!-- Accent Edge Border Indicator -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-tertiary to-secondary-container"></div>
+<!-- Header & Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-wide uppercase">
+                新用户学生注册
+              </div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">
+                Student Registration &amp; Verification
+              </div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-primary-container/20 text-primary font-label-caps text-label-caps tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+<span>管理员人工审核制</span>
+</div>
+</div>
+<!-- Dual Tab Switcher -->
+<div class="flex items-center p-1 rounded-lg bg-surface-container mb-space-lg">
+<button class="flex-1 py-2 rounded-md font-title-md text-title-md text-center bg-primary-container text-on-primary-container transition-all flex items-center justify-center gap-2" id="tabBtnRegister" onclick="switchTab('register')">
+<span class="material-symbols-outlined text-[18px]">app_registration</span>
+<span>Step 1 · 填写注册信息</span>
+</button>
+<button class="flex-1 py-2 rounded-md font-title-md text-title-md text-center text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-2" id="tabBtnStatus" onclick="switchTab('status')">
+<span class="material-symbols-outlined text-[18px]">track_changes</span>
+<span>Step 2 · 审核状态查询</span>
+</button>
+</div>
+<!-- TAB 1: FORM REGISTER VIEW -->
+<div class="flex flex-col gap-space-md" id="tabContentRegister">
+<form class="flex flex-col gap-space-md" id="registrationForm" onsubmit="handleRegistrationSubmit(event)">
+<!-- Row: Student No & Real Name -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Field: Student No -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1" for="studentNo">
+<span>学号 / 工号</span>
+<span class="text-primary-container">*</span>
+</label>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase" id="studentNoTip">6~32位字母数字</span>
+</div>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 bg-surface rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" id="studentNo" oninput="validateStudentNo(this.value)" pattern="[a-zA-Z0-9]{6,32}" placeholder="例：20230914022" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]" id="studentNoIcon">badge</span>
+</div>
+</div>
+<!-- Field: Real Name -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1" for="realName">
+<span>真实姓名</span>
+<span class="text-primary-container">*</span>
+</label>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">2~64字符 · 实名核验</span>
+</div>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 bg-surface rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" id="realName" maxlength="64" minlength="2" placeholder="例：王浩宇 / 张晓涵" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]">person</span>
+</div>
+</div>
+</div>
+<!-- Field: Department & Class -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1" for="className">
+<span>所属院系班级</span>
+<span class="text-primary-container">*</span>
+</label>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">按教务行政建制</span>
+</div>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 bg-surface rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" id="className" placeholder="例：计算机与软件学院 计科2304班" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]">school</span>
+</div>
+</div>
+<!-- Row: Password & Confirm -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Set Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1" for="password">
+<span>设置密码</span>
+<span class="text-primary-container">*</span>
+</label>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 bg-surface rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" id="password" maxlength="32" minlength="8" oninput="checkPasswordStrength(this.value)" placeholder="8~32位，含字母与数字" required="" type="password"/>
+<button class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant hover:text-on-surface text-[20px]" onclick="togglePasswordVisibility('password', this)" type="button">visibility</button>
+</div>
+<!-- Password Strength Meter -->
+<div class="flex items-center gap-1.5 pt-1">
+<div class="h-1 flex-1 rounded-full bg-surface-container-highest transition-colors" id="bar1"></div>
+<div class="h-1 flex-1 rounded-full bg-surface-container-highest transition-colors" id="bar2"></div>
+<div class="h-1 flex-1 rounded-full bg-surface-container-highest transition-colors" id="bar3"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant pl-1" id="strengthText">未输入</span>
+</div>
+</div>
+<!-- Confirm Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-1" for="confirmPassword">
+<span>确认密码</span>
+<span class="text-primary-container">*</span>
+</label>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 bg-surface rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" id="confirmPassword" oninput="checkPasswordMatch()" placeholder="再次输入相同密码" required="" type="password"/>
+<button class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant hover:text-on-surface text-[20px]" onclick="togglePasswordVisibility('confirmPassword', this)" type="button">visibility</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pt-1" id="matchFeedback">密码需保持一致</span>
+</div>
+</div>
+<!-- Roles Intent Multi-Check -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-title-md text-title-md text-on-surface">角色身份意向 (可多选 · 后续可调整)</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-2.5 p-3 rounded-lg bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary-container accent-primary-container bg-surface-container" name="roles" type="checkbox" value="audience"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">普通观众 / 校友</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">弹幕与投票互动</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-lg bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container bg-surface-container" name="roles" type="checkbox" value="player"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">参赛球员候选</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">同步个人专属数据</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-lg bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container bg-surface-container" name="roles" type="checkbox" value="cheer"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">院系领队 / 啦啦队</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">方阵应援与检录</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Compliance & Privacy Agreement Check -->
+<div class="p-space-md rounded-lg bg-surface flex items-start gap-3">
+<input class="mt-1 w-4 h-4 rounded text-primary-container accent-primary-container" id="termsCheck" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="termsCheck">
+                  我已阅读并同意 <a class="text-primary underline" href="#">《CBB-Live 高校篮球联赛用户服务规范》</a>、<a class="text-primary underline" href="#">《学生隐私与参赛数据合规条例》</a>。本人承诺提交的学号与院系信息真实有效，自愿接受体育仲裁委员会与管理员学籍审核。
+                </label>
+</div>
+<!-- Action Submission Button -->
+<button class="w-full py-3.5 px-space-md rounded-lg bg-gradient-to-r from-primary-container to-[#ff3d00] hover:brightness-110 active:scale-[0.99] text-white font-title-lg text-title-lg tracking-wider uppercase transition-all shadow-lg flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>提交注册申请 (Submit for Review)</span>
+</button>
+<!-- Footer Switcher Link -->
+<div class="flex items-center justify-center gap-2 pt-2 font-body-md text-body-md text-on-surface-variant">
+<span>已有认证账号或曾提交申请？</span>
+<a class="text-primary font-title-md text-title-md hover:underline inline-flex items-center gap-0.5" href="cbb_live_student_login.html">
+<span>直接登录 (Sign In)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</form>
+</div>
+<!-- TAB 2: AUDIT STATUS PREVIEW PANEL (PRD §七.14 & §六.2 状态机展示) -->
+<div class="hidden flex flex-col gap-space-md" id="tabContentStatus">
+<!-- Quick Inquiry Box -->
+<div class="p-space-md rounded-lg bg-surface flex flex-col sm:flex-row gap-3 items-center">
+<div class="relative flex-1 w-full">
+<input class="w-full px-3.5 py-2.5 bg-surface-container rounded-lg text-on-surface placeholder:text-surface-variant font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary-container" id="searchStudentNo" placeholder="输入学号查询当前审核进度 (例：2023010102)" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-title-md tracking-wider transition-colors shrink-0" onclick="simulateAuditQuery()">
+                实时查询
+              </button>
+</div>
+<!-- Dynamic Live Result Card Container (Default demonstrates 3 PRD states) -->
+<div class="flex flex-col gap-space-md">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider flex items-center justify-between">
+<span>审核状态规范示范 (PRD §六.2 状态机示例)</span>
+<span class="text-secondary-fixed-dim">DATA STATE DEMO</span>
+</div>
+<!-- State 1: Pending (审核中) -->
+<div class="p-space-md rounded-lg bg-surface flex flex-col gap-space-sm border-l-4 border-l-tertiary">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-headline-md text-headline-md text-tertiary">🟡 审核中 · PENDING REVIEW</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">REQ-20250302-881</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                  学号 <strong class="text-white">2023010102</strong>，姓名 <strong class="text-white">李四 (计算机学院)</strong> 的学生注册申请已进入待审队列。申请提交于 10 分钟前，当前排位第 <span class="text-tertiary font-bold">14</span> 位，预计 2 小时内由校体育部管理员完成实名核验。
+                </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-caps text-label-caps">
+<span>通道：自动学籍库匹配中</span>
+<span class="text-tertiary">请稍后刷新查询</span>
+</div>
+</div>
+<!-- State 2: Approved (已通过) -->
+<div class="p-space-md rounded-lg bg-surface flex flex-col gap-space-sm border-l-4 border-l-secondary-container">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>
+<span class="font-headline-md text-headline-md text-secondary-container">🟢 已通过 · APPROVED &amp; ACTIVATED</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">UID: CBB-88910</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                  学籍核对成功！身份标签：<strong class="text-secondary-container">「院系先发控卫 / 经管学院」</strong>。欢迎正式进入 CBB-Live 赛场，您已解锁全景投篮热图追踪与全场 MVP 选票权限。
+                </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">审核员：体育部赛事技术组工号 #A08</span>
+<a class="px-3 py-1 rounded bg-secondary-container/20 text-secondary-container font-title-md text-title-md hover:bg-secondary-container/30 transition-colors" href="#">
+                    立即登录赛场通道
+                  </a>
+</div>
+</div>
+<!-- State 3: Rejected (已驳回) -->
+<div class="p-space-md rounded-lg bg-surface flex flex-col gap-space-sm border-l-4 border-l-error">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">cancel</span>
+<span class="font-headline-md text-headline-md text-error">🔴 已驳回 · REJECTED</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">REF: 403-MISMATCH</span>
+</div>
+<div class="p-2.5 rounded bg-error-container/20 text-error font-body-md text-body-md">
+<strong>驳回原因：</strong>学号与姓名与本校教务处2024秋季学期在册名单不符（姓名拼写不匹配）。请核对身份证姓名或联系本院系辅导员开具资格证明。
+                </div>
+<div class="flex items-center justify-between pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span>处理时间：今日 14:15:20</span>
+<button class="text-primary hover:underline font-title-md text-title-md" onclick="switchTab('register')">
+                    修正信息并重新提交 →
+                  </button>
+</div>
+</div>
+</div>
+<!-- Return to Form Action -->
+<div class="pt-space-md text-center">
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-title-md text-title-md transition-colors" onclick="switchTab('register')">
+                返回修改注册表格
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Submission Toast Notification Mock -->
+<div class="fixed bottom-6 right-6 max-w-md p-space-md rounded-lg bg-surface-container-highest shadow-2xl transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none z-50 flex items-start gap-3" id="toastNotification">
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface" id="toastTitle">申请提交成功</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toastDesc">已推送至校体育部管理员审核中心，请牢记您的学号以便随时查询。</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(target) {
+    const btnRegister = document.getElementById('tabBtnRegister');
+    const btnStatus = document.getElementById('tabBtnStatus');
+    const contentRegister = document.getElementById('tabContentRegister');
+    const contentStatus = document.getElementById('tabContentStatus');
+
+    if (target === 'register') {
+      btnRegister.className = "flex-1 py-2 rounded-md font-title-md text-title-md text-center bg-primary-container text-on-primary-container transition-all flex items-center justify-center gap-2";
+      btnStatus.className = "flex-1 py-2 rounded-md font-title-md text-title-md text-center text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-2";
+      contentRegister.classList.remove('hidden');
+      contentStatus.classList.add('hidden');
+    } else {
+      btnStatus.className = "flex-1 py-2 rounded-md font-title-md text-title-md text-center bg-primary-container text-on-primary-container transition-all flex items-center justify-center gap-2";
+      btnRegister.className = "flex-1 py-2 rounded-md font-title-md text-title-md text-center text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-2";
+      contentStatus.classList.remove('hidden');
+      contentRegister.classList.add('hidden');
+    }
+  }
+
+  function togglePasswordVisibility(fieldId, btn) {
+    const field = document.getElementById(fieldId);
+    if (field.type === 'password') {
+      field.type = 'text';
+      btn.innerText = 'visibility_off';
+    } else {
+      field.type = 'password';
+      btn.innerText = 'visibility';
+    }
+  }
+
+  function validateStudentNo(val) {
+    const tip = document.getElementById('studentNoTip');
+    const icon = document.getElementById('studentNoIcon');
+    if (val.length >= 6 && /^[a-zA-Z0-9]+$/.test(val)) {
+      tip.innerText = "格式合法 · 自动校验唯一中";
+      tip.className = "font-label-caps text-label-caps text-secondary-fixed-dim uppercase";
+      icon.innerText = "check_circle";
+      icon.className = "material-symbols-outlined absolute right-3 top-2.5 text-secondary-container text-[20px]";
+    } else {
+      tip.innerText = "6~32位字母数字";
+      tip.className = "font-label-caps text-label-caps text-on-surface-variant uppercase";
+      icon.innerText = "badge";
+      icon.className = "material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]";
+    }
+  }
+
+  function checkPasswordStrength(val) {
+    const b1 = document.getElementById('bar1');
+    const b2 = document.getElementById('bar2');
+    const b3 = document.getElementById('bar3');
+    const text = document.getElementById('strengthText');
+
+    let strength = 0;
+    if (val.length >= 8) strength++;
+    if (/[0-9]/.test(val) && /[a-zA-Z]/.test(val)) strength++;
+    if (/[^a-zA-Z0-9]/.test(val) || (val.length >= 12 && /[A-Z]/.test(val))) strength++;
+
+    b1.className = "h-1 flex-1 rounded-full bg-surface-container-highest transition-colors";
+    b2.className = "h-1 flex-1 rounded-full bg-surface-container-highest transition-colors";
+    b3.className = "h-1 flex-1 rounded-full bg-surface-container-highest transition-colors";
+
+    if (val.length === 0) {
+      text.innerText = "未输入";
+      text.className = "font-label-caps text-label-caps text-on-surface-variant pl-1";
+      return;
+    }
+
+    if (strength === 1) {
+      b1.className = "h-1 flex-1 rounded-full bg-error transition-colors";
+      text.innerText = "弱";
+      text.className = "font-label-caps text-label-caps text-error pl-1";
+    } else if (strength === 2) {
+      b1.className = "h-1 flex-1 rounded-full bg-tertiary transition-colors";
+      b2.className = "h-1 flex-1 rounded-full bg-tertiary transition-colors";
+      text.innerText = "中等";
+      text.className = "font-label-caps text-label-caps text-tertiary pl-1";
+    } else if (strength >= 3) {
+      b1.className = "h-1 flex-1 rounded-full bg-secondary-container transition-colors";
+      b2.className = "h-1 flex-1 rounded-full bg-secondary-container transition-colors";
+      b3.className = "h-1 flex-1 rounded-full bg-secondary-container transition-colors";
+      text.innerText = "强";
+      text.className = "font-label-caps text-label-caps text-secondary-container pl-1";
+    }
+    checkPasswordMatch();
+  }
+
+  function checkPasswordMatch() {
+    const p1 = document.getElementById('password').value;
+    const p2 = document.getElementById('confirmPassword').value;
+    const feedback = document.getElementById('matchFeedback');
+
+    if (!p2) {
+      feedback.innerText = "密码需保持一致";
+      feedback.className = "font-body-sm text-body-sm text-on-surface-variant pt-1";
+      return;
+    }
+
+    if (p1 === p2) {
+      feedback.innerText = "✓ 密码校验一致";
+      feedback.className = "font-body-sm text-body-sm text-secondary-container pt-1";
+    } else {
+      feedback.innerText = "✕ 两次输入的密码不一致";
+      feedback.className = "font-body-sm text-body-sm text-error pt-1";
+    }
+  }
+
+  function handleRegistrationSubmit(e) {
+    e.preventDefault();
+    const p1 = document.getElementById('password').value;
+    const p2 = document.getElementById('confirmPassword').value;
+    if (p1 !== p2) {
+      alert("两次输入的密码不一致，请核对。");
+      return;
+    }
+
+    showToast("申请已提交至审核流", "学号与姓名已写入等待队列，组委会管理员正进行人工核验。");
+    setTimeout(() => {
+      switchTab('status');
+    }, 1200);
+  }
+
+  function simulateAuditQuery() {
+    const sVal = document.getElementById('searchStudentNo').value.trim();
+    if (!sVal) {
+      showToast("请输入学号", "请填写有效的学号/工号进行状态检索。");
+      return;
+    }
+    showToast("状态同步完毕", "学号 " + sVal + " 当前处于审核流程，预计1~2小时反馈。");
+  }
+
+  function showToast(title, desc) {
+    const toast = document.getElementById('toastNotification');
+    document.getElementById('toastTitle').innerText = title;
+    document.getElementById('toastDesc').innerText = desc;
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3800);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.3)]"><div class="w-full px-margin md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="font-headline-md text-headline-md text-primary tracking-wide">CBB-LIVE</span><span>高校大学生男女篮球锦标赛官方观战与技术统计平台</span></div><div class="flex items-center gap-space-lg font-label-caps text-label-caps tracking-wider uppercase"><span>主办方：校学生体育联合会</span><span>数据节点：LIVE ARENA HUD</span><span>© 2025 CBB-LIVE ALL RIGHTS RESERVED</span></div></div></footer></body></html>

@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#e4beb4","secondary-container":"#00e3fd","on-secondary-fixed":"#001f24","on-error-container":"#ffdad6","primary-container":"#ff5722","on-primary":"#5f1500","secondary":"#bdf4ff","on-secondary-fixed-variant":"#004f58","on-tertiary-fixed-variant":"#633f00","on-tertiary-fixed":"#291800","surface":"#10141a","surface-variant":"#31353c","primary-fixed":"#ffdbd1","tertiary-fixed":"#ffddb4","inverse-on-surface":"#2d3137","on-primary-fixed-variant":"#862200","surface-bright":"#353940","outline":"#ab8980","tertiary-container":"#c68300","secondary-fixed-dim":"#00daf3","on-tertiary-container":"#3c2500","on-primary-container":"#541200","inverse-surface":"#dfe2eb","outline-variant":"#5b4039","secondary-fixed":"#9cf0ff","on-background":"#dfe2eb","on-error":"#690005","primary-fixed-dim":"#ffb5a0","on-primary-fixed":"#3b0900","on-tertiary":"#452b00","primary":"#ffb5a0","surface-container-low":"#181c22","on-surface":"#dfe2eb","surface-tint":"#ffb5a0","on-secondary":"#00363d","surface-container-highest":"#31353c","surface-container-high":"#262a31","tertiary":"#ffb952","error":"#ffb4ab","tertiary-fixed-dim":"#ffb952","surface-container":"#1c2026","error-container":"#93000a","surface-dim":"#10141a","inverse-primary":"#b02f00","on-secondary-container":"#00616d","surface-container-lowest":"#0a0e14","background":"#10141a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-desktop":"1.5rem","space-lg":"1.5rem","margin":"1rem","space-sm":"0.5rem","gutter":"1rem","space-md":"1rem","space-xs":"0.25rem","margin-desktop":"2.5rem","space-xl":"2.5rem"},fontFamily:{"label-numeric":["Oswald"],"headline-lg":["Oswald"],"display-score":["Oswald"],"headline-xl-mobile":["Oswald"],"headline-md":["Oswald"],"body-lg":["Space Grotesk"],"label-caps":["Space Grotesk"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"],"display-score-mobile":["Oswald"],"title-lg":["Space Grotesk"],"title-md":["Space Grotesk"],"headline-xl":["Oswald"]},fontSize:{"label-numeric":["15px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"0.01em","fontWeight":"600"}],"display-score":["80px",{"lineHeight":"84px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"34px","letterSpacing":"0.01em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-score-mobile":["48px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 flex items-center px-space-md gap-space-sm bg-surface-container-lowest"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase leading-none">CBB-LIVE</span><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Ops Control Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><span class="px-space-sm font-label-caps text-label-caps text-outline tracking-wider uppercase block">核心中台业务</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="cbb_live_0.1.html"><span class="">数据看板</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="seasons-tournament" href="cbb_live_2.html"><span class="">赛季赛制</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="match-schedules" href="cbb_live_g_finals_01.html"><span class="">赛程排期</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="teams-roster" href="cbb_live_5.html"><span class="">球队名单</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-caps text-label-caps text-outline tracking-wider uppercase block">赛场临场控制</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="courtside-broadcast-ops" href="cbb_live_30_live_ops.html"><span class="">现场临场播控</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="irs-multi-angle-replay" href="cbb_live_irs.html"><span class="">IRS回放与多机位</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dispute-arbitration-center" href="cbb_live_call_audit_reports.html"><span class="">争议仲裁中心</span></a></nav></div><div class="space-y-space-xs"><div class="flex items-center justify-between px-space-sm"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">裁判监督与考评认证</span><span class="px-1.5 py-0.5 rounded bg-primary-container/20 text-primary font-label-caps text-label-caps">PRO</span></div><nav class="space-y-space-xs pl-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="referee-performance-evaluation" href="cbb_live_referee_evaluation_credit.html"><span class="">执裁考评与授信</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="national-referee-roster" href="cbb_live_national_referee_roster.html"><span class="">全国裁判梯队库</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="finals-trio-compatibility-audit" href="cbb_live_27.html"><span class="">总决赛三人组执裁兼容性智能冲突排查</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="referee-drill-sandbox" href="cbb_live_practice_mode.html"><span class="">裁判演练沙箱</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="call-audit-reports" href="cbb_live_call_audit_reports.html"><span class="">判罚报告与审计</span></a></nav></div><div class="space-y-space-xs"><span class="px-space-sm font-label-caps text-label-caps text-outline tracking-wider uppercase block">系统支撑</span><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="system-parameters-logs" href="cbb_live_2.html"><span class="">系统参数与日志</span></a></nav></div></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="">CUBA 专线安全链路</span></div><span class="font-label-numeric text-label-numeric text-outline">v4.18</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest transition-colors font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-[18px]">sports_basketball</span><span class="font-title-md text-title-md">CUBA 全国一级联赛 (男篮总决赛)</span><span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span></button></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></div><span class="font-label-caps text-label-caps text-on-surface">WS推流 24.8 Mbps</span><span class="font-label-numeric text-label-numeric text-secondary">0.12s 延时</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center p-0.5 rounded bg-surface-container-high"><button class="px-space-sm py-1 rounded font-body-sm text-body-sm bg-primary-container text-on-primary font-bold">考评专家</button><button class="px-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest">技术代表</button></div><button class="relative p-1.5 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-title-md text-title-md leading-tight text-on-surface">张维真</span><span class="font-label-caps text-label-caps text-outline">国家级技术监督</span></div><button class="p-1 text-on-surface-variant hover:text-primary transition-colors ml-space-xs"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Command & Action Bar -->
+<div class="w-full bg-surface-container-lowest p-space-md mb-space-md shadow-md rounded"><div class="flex flex-col gap-3"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md pb-2 border-b border-outline-variant/30"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold shadow-sm"><span class="material-symbols-outlined text-[20px]">print</span></div><div><div class="flex items-center gap-2"><h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">红头公报专业打印排版预览模式<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-caps text-label-caps tracking-wider">PRINT-READY A4 300DPI</span></h2><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-label-caps text-[11px] flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 打印排版引擎就绪</span></div><p class="font-body-sm text-body-sm text-outline">国家公文 GB/T 9704-2012 格式标准 · 双面骑马订/左侧装订孔对齐 · CMYK 矢量套印已校正</p></div></div><div class="flex flex-wrap items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-1.5 rounded text-xs text-on-surface-variant font-mono"><span class="material-symbols-outlined text-[16px] text-secondary">print</span><span>目标: Ricoh Pro C7200S (高密激光)</span></div><button class="px-space-sm py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors" onclick="window.print()"><span class="material-symbols-outlined text-[16px] text-outline">post_add</span><span>导出 PostScript</span></button><button class="px-space-md py-1.5 rounded bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary-container/90 shadow-md flex items-center gap-space-xs transition-all" onclick="window.print()"><span class="material-symbols-outlined text-[18px]">print</span><span>立即执行打印 (Ctrl+P)</span></button><button class="px-space-sm py-1.5 rounded bg-surface-variant text-on-surface font-body-sm text-body-sm hover:bg-surface-container-highest transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">close</span><span>退出打印模式</span></button></div></div><div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-3 pt-1 text-xs text-on-surface-variant"><div class="bg-surface-container-low p-2 rounded flex flex-col justify-between"><span class="text-outline font-label-caps text-[10px]">纸张规格与方向</span><span class="font-bold text-on-surface font-mono mt-1">A4 纵向 (210×297mm)</span></div><div class="bg-surface-container-low p-2 rounded flex flex-col justify-between"><span class="text-outline font-label-caps text-[10px]">标准公文页边距</span><span class="font-bold text-secondary font-mono mt-1">上37 下35 左28 右26mm</span></div><div class="bg-surface-container-low p-2 rounded flex flex-col justify-between"><span class="text-outline font-label-caps text-[10px]">装订线预留</span><span class="font-bold text-emerald-400 font-mono mt-1">左侧预留 15mm (三孔基准)</span></div><div class="bg-surface-container-low p-2 rounded flex flex-col justify-between"><span class="text-outline font-label-caps text-[10px]">色彩分色模式</span><span class="font-bold text-primary font-mono mt-1">CMYK 300 DPI 矢量红章</span></div><div class="bg-surface-container-low p-2 rounded flex flex-col justify-between"><span class="text-outline font-label-caps text-[10px]">打印范围</span><span class="font-bold text-on-surface font-mono mt-1">全部 4 页 (骑缝连续)</span></div><div class="bg-surface-container-low p-2 rounded flex items-center justify-between"><div class="flex flex-col"><span class="text-outline font-label-caps text-[10px]">装订打孔标尺</span><span class="font-semibold text-secondary text-[11px] mt-0.5">标尺与参考线显示中</span></div><span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span></div></div></div></div>
+<!-- Workspace: Document Viewport + Metadata & Sign-off Panel -->
+<div class="w-full grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Left Navigation: Page Thumbnails & Outlines -->
+<div class="hidden lg:flex xl:col-span-2 flex-col gap-space-sm bg-surface-container-lowest p-space-sm rounded"><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">tune</span><span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">打印排版参数</span></div><span class="font-label-numeric text-[11px] text-secondary">A4 PROFILE</span></div><div class="space-y-3 pr-1 text-xs"><div class="space-y-1"><label class="text-outline font-medium block">目标打印机</label><select class="w-full bg-surface-container text-on-surface text-xs rounded p-2 border border-outline-variant/30"><option>Ricoh Pro C7200S (红头彩色激光)</option><option>Canon imagePRESS C170 (档案室)</option><option>保存为高质量 PDF (带矢量印章)</option></select></div><div class="space-y-1"><label class="text-outline font-medium block">纸张尺寸与规格</label><div class="grid grid-cols-2 gap-1.5"><button class="p-1.5 rounded bg-primary-container text-on-primary font-bold text-center">A4 (210×297)</button><button class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-center">16开 (国标)</button></div></div><div class="space-y-1"><label class="text-outline font-medium block">打印范围与份数</label><div class="flex items-center gap-2"><input class="w-14 bg-surface-container text-on-surface rounded p-1.5 text-center border border-outline-variant/30 font-mono" min="1" type="number" value="2"/><span class="text-outline">份</span><div class="flex-1 flex gap-1"><span class="p-1.5 rounded bg-surface-container text-center flex-1 font-mono text-[11px] text-on-surface">页码 1-4</span></div></div></div><div class="space-y-2 pt-2 border-t border-outline-variant/20"><span class="text-outline font-label-caps text-[10px] uppercase block">要素套印与安全开关</span><label class="flex items-center justify-between cursor-pointer p-1 rounded hover:bg-surface-container"><span class="text-on-surface">打印朱红公章/红头</span><input checked="" class="accent-[#ff5722] rounded" type="checkbox"/></label><label class="flex items-center justify-between cursor-pointer p-1 rounded hover:bg-surface-container"><span class="text-on-surface">打印装订辅助线与打孔点</span><input checked="" class="accent-[#ff5722] rounded" type="checkbox"/></label><label class="flex items-center justify-between cursor-pointer p-1 rounded hover:bg-surface-container"><span class="text-on-surface">绝密防伪水印底纹</span><input checked="" class="accent-[#ff5722] rounded" type="checkbox"/></label><label class="flex items-center justify-between cursor-pointer p-1 rounded hover:bg-surface-container"><span class="text-on-surface">国密存证页眉页脚</span><input checked="" class="accent-[#ff5722] rounded" type="checkbox"/></label><label class="flex items-center justify-between cursor-pointer p-1 rounded hover:bg-surface-container"><span class="text-on-surface">双面翻转装订补偿 (2mm)</span><input checked="" class="accent-[#ff5722] rounded" type="checkbox"/></label></div><div class="pt-2 border-t border-outline-variant/20 space-y-1.5"><span class="text-outline font-label-caps text-[10px] uppercase block">快速跳转预览</span><div class="grid grid-cols-2 gap-1 font-mono text-[11px]"><button class="p-1.5 bg-surface-container hover:bg-surface-container-high rounded text-left flex items-center justify-between" onclick="scrollToPage('doc-page-1')"><span>P1 封面</span><span class="text-primary">084号</span></button><button class="p-1.5 bg-surface-container hover:bg-surface-container-high rounded text-left flex items-center justify-between" onclick="scrollToPage('doc-page-2')"><span>P2 站位</span><span class="text-secondary">三人组</span></button><button class="p-1.5 bg-surface-container hover:bg-surface-container-high rounded text-left flex items-center justify-between" onclick="scrollToPage('doc-page-3')"><span>P3 指标</span><span class="text-emerald-400">1万次</span></button><button class="p-1.5 bg-surface-container hover:bg-surface-container-high rounded text-left flex items-center justify-between" onclick="scrollToPage('doc-page-4')"><span>P4 签章</span><span class="text-tertiary">红印章</span></button></div></div></div></div>
+<!-- Center: Official Red-Header Document Viewport (Interactive Zoom Container) -->
+<div class="xl:col-span-7 flex flex-col items-center gap-space-lg overflow-y-auto max-h-[1100px] p-space-sm bg-surface-container-lowest/50 rounded shadow-inner" id="pdf-scroll-area">
+<!-- PAGE 1: Standard Red-Header Bulletin -->
+<article class="doc-page w-full max-w-[820px] bg-[#fbfbfb] text-neutral-900 shadow-2xl rounded p-8 sm:p-14 relative overflow-hidden transition-all duration-300" id="doc-page-1"><div class="absolute left-2 top-0 bottom-0 w-6 flex flex-col justify-around items-center pointer-events-none select-none border-r border-dashed border-neutral-300 opacity-60 z-30"><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 标准装订打孔定位线 (预留28mm) →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 中缝打孔基准 →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div></div><div class="w-full flex items-center justify-between pb-3 mb-2 border-b border-neutral-300 text-[11px] font-mono text-neutral-500 pl-4"><span class="flex items-center gap-1 font-bold text-red-700"><span class="material-symbols-outlined text-[13px]">lock</span> 绝密·CUBA全国男篮总决赛执裁档案·中体协竞字〔2026〕第084号</span><span class="text-neutral-400">A4·300DPI 打印排版页 1/4 · 装订线已校准</span></div>
+<!-- Floating Security Watermark Layer -->
+<div class="watermark-layer pointer-events-none absolute inset-0 z-30 flex flex-wrap items-center justify-around opacity-[0.07] select-none overflow-hidden">
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">CBB-LIVE 官方专用 张维真 2026-06-28 19:30 严禁扩散</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">中体协竞字〔2026〕084号 绝密凭证</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">CBB-LIVE 官方专用 张维真 2026-06-28 19:30 严禁扩散</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">SHA256: #CF-THU-GDUT-9912-VERIFIED</div>
+</div>
+<!-- Official Red-Header Banner -->
+<header class="w-full text-center pb-6">
+<p class="tracking-[0.28em] text-[#d90000] font-headline-lg text-headline-lg font-bold uppercase leading-none py-1">中国大学生体育协会篮球分会</p>
+<p class="tracking-[0.16em] text-[#d90000] font-title-lg text-title-lg font-semibold py-1">2025-2026 赛季全国大学生篮球联赛组委会裁判委员会</p>
+<!-- Standard Red Separation Rule -->
+<div class="w-full h-1 bg-[#d90000] mt-3"></div>
+<div class="w-full h-0.5 bg-[#d90000] mt-0.5"></div>
+<!-- Official Document Number & Issuer Line -->
+<div class="flex items-center justify-between text-neutral-700 text-sm font-serif font-medium mt-3 px-1">
+<span class="">中体协竞字〔2026〕第 084 号</span>
+<div class="flex items-center gap-4">
+<span class="">签发人：<strong class="text-neutral-950 text-base">张维真</strong></span>
+<span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-sans rounded">绝密 · 赛前封存</span>
+</div>
+</div>
+</header>
+<!-- Document Main Title -->
+<div class="py-4 text-center">
+<h1 class="font-serif font-bold text-2xl sm:text-[25px] leading-relaxed text-neutral-950 tracking-tight">
+            关于 2025-2026 赛季全国大学生男子篮球一级联赛总决赛 (G7)<br/>
+            执裁三人组（王峰、李雷、张强）资格合规性与执裁兼容性审查结论的公报
+          </h1>
+</div>
+<!-- Document Body Text (Official Governmental Formal Style) -->
+<div class="space-y-5 text-neutral-800 font-serif text-[15px] leading-[1.85] text-justify">
+<p class="indent-8">
+            各参赛高校代表队、总决赛赛事监督组、赛区技术代表及记录台工作委员会：
+          </p>
+<p class="indent-8">
+            依据《国际篮球联合会 (FIBA) 官方篮球规则》（2024年审定版）第 9 条、第 12 条、第 46 条与《中国大学生篮球联赛 (CUBA) 裁判员选派、监督与利益回避审查管理细则》相关规定，联赛组委会技术考评处协同国家级技术监督专家组，借助 CBB-Live 赛事管理中台高阶算法引擎，对定于 2026 年 6 月 28 日 19:30 在国家五棵松体育馆 A1 主馆举行的 2025-2026 赛季全国大学生男子篮球一级联赛总决赛决胜场（G7：清华大学男篮 vs 广东工业大学男篮）拟委派执裁三人组进行了全息穿透式背景审查、空间视线交叠测算及极端判罚冲突模拟。
+          </p>
+<p class="indent-8">
+            经审查，拟定主裁判员<strong>王峰</strong>（国际级·北京）、第一副裁判员<strong>李雷</strong>（国家级·上海）、第二副裁判员<strong>张强</strong>（国家级·山东）三人执裁资质合规合法，十年来无任何直系亲属、学缘背景、地域联谊或商业代言关联；三人团队协同适配指数（TSI）达 <strong>99.4/100</strong>，判罚尺度离散方差收敛至 <strong>σ=0.04</strong>，符合总决赛超高对抗强度执裁准入标准。现将审查与兼容性核定结论正式公报如下：
+          </p>
+<!-- Section 1: Background & Match Parameters -->
+<div class="pt-2">
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              一、受案对阵与场馆空域参数核定
+            </h2>
+<div class="mt-2 bg-neutral-100 p-4 rounded text-sm space-y-1.5 font-sans">
+<div class="grid grid-cols-2 gap-2">
+<div class=""><span class="text-neutral-500">比赛项目：</span>全国一级男篮巅峰决战 (G7)</div>
+<div class=""><span class="text-neutral-500">对阵双方：</span>清华大学 (主) vs 广东工业大学 (客)</div>
+<div class=""><span class="text-neutral-500">受案场馆：</span>北京·国家五棵松体育馆 A1 主竞赛馆</div>
+<div class=""><span class="text-neutral-500">IRS 即时回放机位：</span>32 路广播级机位 + 2 路微秒同步顶摄</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page 1 Footer -->
+<div class="pt-10 flex items-center justify-between text-neutral-400 text-xs font-mono border-t border-neutral-200 mt-8">
+<span class="">中国大学生体育协会文件</span>
+<span class="">第 1 页，共 4 页</span>
+<span class="">SHA: 4a9f...77bc</span>
+</div>
+</article>
+<!-- PAGE 2: Referee Profiles & Court Spatial Stationing -->
+<article class="doc-page w-full max-w-[820px] bg-[#fbfbfb] text-neutral-900 shadow-2xl rounded p-8 sm:p-14 relative overflow-hidden transition-all duration-300" id="doc-page-2"><div class="absolute left-2 top-0 bottom-0 w-6 flex flex-col justify-around items-center pointer-events-none select-none border-r border-dashed border-neutral-300 opacity-60 z-30"><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 标准装订打孔定位线 (预留28mm) →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 中缝打孔基准 →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div></div><div class="w-full flex items-center justify-between pb-3 mb-2 border-b border-neutral-300 text-[11px] font-mono text-neutral-500 pl-4"><span class="flex items-center gap-1 font-bold text-red-700"><span class="material-symbols-outlined text-[13px]">lock</span> 绝密·CUBA全国男篮总决赛执裁档案·中体协竞字〔2026〕第084号</span><span class="text-neutral-400">A4·300DPI 打印排版页 2/4 · 视线雷达矢矢量化</span></div>
+<!-- Floating Security Watermark Layer -->
+<div class="watermark-layer pointer-events-none absolute inset-0 z-30 flex flex-wrap items-center justify-around opacity-[0.07] select-none overflow-hidden">
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">CBB-LIVE 官方专用 张维真 2026-06-28 19:30 严禁扩散</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">中体协竞字〔2026〕084号 绝密凭证</div>
+</div>
+<div class="space-y-6 text-neutral-800 font-serif text-[15px] leading-[1.85]">
+<!-- Section 2: Trio Holographic Profiles -->
+<div>
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              二、三人执裁组人员全息档案与职责边界锁定
+            </h2>
+<p class="indent-8 text-justify mt-2">
+              本场比赛严格执行 FIBA 三人执裁力学体系（Three-Person Mechanics）。各裁判员专属职责划定如下，严禁跨区无因介入他方主要判定扇面：
+            </p>
+<!-- Referee Trio Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3 font-sans">
+<!-- Crew Chief -->
+<div class="bg-neutral-100 p-3.5 rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-1">
+<span class="px-1.5 py-0.5 bg-neutral-900 text-white text-xs font-bold rounded">主裁判 Crew Chief</span>
+<span class="text-xs text-neutral-500 font-mono">FIBA-3108</span>
+</div>
+<h3 class="text-base font-bold text-neutral-950 pt-1">王峰 <span class="text-xs font-normal text-neutral-600">(国际级·北京)</span></h3>
+<div class="text-xs text-neutral-600 mt-2 space-y-1">
+<p class=""><strong>初动站位：</strong>跟踪裁判 (Trail)</p>
+<p class=""><strong>主责扇面：</strong>外围战术组织、8秒过半场、弧顶投篮出手圆柱体侵犯判定</p>
+<p class=""><strong>特权授权：</strong>享有 IRS 回放最终核定权与争议最终裁量权</p>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-neutral-200 text-[11px] text-neutral-500 flex justify-between">
+<span class="">生涯吹罚: 418场</span>
+<span class="text-emerald-700 font-semibold">履约零违规</span>
+</div>
+</div>
+<!-- Umpire 1 -->
+<div class="bg-neutral-100 p-3.5 rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-1">
+<span class="px-1.5 py-0.5 bg-neutral-700 text-white text-xs font-bold rounded">第一副裁 Umpire 1</span>
+<span class="text-xs text-neutral-500 font-mono">NAT-0492</span>
+</div>
+<h3 class="text-base font-bold text-neutral-950 pt-1">李雷 <span class="text-xs font-normal text-neutral-600">(国家级·上海)</span></h3>
+<div class="text-xs text-neutral-600 mt-2 space-y-1">
+<p class=""><strong>初动站位：</strong>前导裁判 (Lead)</p>
+<p class=""><strong>主责扇面：</strong>油漆区攻防冲突、无球空切掩护、底线冲撞免责区 (RA) 落地判定</p>
+<p class=""><strong>特权授权：</strong>内线肘部违例及违体犯规 (Art.37) 优先鸣哨权</p>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-neutral-200 text-[11px] text-neutral-500 flex justify-between">
+<span class="">生涯吹罚: 286场</span>
+<span class="text-emerald-700 font-semibold">底线识别率 99.2%</span>
+</div>
+</div>
+<!-- Umpire 2 -->
+<div class="bg-neutral-100 p-3.5 rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-1">
+<span class="px-1.5 py-0.5 bg-neutral-700 text-white text-xs font-bold rounded">第二副裁 Umpire 2</span>
+<span class="text-xs text-neutral-500 font-mono">NAT-0814</span>
+</div>
+<h3 class="text-base font-bold text-neutral-950 pt-1">张强 <span class="text-xs font-normal text-neutral-600">(国家级·山东)</span></h3>
+<div class="text-xs text-neutral-600 mt-2 space-y-1">
+<p class=""><strong>初动站位：</strong>中央裁判 (Center)</p>
+<p class=""><strong>主责扇面：</strong>弱侧协防干扰球、掩护顺下拆挡、24秒违例微秒监控及记录台复核</p>
+<p class=""><strong>特权授权：</strong>主帅越权警告与替补席合规管理特许专员</p>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-neutral-200 text-[11px] text-neutral-500 flex justify-between">
+<span class="">生涯吹罚: 245场</span>
+<span class="text-emerald-700 font-semibold">弱侧无盲区</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Court Coverage Vector Visualizer -->
+<div class="pt-2">
+<h3 class="font-sans font-bold text-neutral-900 text-sm mb-2">【附图：总决赛动态三人协同视线覆盖雷达模拟】</h3>
+<div class="bg-neutral-900 text-white p-4 rounded relative overflow-hidden font-sans">
+<div class="flex items-center justify-between text-xs text-neutral-400 mb-2">
+<span class="font-mono text-secondary">FIBA 28m×15m STANDARD COURT VECTOR</span>
+<span class="text-primary font-bold">全场盲区测算值：0.00%</span>
+</div>
+<!-- Simulated Basketball Half Court SVG Overlay -->
+<div class="w-full h-44 bg-neutral-950 rounded flex items-center justify-center relative p-2 overflow-hidden border-0">
+<svg class="w-full h-full max-w-[420px] text-neutral-700" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 400 200">
+<!-- Half court boundary -->
+<rect height="180" rx="2" stroke="currentColor" width="360" x="20" y="10"></rect>
+<line stroke="currentColor" x1="20" x2="380" y1="100" y2="100"></line>
+<circle cx="200" cy="100" r="30" stroke="currentColor"></circle>
+<!-- 3pt arc & key left -->
+<path d="M 20 40 L 90 40 A 70 70 0 0 1 90 160 L 20 160" stroke="currentColor"></path>
+<rect height="70" stroke="currentColor" width="70" x="20" y="65"></rect>
+<!-- Referee Visual Cones -->
+<!-- Trail (Top left) -->
+<polygon fill="rgba(255, 87, 34, 0.25)" points="120,30 20,20 180,90" stroke="#ff5722" stroke-dasharray="2,2"></polygon>
+<circle cx="120" cy="30" fill="#ff5722" r="5"></circle>
+<text fill="#fff" font-family="Space Grotesk" font-size="9" x="128" y="32">T (王峰)</text>
+<!-- Lead (Deep Baseline left) -->
+<polygon fill="rgba(0, 227, 253, 0.2)" points="30,170 30,80 140,110" stroke="#00e3fd" stroke-dasharray="2,2"></polygon>
+<circle cx="30" cy="170" fill="#00e3fd" r="5"></circle>
+<text fill="#fff" font-family="Space Grotesk" font-size="9" x="38" y="174">L (李雷)</text>
+<!-- Center (Opposite sideline mid) -->
+<polygon fill="rgba(255, 185, 82, 0.2)" points="160,180 80,130 190,40" stroke="#ffb952" stroke-dasharray="2,2"></polygon>
+<circle cx="160" cy="180" fill="#ffb952" r="5"></circle>
+<text fill="#fff" font-family="Space Grotesk" font-size="9" x="170" y="184">C (张强)</text>
+</svg>
+</div>
+<div class="grid grid-cols-3 text-center text-xs text-neutral-300 mt-2">
+<div class="">主视角扇面：<span class="text-primary font-bold">142°</span></div>
+<div class="">第一副裁扇面：<span class="text-secondary font-bold">136°</span></div>
+<div class="">第二副裁扇面：<span class="text-tertiary font-bold">151°</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page 2 Footer -->
+<div class="pt-8 flex items-center justify-between text-neutral-400 text-xs font-mono border-t border-neutral-200 mt-8">
+<span class="">中国大学生体育协会文件</span>
+<span class="">第 2 页，共 4 页</span>
+<span class="">SHA: 4a9f...77bc</span>
+</div>
+</article>
+<!-- PAGE 3: Quantitative Audit Metrics & Monte Carlo Sim -->
+<article class="doc-page w-full max-w-[820px] bg-[#fbfbfb] text-neutral-900 shadow-2xl rounded p-8 sm:p-14 relative overflow-hidden transition-all duration-300" id="doc-page-3"><div class="absolute left-2 top-0 bottom-0 w-6 flex flex-col justify-around items-center pointer-events-none select-none border-r border-dashed border-neutral-300 opacity-60 z-30"><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 标准装订打孔定位线 (预留28mm) →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 中缝打孔基准 →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div></div><div class="w-full flex items-center justify-between pb-3 mb-2 border-b border-neutral-300 text-[11px] font-mono text-neutral-500 pl-4"><span class="flex items-center gap-1 font-bold text-red-700"><span class="material-symbols-outlined text-[13px]">lock</span> 绝密·CUBA全国男篮总决赛执裁档案·中体协竞字〔2026〕第084号</span><span class="text-neutral-400">A4·300DPI 打印排版页 3/4 · 表格无孤行溢出</span></div>
+<!-- Floating Security Watermark Layer -->
+<div class="watermark-layer pointer-events-none absolute inset-0 z-30 flex flex-wrap items-center justify-around opacity-[0.07] select-none overflow-hidden">
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">CBB-LIVE 官方专用 张维真 2026-06-28 19:30 严禁扩散</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">中体协竞字〔2026〕084号 绝密凭证</div>
+</div>
+<div class="space-y-6 text-neutral-800 font-serif text-[15px] leading-[1.85]">
+<!-- Section 3: Quantitative Review Summary Table -->
+<div>
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              三、核心量化审查指标与利益回避核查汇总
+            </h2>
+<p class="indent-8 text-justify mt-2 font-serif">
+              通过全国裁判员数据库、学信网、国家企查查及中国篮协纪律委员会联动核查，三人组完全满足《中国篮协注册裁判员回避办法》第 4 条，量化核查参数如下表所示：
+            </p>
+<!-- Audit Metrics Table -->
+<div class="mt-3 overflow-x-auto font-sans">
+<table class="w-full text-left text-xs bg-neutral-100 rounded overflow-hidden">
+<thead class="bg-neutral-200/80 text-neutral-950 uppercase font-bold">
+<tr>
+<th class="py-2.5 px-3">指标维度</th>
+<th class="py-2.5 px-3">核定实测值</th>
+<th class="py-2.5 px-3">CUBA 准入阈值</th>
+<th class="py-2.5 px-3">单项评级</th>
+<th class="py-2.5 px-3">审查结论</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-200 text-neutral-700">
+<tr class="bg-white/50">
+<td class="py-2 px-3 font-semibold text-neutral-900">利益与地缘回避率</td>
+<td class="py-2 px-3 text-emerald-700 font-bold">100.0%</td>
+<td class="py-2 px-3 text-neutral-500">≥ 98.0%</td>
+<td class="py-2 px-3 font-bold text-emerald-700">AAA+</td>
+<td class="py-2 px-3 text-emerald-800 font-medium">CLEARED (无穿透关联)</td>
+</tr>
+<tr>
+<td class="py-2 px-3 font-semibold text-neutral-900">协同适配指数 (TSI)</td>
+<td class="py-2 px-3 text-emerald-700 font-bold">99.4 / 100</td>
+<td class="py-2 px-3 text-neutral-500">≥ 88.0 分</td>
+<td class="py-2 px-3 font-bold text-emerald-700">S+ 极巅</td>
+<td class="py-2 px-3 text-emerald-800 font-medium">历史搭档 22 场胜任度极高</td>
+</tr>
+<tr class="bg-white/50">
+<td class="py-2 px-3 font-semibold text-neutral-900">判罚尺度离散方差 (Whistle-VAR)</td>
+<td class="py-2 px-3 text-neutral-900 font-mono font-bold">σ = 0.04</td>
+<td class="py-2 px-3 text-neutral-500">σ ≤ 0.12</td>
+<td class="py-2 px-3 font-bold text-emerald-700">高度收敛</td>
+<td class="py-2 px-3 text-neutral-800">身体对抗容许度完全一致</td>
+</tr>
+<tr>
+<td class="py-2 px-3 font-semibold text-neutral-900">IRS 即时回放响应延时</td>
+<td class="py-2 px-3 text-neutral-900 font-mono font-bold">0.23 秒</td>
+<td class="py-2 px-3 text-neutral-500">≤ 0.80 秒</td>
+<td class="py-2 px-3 font-bold text-emerald-700">超敏捷</td>
+<td class="py-2 px-3 text-neutral-800">微秒级同步回看标准</td>
+</tr>
+<tr class="bg-white/50">
+<td class="py-2 px-3 font-semibold text-neutral-900">动态场上视线盲区率</td>
+<td class="py-2 px-3 text-emerald-700 font-bold">0.00%</td>
+<td class="py-2 px-3 text-neutral-500">≤ 1.50%</td>
+<td class="py-2 px-3 font-bold text-emerald-700">无死角</td>
+<td class="py-2 px-3 text-emerald-800 font-medium">全场空域 100% 互补穿透</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 4: Monte Carlo Stress Test Results -->
+<div>
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              四、10,000 次蒙特卡洛极端赛况压力模拟测试结论
+            </h2>
+<p class="indent-8 text-justify mt-2 font-serif">
+              模拟系统注入了过去 10 个赛季全国八强赛的全部 412 个争议判例情境，针对决赛第四节最后 2 分钟分差 ≤ 3 分的极端压迫场景完成 10,000 次虚拟执裁推演：
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3 font-sans">
+<div class="bg-neutral-100 p-3 rounded">
+<div class="text-xs text-neutral-500">场景 A: 压哨投篮与犯规微秒对冲</div>
+<div class="text-xl font-bold font-mono text-neutral-950 mt-1">100.0%</div>
+<div class="text-[11px] text-emerald-700 mt-1">IRS触发机制与鸣哨时序无冲突</div>
+</div>
+<div class="bg-neutral-100 p-3 rounded">
+<div class="text-xs text-neutral-500">场景 B: 主帅违规跨界挑衅与C1追加</div>
+<div class="text-xl font-bold font-mono text-neutral-950 mt-1">99.9%</div>
+<div class="text-[11px] text-neutral-700 mt-1">C位第二副裁 3 秒内阻隔化解</div>
+</div>
+<div class="bg-neutral-100 p-3 rounded">
+<div class="text-xs text-neutral-500">场景 C: 篮下争球与交替拥有箭头轮转</div>
+<div class="text-xl font-bold font-mono text-neutral-950 mt-1">100.0%</div>
+<div class="text-[11px] text-emerald-700 mt-1">记录台与L位前导无信息断层</div>
+</div>
+</div>
+<p class="indent-8 text-justify mt-3 font-serif">
+<strong>测试审定意见：</strong>该组裁判在极端判罚干扰、主客场声浪冲击及赛末超限申诉情境下，心理负荷稳定度大于 98.7%，一致性判定率达 99.8%，具备极强的大赛抗压执行力。
+            </p>
+</div>
+</div>
+<!-- Page 3 Footer -->
+<div class="pt-8 flex items-center justify-between text-neutral-400 text-xs font-mono border-t border-neutral-200 mt-8">
+<span class="">中国大学生体育协会文件</span>
+<span class="">第 3 页，共 4 页</span>
+<span class="">SHA: 4a9f...77bc</span>
+</div>
+</article>
+<!-- PAGE 4: Emergency Backup Protocol & Official Sign-off Seal -->
+<article class="doc-page w-full max-w-[820px] bg-[#fbfbfb] text-neutral-900 shadow-2xl rounded p-8 sm:p-14 relative overflow-hidden transition-all duration-300" id="doc-page-4"><div class="absolute left-2 top-0 bottom-0 w-6 flex flex-col justify-around items-center pointer-events-none select-none border-r border-dashed border-neutral-300 opacity-60 z-30"><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 标准装订打孔定位线 (预留28mm) →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div><div class="text-[9px] font-mono text-neutral-400 -rotate-90 whitespace-nowrap">← 中缝打孔基准 →</div><div class="w-3 h-3 rounded-full border-2 border-dashed border-neutral-400 flex items-center justify-center"><div class="w-1 h-1 bg-neutral-400 rounded-full"></div></div></div><div class="w-full flex items-center justify-between pb-3 mb-2 border-b border-neutral-300 text-[11px] font-mono text-neutral-500 pl-4"><span class="flex items-center gap-1 font-bold text-red-700"><span class="material-symbols-outlined text-[13px]">lock</span> 绝密·CUBA全国男篮总决赛执裁档案·中体协竞字〔2026〕第084号</span><span class="text-neutral-400">A4·300DPI 打印排版页 4/4 · 鲜红矢量电子印章生效</span></div>
+<!-- Floating Security Watermark Layer -->
+<div class="watermark-layer pointer-events-none absolute inset-0 z-30 flex flex-wrap items-center justify-around opacity-[0.07] select-none overflow-hidden">
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">CBB-LIVE 官方专用 张维真 2026-06-28 19:30 严禁扩散</div>
+<div class="transform -rotate-45 text-neutral-950 font-bold text-lg whitespace-nowrap p-8">中体协竞字〔2026〕084号 绝密凭证</div>
+</div>
+<div class="space-y-6 text-neutral-800 font-serif text-[15px] leading-[1.85]">
+<!-- Section 5: Backup Standby Plan -->
+<div>
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              五、现场应急替补热备备案与激活程序
+            </h2>
+<p class="indent-8 text-justify mt-2 font-serif">
+              为防范比赛过程中出现突发性运动损伤、急性疾病或其他不可抗力事件，根据《CUBA 竞赛工作手册》第 18 条，特设立双重现场待命应急热备梯队：
+            </p>
+<div class="bg-neutral-100 p-3.5 rounded mt-3 text-xs font-sans space-y-2">
+<div class="flex items-center justify-between border-b border-neutral-200 pb-2">
+<div>
+<span class="font-bold text-neutral-900 text-sm">第一热备顺位：林晓宇</span>
+<span class="text-neutral-500 ml-2">(国家级·江苏 / A+ 级考评)</span>
+</div>
+<span class="px-2 py-0.5 bg-neutral-200 text-neutral-800 rounded font-semibold">就绪状态：场馆内封闭隔离热身</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-bold text-neutral-900 text-sm">第二热备顺位：陈博</span>
+<span class="text-neutral-500 ml-2">(国家级·天津 / B+ 级考评)</span>
+</div>
+<span class="px-2 py-0.5 bg-neutral-200 text-neutral-800 rounded font-semibold">就绪状态：技术代表席待命</span>
+</div>
+<p class="text-neutral-500 pt-1 text-[11px]">
+                * 启动流程：技术监督当场出示黄色更换指令单，替补裁判将于 <strong>180 秒</strong> 内完成对讲调试、更衣并无缝接替空间站位。
+              </p>
+</div>
+</div>
+<!-- Section 6: Official Sign-off & Red Seal Stamp -->
+<div class="pt-6">
+<h2 class="font-sans font-bold text-neutral-950 text-base flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#d90000] inline-block"></span>
+              六、审查审定签署与电子公章认证
+            </h2>
+<p class="indent-8 text-justify mt-2 font-serif">
+              本公报自签发之日起生效并上链存证。执裁三人组资格正式锁定，任何单位及个人非经组委会特别纪律听证程序，不得擅自变更。
+            </p>
+<!-- Signature and Official Stamp Area -->
+<div class="mt-8 relative flex flex-col items-end pr-4 sm:pr-8">
+<!-- Official Stamp (SVG Red Seal) -->
+<div class="absolute right-0 bottom-4 w-44 h-44 pointer-events-none select-none z-20">
+<svg class="w-full h-full" viewbox="0 0 200 200">
+<!-- Outer Circular Ring -->
+<circle cx="100" cy="100" fill="none" opacity="0.9" r="92" stroke="#d90000" stroke-width="4"></circle>
+<circle cx="100" cy="100" fill="none" opacity="0.9" r="86" stroke="#d90000" stroke-width="1.5"></circle>
+<!-- Curved Text Top: 中国大学生体育协会篮球分会 -->
+<path d="M 22 100 A 78 78 0 0 1 178 100" fill="none" id="seal-text-path-top"></path>
+<text fill="#d90000" font-family="SimSun, serif" font-size="14" font-weight="bold" letter-spacing="1">
+<textpath href="#seal-text-path-top" startoffset="50%" text-anchor="middle">
+                      中国大学生体育协会篮球分会
+                    </textpath>
+</text>
+<!-- Central Star -->
+<polygon fill="#d90000" opacity="0.95" points="100,58 108,82 134,82 113,97 121,121 100,106 79,121 87,97 66,82 92,82"></polygon>
+<!-- Bottom Straight Subtext: 裁判委员会 -->
+<text fill="#d90000" font-family="SimSun, serif" font-size="13" font-weight="bold" letter-spacing="3" text-anchor="middle" x="100" y="142">
+                    裁判委员会
+                  </text>
+<!-- Anti-counterfeiting micro hash code -->
+<text fill="#d90000" font-family="monospace" font-size="7" opacity="0.7" text-anchor="middle" x="100" y="160">
+                    2026-CUBA-AUTH-9912
+                  </text>
+</svg>
+</div>
+<!-- Formal Signature & Date Lines -->
+<div class="text-right space-y-2 relative z-10 font-serif">
+<p class="text-base font-bold text-neutral-900">中国大学生体育协会篮球分会</p>
+<p class="text-base font-bold text-neutral-900">2025-2026 CUBA 组委会裁判委员会</p>
+<div class="py-2 text-left font-sans text-xs bg-neutral-100 p-2.5 rounded my-2 mr-2 border-0">
+<div class="text-neutral-500">专家组核准签名（电子密匙）：</div>
+<div class="font-serif font-bold text-sm text-neutral-900 tracking-wider pt-0.5">
+                    张维真 (技术监督) · 孙德海 (仲裁委主席) · 许文强 (裁判长)
+                  </div>
+</div>
+<p class="text-neutral-800 text-sm font-sans pt-1">
+                  公报签发日期：<span class="font-serif font-semibold">2026 年 6 月 28 日</span>
+</p>
+</div>
+</div>
+<!-- Verification QR Code & Blockchain Hash Digest -->
+<div class="mt-12 pt-4 border-t border-neutral-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-sans text-xs">
+<div class="flex items-center gap-3">
+<!-- QR Code Box -->
+<div class="w-14 h-14 bg-white p-1 rounded shadow-sm flex items-center justify-center">
+<svg class="w-full h-full text-neutral-900" viewbox="0 0 100 100">
+<rect fill="currentColor" height="30" width="30" x="0" y="0"></rect>
+<rect fill="white" height="20" width="20" x="5" y="5"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="70" y="0"></rect>
+<rect fill="white" height="20" width="20" x="75" y="5"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="0" y="70"></rect>
+<rect fill="white" height="20" width="20" x="5" y="75"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect fill="currentColor" height="16" width="6" x="38" y="10"></rect>
+<rect fill="currentColor" height="8" width="8" x="50" y="5"></rect>
+<rect fill="currentColor" height="24" width="24" x="38" y="38"></rect>
+<rect fill="currentColor" height="18" width="12" x="70" y="45"></rect>
+<rect fill="currentColor" height="10" width="14" x="15" y="45"></rect>
+<rect fill="currentColor" height="15" width="20" x="70" y="75"></rect>
+<rect fill="currentColor" height="18" width="16" x="42" y="75"></rect>
+</svg>
+</div>
+<div>
+<div class="font-bold text-neutral-900 flex items-center gap-1">
+<span class="">教育部学生体协可信数字凭据认证</span>
+<span class="text-emerald-700 font-mono text-[10px] bg-emerald-100 px-1 rounded">VERIFIED</span>
+</div>
+<div class="text-[11px] text-neutral-500 font-mono mt-0.5">Hash: 8b0f792c...e4310a08</div>
+<div class="text-[11px] text-neutral-400">扫码即刻在线调阅公报原件及防伪签章日志</div>
+</div>
+</div>
+<div class="text-right text-[11px] text-neutral-400 font-mono">
+<div class="">TSA 时间戳: 2026-06-28 19:28:44 UTC+8</div>
+<div class="">国家数字版权服务中心备案号: B-2026-CUBA-00892</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page 4 Footer -->
+<div class="pt-8 flex items-center justify-between text-neutral-400 text-xs font-mono border-t border-neutral-200 mt-8">
+<span class="">中国大学生体育协会文件</span>
+<span class="">第 4 页，共 4 页</span>
+<span class="">SHA: 4a9f...77bc</span>
+</div>
+</article>
+</div>
+<!-- Right Sidebar: Sign-off Workflow, Attachments & Action Cards -->
+<div class="xl:col-span-3 flex flex-col gap-space-md"><div class="bg-surface-container-lowest p-space-md rounded shadow-md flex flex-col gap-space-sm border border-emerald-500/30"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-emerald-400 tracking-wider uppercase flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span> 打印前合规巡检 (PRE-FLIGHT)</span><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-label-numeric text-[12px] font-bold">100% 达标</span></div><div class="space-y-2 pt-1 text-xs"><div class="flex items-start gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-emerald-400 text-[16px] mt-0.5">check_circle</span><div><p class="font-semibold text-on-surface">红章 CMYK 矢量套印精度校验</p><p class="text-[11px] text-outline">印章色相 M100 Y100 正红，分色位移误差 &lt; 0.05pt，无发虚与摩尔纹。</p></div></div><div class="flex items-start gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-emerald-400 text-[16px] mt-0.5">check_circle</span><div><p class="font-semibold text-on-surface">无跨页孤行 (No Widows/Orphans)</p><p class="text-[11px] text-outline">标题与表格均处于同一逻辑版芯，各页末尾未出现单行遗留或断句。</p></div></div><div class="flex items-start gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-emerald-400 text-[16px] mt-0.5">check_circle</span><div><p class="font-semibold text-on-surface">防伪哈希与二维码清晰度</p><p class="text-[11px] text-outline">TSA 授时及 SHA-256 戳记位于安全区内，喷墨/激光可清晰扫码识别。</p></div></div><div class="flex items-start gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-emerald-400 text-[16px] mt-0.5">check_circle</span><div><p class="font-semibold text-on-surface">A4 物理装订打孔安全避让</p><p class="text-[11px] text-outline">左侧版芯预留 28mm 装订孔距，翻阅与骑马钉装订不遮挡正文字符。</p></div></div></div></div><div class="bg-surface-container-lowest p-space-md rounded shadow-md flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-outline tracking-wider uppercase">打印份数分配与签收联</span><div class="space-y-1.5 text-xs text-on-surface-variant"><div class="flex justify-between items-center p-2 rounded bg-surface-container"><span class="text-on-surface font-medium">第 1 联：总决赛裁判组留存</span><span class="px-1.5 py-0.5 rounded bg-primary-container/20 text-primary font-mono text-[10px]">正本</span></div><div class="flex justify-between items-center p-2 rounded bg-surface-container"><span class="text-on-surface font-medium">第 2 联：五棵松赛区技术代表处</span><span class="px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-mono text-[10px]">副本</span></div><div class="flex justify-between items-center p-2 rounded bg-surface-container"><span class="text-on-surface font-medium">第 3 联：中体协纪律与仲裁委员会</span><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-outline font-mono text-[10px]">归档备查</span></div></div></div><div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-outline tracking-wider uppercase">快捷打印指令</span><button class="w-full py-2 px-space-md rounded bg-primary-container text-on-primary font-title-md text-title-md hover:bg-primary-container/90 flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="window.print()"><span class="material-symbols-outlined text-[18px]">print</span><span>调起系统打印机 (Ctrl+P)</span></button><button class="w-full py-2 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-title-md text-title-md flex items-center justify-center gap-space-xs transition-colors"><span class="material-symbols-outlined text-[18px]">picture_as_pdf</span><span>导出双面排版 PDF</span></button></div><div class="p-space-sm rounded bg-surface-container-lowest text-outline font-body-sm text-[11px] leading-relaxed"><p><strong>打印合规说明：</strong>打印时请确保勾选「背景图形」以输出防伪微缩水印及朱红矢量印章。未获授权的黑白复印件将失去防伪光学反光特性。</p></div></div>
+</div>
+</div>
+<script>
+  let currentZoom = 100;
+  let isWatermarkOn = true;
+  let isDarkDocTheme = false;
+
+  function scrollToPage(pageId) {
+    const el = document.getElementById(pageId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const pageIndex = pageId.split('-')[2];
+      document.getElementById('curr-page-num').innerText = pageIndex;
+    }
+  }
+
+  function changePage(delta) {
+    let curr = parseInt(document.getElementById('curr-page-num').innerText);
+    let next = curr + delta;
+    if (next >= 1 && next <= 4) {
+      scrollToPage('doc-page-' + next);
+    }
+  }
+
+  function adjustZoom(delta) {
+    currentZoom = Math.max(70, Math.min(150, currentZoom + delta));
+    applyZoom();
+  }
+
+  function resetZoom() {
+    currentZoom = 100;
+    applyZoom();
+  }
+
+  function applyZoom() {
+    document.getElementById('zoom-text').innerText = currentZoom + '%';
+    const pages = document.querySelectorAll('.doc-page');
+    pages.forEach(p => {
+      p.style.transform = `scale(${currentZoom / 100})`;
+      p.style.transformOrigin = 'top center';
+    });
+  }
+
+  function toggleWatermark() {
+    isWatermarkOn = !isWatermarkOn;
+    const layers = document.querySelectorAll('.watermark-layer');
+    layers.forEach(layer => {
+      layer.style.display = isWatermarkOn ? 'flex' : 'none';
+    });
+    document.getElementById('wm-status-text').innerText = isWatermarkOn ? '动态水印: 开' : '动态水印: 关';
+  }
+
+  function toggleDocTheme() {
+    isDarkDocTheme = !isDarkDocTheme;
+    const pages = document.querySelectorAll('.doc-page');
+    pages.forEach(p => {
+      if (isDarkDocTheme) {
+        p.classList.remove('bg-[#fbfbfb]', 'text-neutral-900');
+        p.classList.add('bg-surface-container-high', 'text-on-surface');
+      } else {
+        p.classList.add('bg-[#fbfbfb]', 'text-neutral-900');
+        p.classList.remove('bg-surface-container-high', 'text-on-surface');
+      }
+    });
+    document.getElementById('doc-theme-text').innerText = isDarkDocTheme ? '恢复白纸底' : '切换公文暗底';
+  }
+
+  function setViewMode(mode) {
+    const scrollArea = document.getElementById('pdf-scroll-area');
+    const singleBtn = document.getElementById('view-mode-single');
+    const dualBtn = document.getElementById('view-mode-dual');
+
+    if (mode === 'dual') {
+      scrollArea.classList.remove('flex-col');
+      scrollArea.classList.add('flex-row', 'flex-wrap', 'justify-center');
+      dualBtn.className = 'px-space-xs py-0.5 rounded font-label-caps text-label-caps bg-primary-container text-on-primary';
+      singleBtn.className = 'px-space-xs py-0.5 rounded font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface';
+    } else {
+      scrollArea.classList.remove('flex-row', 'flex-wrap', 'justify-center');
+      scrollArea.classList.add('flex-col');
+      singleBtn.className = 'px-space-xs py-0.5 rounded font-label-caps text-label-caps bg-primary-container text-on-primary';
+      dualBtn.className = 'px-space-xs py-0.5 rounded font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface';
+    }
+  }
+</script></main></div>
+</body></html>

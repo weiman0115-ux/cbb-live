@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#10141a", "surface-container": "#1c2026", "secondary-container": "#00e3fd", "error": "#ffb4ab", "on-tertiary": "#452b00", "surface-container-low": "#181c22", "outline-variant": "#5b4039", "on-secondary-fixed-variant": "#004f58", "on-background": "#dfe2eb", "inverse-primary": "#b02f00", "on-secondary-container": "#00616d", "on-tertiary-container": "#3c2500", "surface-variant": "#31353c", "outline": "#ab8980", "secondary": "#bdf4ff", "on-surface-variant": "#e4beb4", "surface-container-lowest": "#0a0e14", "surface-bright": "#353940", "error-container": "#93000a", "surface-container-highest": "#31353c", "on-primary-fixed": "#3b0900", "primary": "#ffb5a0", "on-tertiary-fixed-variant": "#633f00", "primary-container": "#ff5722", "secondary-fixed-dim": "#00daf3", "tertiary-container": "#c68300", "tertiary-fixed": "#ffddb4", "on-secondary-fixed": "#001f24", "inverse-on-surface": "#2d3137", "secondary-fixed": "#9cf0ff", "on-secondary": "#00363d", "primary-fixed-dim": "#ffb5a0", "on-surface": "#dfe2eb", "primary-fixed": "#ffdbd1", "background": "#10141a", "on-primary-container": "#541200", "on-error": "#690005", "on-primary": "#5f1500", "on-tertiary-fixed": "#291800", "tertiary": "#ffb952", "on-primary-fixed-variant": "#862200", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "surface-container-high": "#262a31", "tertiary-fixed-dim": "#ffb952", "surface-tint": "#ffb5a0", "surface-dim": "#10141a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-desktop": "1.5rem", "gutter": "1rem", "space-md": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "display-score": [ "Oswald" ], "body-md": [ "Space Grotesk" ], "display-score-mobile": [ "Oswald" ], "title-md": [ "Space Grotesk" ], "headline-xl": [ "Oswald" ], "label-numeric": [ "Oswald" ], "body-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Oswald" ], "headline-md": [ "Oswald" ], "label-caps": [ "Space Grotesk" ], "headline-lg": [ "Oswald" ], "title-lg": [ "Space Grotesk" ], "body-lg": [ "Space Grotesk" ] }, "fontSize": { "display-score": [ "80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-score-mobile": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "title-md": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "label-numeric": [ "15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "24px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-6"><div class="flex items-center gap-3"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEoxwcYFcZSalXSzifAZ-Xl9UP0DApSWCWxnL0FJygpXtov_RQqhOwTeZE423e9FFg0ZXUOve0W-BB0fgXJqLHkUu_Owrn1rPOwLjS9Psx30bj79cOB2YBAVcuRpomZoFkxjd8nDzxHLkTbUpRKujVqNftbjO2l3qAohkB9coPEOsdCqI3RLPpOduSP4Edom8UIVGTHTVxnTeubEkgArOEPmoHMDxv-4O2mdJaQTEVPQeh_2T8SA5bdw8"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">CBB<span class="text-primary-container">-LIVE</span></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">高校篮球执裁中台</span></div></div><div class="hidden lg:flex items-center px-space-sm py-space-xs rounded bg-surface-container gap-2"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-primary-container uppercase">VARSITY LIVE OPS</span></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-surface-container text-primary-container font-title-md"><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="match-overview" href="cbb_live_g_finals_01.html">赛程管理</a><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="referee-roster" href="cbb_live_national_referee_roster.html">裁判中心</a><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="technical-stats" href="cbb_live_box_score_telemetry.html">技术台终端</a><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audit-reports" href="cbb_live_call_audit_reports.html">审计中心</a></nav></div><div class="flex items-center gap-4"><div class="hidden md:flex items-center gap-2 px-space-sm py-space-xs rounded bg-surface-container-high"><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider">TECH DESK</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-body-sm text-body-sm text-on-surface-variant">主控端 01</span></div><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-title-md text-title-md text-on-surface leading-none">主裁判长 · 竞赛组</span><span class="font-body-sm text-body-sm text-primary-fixed-dim">国家一级裁判员</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-40 flex flex-col pt-20 pb-6 shadow-[1px_0_12px_rgba(0,0,0,0.35)]"><div class="px-space-lg mb-space-md flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">执裁运营矩阵</span><span class="font-label-numeric text-label-numeric text-tertiary">CUBA / DIV-A</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-title-md"><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="match-overview" href="cbb_live_g_finals_01.html"><span class="material-symbols-outlined text-[20px]">sports_basketball</span><span class="font-body-md text-body-md">赛事总览</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="schedule-orchestration" href="cbb_live_g_finals_01.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">赛程编排</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="referee-roster" href="cbb_live_national_referee_roster.html"><span class="material-symbols-outlined text-[20px]">sports</span><span class="font-body-md text-body-md">裁判名册与评级</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="referee-evaluation" href="cbb_live_referee_evaluation_credit.html"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md">裁判考评与信用中枢</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="audit-reports" href="cbb_live_call_audit_reports.html"><span class="material-symbols-outlined text-[20px]">gavel</span><span class="font-body-md text-body-md">判罚审计报告与争议复核</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="technical-stats" href="cbb_live_box_score_telemetry.html"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">技术台高阶统计</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded transition-all gap-3 bg-primary-container text-on-primary-container font-title-md" data-path="device-diagnostics" href="cbb_live_device_sync_diagnostics.html"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-body-md text-body-md">执裁设备诊断</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="system-settings" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">系统配置</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">24S 计时中枢</span><span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">SYNCHRONIZED</span></div><span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">timer</span></div></div></aside><div class="pl-72"><main class="relative pt-16 w-full px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="w-full space-y-space-lg pb-space-xl">
+<!-- Top Global Device Telemetry Ribbon -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest p-space-md shadow-2xl overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md relative z-10">
+<!-- System Status Summary -->
+<div class="flex items-center gap-space-md">
+<div class="relative flex items-center justify-center w-12 h-12 rounded bg-surface-container-high text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="absolute -top-1 -right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md uppercase tracking-wider text-on-surface">HARDWARE SYNC MATRIX</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest">STADIUM BUS V2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span>技术台执裁核心总线实时就绪</span>
+<span class="text-outline">/</span>
+<span class="text-secondary-fixed-dim">CUBA-DIV-A 主赛区场馆 #01 控制台</span>
+</p>
+</div>
+</div>
+<!-- Metric Capsules -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 xl:gap-3">
+<div class="flex flex-col px-space-md py-space-xs rounded bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase">硬件全局同步</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">verified</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-secondary-fixed-dim tracking-tight">ALL ONLINE</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">14台设备全部在网</span>
+</div>
+<div class="flex flex-col px-space-md py-space-xs rounded bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase">主计时往返时延</span>
+<span class="material-symbols-outlined text-[14px] text-primary">speed</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">1.2</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">ms</span>
+</div>
+<span class="font-body-sm text-[11px] text-secondary-fixed-dim font-medium">Jitter ±0.08ms</span>
+</div>
+<div class="flex flex-col px-space-md py-space-xs rounded bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase">时钟漂移补偿</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">timelapse</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-tertiary tracking-tight">&lt; 0.001</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">s</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">PTP IEEE 1588 锁定</span>
+</div>
+<div class="flex flex-col px-space-md py-space-xs rounded bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase">IRS慢放流帧同步</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">videocam</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-secondary-fixed-dim tracking-tight">100.0</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">%</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">8路机位零丢帧</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Operational Workspace Grid (3-Tier Layout) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left 8-Cols: Hardware Topology & Health Status -->
+<div class="xl:col-span-8 space-y-space-lg">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 bg-primary-container rounded-full"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface uppercase tracking-wide">设备拓扑诊断网格 (DEVICE TOPOLOGY &amp; HEALTH MATRIX)</h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">BUS PROTOCOL V2.4 / AUTO-DISCOVERY ON</span>
+</div>
+<!-- Card Grid (6 Devices) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Device 1: 主裁判手持终端 (Referee Master Tablet #01) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">tablet_mac</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">主裁判终端 #01</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary font-label-caps text-[10px] uppercase">排他录入锁</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">REF-TABLET-A1 // MASTER DEV</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-secondary-fixed-dim bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+                ACTIVE
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">电量指标</span>
+<span class="font-label-numeric text-label-numeric text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed-dim">battery_charging_full</span>
+                  98%
+                </span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">RF频段</span>
+<span class="font-label-numeric text-label-numeric text-primary">5.8 GHz</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">信号强度</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">-38 dBm</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>执裁握手协议</span>
+<span class="font-label-numeric text-on-surface">VARSITY-BUS v2.4 (TLS 1.3)</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>心跳间隔</span>
+<span class="font-label-numeric text-secondary-fixed-dim">50ms (0 DROP)</span>
+</div>
+</div>
+</div>
+<!-- Device 2: 副裁判终端 (Umpire Tablet #02 & #03) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">devices</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">副裁终端 #02 / #03</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-on-surface-variant">DUAL-STANDBY</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">REF-HOTSTANDBY // UMPIRE GROUP</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-primary bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                STANDBY
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">电量 #02/#03</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">94% / 91%</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">信号强度</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">-42 dBm</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">丢包率</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">0.00%</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>热备同步延迟</span>
+<span class="font-label-numeric text-secondary-fixed-dim">≤ 2.4ms 镜像同步</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>应急接管授权</span>
+<span class="font-label-numeric text-primary">已预载签名密钥</span>
+</div>
+</div>
+</div>
+<!-- Device 3: 现场主计分大屏 LED 控制器 (Main Scoreboard Controller) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">desktop_windows</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">现场大屏 LED 控制器</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-tertiary">4K 60HZ</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">ARENA-DISP-SYS // DUAL DP 1.4</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-secondary-fixed-dim bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+                GENLOCKED
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">输出画质</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">3840×2160</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">帧速率</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">59.94 fps</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">帧撕裂检测</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">0 TEAR</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>信号源链路</span>
+<span class="font-label-numeric text-on-surface">光纤 HDMI 2.1 主干</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>色域与同步</span>
+<span class="font-label-numeric text-tertiary">Rec.709 / VESA FrameLock</span>
+</div>
+</div>
+</div>
+<!-- Device 4: 24秒投篮倒计时器 (Shot-Clock Sensors A/B) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">alarm</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">24秒计时器 A/B 端</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-secondary-fixed-dim">OPTICAL OK</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SHOT-CLOCK-A &amp; B // RIM SENSORS</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-secondary-fixed-dim bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+                SYNC-OK
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">光电继电器</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">PASSED</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">蜂鸣器响应</span>
+<span class="font-label-numeric text-label-numeric text-primary">0.05s</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">双侧一致性</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">Δ &lt; 0.2ms</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>红灯带高亮自检</span>
+<span class="font-label-numeric text-on-surface">南架/北架 LED 矩阵巡检合格</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>射频抗扰通道</span>
+<span class="font-label-numeric text-primary">CH-11 防冲突锁定</span>
+</div>
+</div>
+</div>
+<!-- Device 5: 技术台主录入工作站 (Scorer Table PC-01) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">技术台主工作站 PC-01</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-secondary-fixed-dim">DUAL NIC</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">TECH-DESK-WS01 // CORE INGESTION</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-secondary-fixed-dim bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+                ACTIVE
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">双网卡冗余</span>
+<span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">10GbE TEAM</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">写库延迟</span>
+<span class="font-label-numeric text-label-numeric text-primary">14 ms</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">CPU 负载</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">19.4%</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>FIBA 执裁记录本状态</span>
+<span class="font-label-numeric text-secondary-fixed-dim">实时加密双签存档</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>备用供电 UPS</span>
+<span class="font-label-numeric text-on-surface">市电在线 / 100% 电池健康</span>
+</div>
+</div>
+</div>
+<!-- Device 6: IRS 8机位流媒体编码矩阵 (IRS 8-Cam Video Encoder Rack) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-lg transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">video_settings</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">IRS 8机位回放编码机架</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-secondary-fixed-dim">CAM 1-8 LOCKED</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">IRS-RACK-8CH // BROADCAST SLOW-MO</span>
+</div>
+</div>
+<span class="flex items-center gap-1 font-label-caps text-label-caps text-secondary-fixed-dim bg-surface-container-high px-space-xs py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+                RECORDING
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-space-md py-space-xs rounded bg-surface-container-low px-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">单路码率</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">25 Mbps</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">时间码广播</span>
+<span class="font-label-numeric text-secondary-fixed-dim">SMPTE TC</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">回放就绪延时</span>
+<span class="font-label-numeric text-primary">0.12s</span>
+</div>
+</div>
+<div class="space-y-1.5 text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center text-[12px]">
+<span>机位状态通道</span>
+<span class="font-label-numeric text-secondary-fixed-dim">CAM 01~08 高清无损全通道同步</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span>NVMe 缓存阵列</span>
+<span class="font-label-numeric text-on-surface">RAID-0 写入速率 2850 MB/s</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Waveform & Packet Telemetry -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-xl space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<div>
+<span class="font-title-md text-title-md text-on-surface uppercase">时钟微秒级漂移 &amp; 网络往返波形监测 (CLOCK JITTER &amp; PACKET TELEMETRY)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">高精度时钟同步实时采样 (Precision Time Protocol IEEE 1588v2)</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">时钟漂移 (μs)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">总线 RTT (ms)</span>
+</div>
+</div>
+</div>
+<!-- SVG Real-Time Telemetry Graph -->
+<div class="relative w-full h-44 rounded bg-surface-container-low p-2 overflow-hidden flex flex-col justify-end">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between p-3 opacity-20 pointer-events-none">
+<div class="w-full h-px bg-on-surface"></div>
+<div class="w-full h-px bg-on-surface"></div>
+<div class="w-full h-px bg-on-surface"></div>
+<div class="w-full h-px bg-on-surface"></div>
+</div>
+<svg class="w-full h-32 overflow-visible" preserveaspectratio="none" viewbox="0 0 700 120">
+<defs>
+<lineargradient id="cyanGlow" x1="0" x2="0" y1="0" y2="1">
+<stop class="text-secondary-fixed-dim" offset="0%" stop-color="currentColor" stop-opacity="0.25"></stop>
+<stop class="text-secondary-fixed-dim" offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="orangeGlow" x1="0" x2="0" y1="0" y2="1">
+<stop class="text-primary-container" offset="0%" stop-color="currentColor" stop-opacity="0.3"></stop>
+<stop class="text-primary-container" offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Secondary Curve (Cyan - Clock Drift in Microseconds) -->
+<path d="M0,85 Q40,82 80,78 T160,82 T240,75 T320,80 T400,74 T480,76 T560,70 T640,74 L700,72 L700,120 L0,120 Z" fill="url(#cyanGlow)"></path>
+<path class="text-secondary-fixed-dim" d="M0,85 Q40,82 80,78 T160,82 T240,75 T320,80 T400,74 T480,76 T560,70 T640,74 L700,72" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- Primary Curve (Orange - RTT Network Jitter in ms) -->
+<path d="M0,45 Q50,38 100,50 T200,42 T300,55 T400,35 T500,48 T600,38 L700,40 L700,120 L0,120 Z" fill="url(#orangeGlow)"></path>
+<path class="text-primary-container" d="M0,45 Q50,38 100,50 T200,42 T300,55 T400,35 T500,48 T600,38 L700,40" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Live Beacon Nodes -->
+<circle class="fill-primary-container animate-ping" cx="700" cy="40" r="4"></circle>
+<circle class="fill-primary" cx="700" cy="40" r="3"></circle>
+<circle class="fill-secondary-fixed-dim" cx="700" cy="72" r="3"></circle>
+</svg>
+<!-- Bottom Waveform Labels -->
+<div class="flex items-center justify-between text-[11px] font-label-caps text-on-surface-variant pt-2 border-none">
+<span>T-60s [14:32:00]</span>
+<span>T-45s</span>
+<span>T-30s</span>
+<span>T-15s</span>
+<span class="text-primary flex items-center gap-1 font-label-numeric">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                LIVE NOW: 1.18ms / ±0.04μs
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4-Cols: Live Sync Stream & Emergency Actions -->
+<div class="xl:col-span-4 space-y-space-lg">
+<!-- Emergency Disaster Recovery Panel -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-2xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-container">shield</span>
+<h3 class="font-title-md text-title-md text-on-surface uppercase tracking-wide">应急容灾与通信干预</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">OPS CONTROL</span>
+</div>
+<div class="space-y-2.5">
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-primary-container text-on-primary-container hover:shadow-[0_0_16px_rgba(255,87,34,0.5)] transition-all font-title-md text-title-md uppercase tracking-wider" id="btn-recalibrate" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+                一键网络漂移校准 (RECALIBRATE)
+              </span>
+<span class="font-label-numeric text-[13px] bg-on-primary-container/20 px-1.5 py-0.5 rounded">0.000s</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-title-md text-title-md uppercase tracking-wider" id="btn-failsafe-switch" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">swap_horiz</span>
+                主备链路无缝强制切换
+              </span>
+<span class="font-label-caps text-[11px] text-tertiary">HOT-SWAP</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-title-md text-title-md uppercase tracking-wider" id="btn-restart-rf" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">wifi_protected_setup</span>
+                重启 24 秒射频通讯链路
+              </span>
+<span class="font-label-caps text-[11px] text-secondary-fixed-dim">RF-RESET</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-md text-body-md" id="btn-export-log" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                导出全场硬件诊断日志 (JSON/PCAP)
+              </span>
+<span class="font-label-caps text-[11px]">8.4 MB</span>
+</button>
+</div>
+</div>
+<!-- Real-Time Sync & Ingestion Event Stream -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-2xl flex flex-col h-[460px]">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed-dim">terminal</span>
+<h3 class="font-title-md text-title-md text-on-surface uppercase tracking-wide">设备诊断实时日志流</h3>
+</div>
+<span class="flex items-center gap-1 font-label-numeric text-[12px] text-secondary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+              TAIL -F
+            </span>
+</div>
+<!-- Log Event Container (Scrollable) -->
+<div class="flex-1 overflow-y-auto space-y-2 pr-1 font-body-sm text-[12px]" id="diagnostics-log-stream">
+<!-- Log Entry 1 -->
+<div class="p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+<span class="font-label-numeric text-secondary-fixed-dim">14:32:48.092</span>
+<span class="font-label-caps text-secondary-fixed-dim bg-secondary-fixed-dim/10 px-1 rounded">PTP_SYNC</span>
+</div>
+<p class="text-on-surface leading-tight font-body-sm">
+                时钟校准广播发送完成。主控时钟与篮架 24S 计时器 B 端时间轴对齐，漂移补偿 Δ=0.0002s。
+              </p>
+</div>
+<!-- Log Entry 2 -->
+<div class="p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+<span class="font-label-numeric text-primary">14:32:46.815</span>
+<span class="font-label-caps text-primary bg-primary/10 px-1 rounded">BLE_SENSOR</span>
+</div>
+<p class="text-on-surface leading-tight font-body-sm">
+                主裁判无线哨音感应探头 (Whistle-Trigger #01) 配对心跳正常，声学阈值检测就绪 (0.012s)。
+              </p>
+</div>
+<!-- Log Entry 3 -->
+<div class="p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+<span class="font-label-numeric text-secondary-fixed-dim">14:32:45.300</span>
+<span class="font-label-caps text-secondary-fixed-dim bg-secondary-fixed-dim/10 px-1 rounded">HEARTBEAT</span>
+</div>
+<p class="text-on-surface leading-tight font-body-sm">
+                副裁终端 #02 &amp; #03 双机热备心跳确认应答，数据镜像同步完整率 100%。
+              </p>
+</div>
+<!-- Log Entry 4 -->
+<div class="p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+<span class="font-label-numeric text-tertiary">14:32:41.119</span>
+<span class="font-label-caps text-tertiary bg-tertiary/10 px-1 rounded">IRS_VIDEO</span>
+</div>
+<p class="text-on-surface leading-tight font-body-sm">
+                IRS 慢放主机 CAM 06 侧向边线机位触发时间码帧对齐校验，SMPTE 01:42:19;22 锁定。
+              </p>
+</div>
+<!-- Log Entry 5 -->
+<div class="p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+<span class="font-label-numeric text-on-surface-variant">14:32:38.640</span>
+<span class="font-label-caps text-on-surface-variant bg-surface-container px-1 rounded">NET_PROBE</span>
+</div>
+<p class="text-on-surface leading-tight font-body-sm">
+                技术台双网卡冗余测试：NIC-2 (10GbE SFP+) 链路自动激活待命，信道丢包率 0.00%。
+              </p>
+</div>
+</div>
+<!-- Bottom Status Bar -->
+<div class="pt-space-sm mt-space-sm flex items-center justify-between text-[11px] text-on-surface-variant font-label-caps">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+              LOG STREAM ENGINE: BUFFER OK
+            </span>
+<button class="hover:text-on-surface transition-colors uppercase" id="btn-clear-log">清屏</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Operator Court Equipment Visual Layout Mini-Map -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-2xl space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed-dim">stadium</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface uppercase">场馆执裁硬件空间分布雷达 (COURT DEPLOYMENT RADAR)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">硬件节点位置关联与实时无线射频覆盖场强分布</p>
+</div>
+</div>
+<div class="flex items-center gap-4 text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span class="text-on-surface-variant">主控终端</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-fixed-dim"></span>
+<span class="text-on-surface-variant">计时/感应端</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="text-on-surface-variant">IRS 采集机位</span>
+</div>
+</div>
+</div>
+<!-- Court Diagram with Device Anchors -->
+<div class="relative w-full h-56 rounded bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
+<!-- Court Layout Vector Graphics -->
+<svg class="w-full h-full max-w-4xl opacity-30 stroke-current text-on-surface" fill="none" viewbox="0 0 800 300">
+<!-- Main Boundary -->
+<rect height="260" rx="4" stroke-width="2" width="760" x="20" y="20"></rect>
+<!-- Half Court Line & Circle -->
+<line stroke-width="2" x1="400" x2="400" y1="20" y2="280"></line>
+<circle cx="400" cy="150" r="45" stroke-width="2"></circle>
+<!-- Left Key & 3pt Arc -->
+<rect height="110" stroke-width="2" width="130" x="20" y="95"></rect>
+<circle cx="150" cy="150" r="45" stroke-dasharray="4 4" stroke-width="1.5"></circle>
+<path d="M 20,45 L 80,45 A 130 130 0 0 1 80,255 L 20,255" stroke-width="1.5"></path>
+<!-- Right Key & 3pt Arc -->
+<rect height="110" stroke-width="2" width="130" x="650" y="95"></rect>
+<circle cx="650" cy="150" r="45" stroke-dasharray="4 4" stroke-width="1.5"></circle>
+<path d="M 780,45 L 720,45 A 130 130 0 0 0 720,255 L 780,255" stroke-width="1.5"></path>
+</svg>
+<!-- Positioned Interactive Device Nodes -->
+<!-- Tech Table Center Station -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center group cursor-pointer">
+<div class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-caps text-[10px] tracking-wider uppercase mb-1 shadow-lg">
+            技术台主控席 (PC-01 + MASTER TABLET)
+          </div>
+<div class="w-4 h-4 rounded-full bg-primary-container flex items-center justify-center animate-pulse">
+<span class="w-2 h-2 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+<!-- Left Shot Clock Node -->
+<div class="absolute left-10 top-1/2 -translate-y-1/2 flex items-center gap-2 group cursor-pointer">
+<div class="w-3.5 h-3.5 rounded-full bg-secondary-fixed-dim shadow-[0_0_10px_#00daf3] flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="hidden sm:block px-1.5 py-0.5 rounded bg-surface-container-high text-secondary-fixed-dim font-label-caps text-[10px]">
+            24S-A (西篮架)
+          </div>
+</div>
+<!-- Right Shot Clock Node -->
+<div class="absolute right-10 top-1/2 -translate-y-1/2 flex items-center gap-2 group cursor-pointer">
+<div class="hidden sm:block px-1.5 py-0.5 rounded bg-surface-container-high text-secondary-fixed-dim font-label-caps text-[10px]">
+            24S-B (东篮架)
+          </div>
+<div class="w-3.5 h-3.5 rounded-full bg-secondary-fixed-dim shadow-[0_0_10px_#00daf3] flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+<!-- IRS Camera Nodes Around Court -->
+<div class="absolute top-4 left-1/4 flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="font-label-caps text-[9px] text-tertiary hidden md:inline">CAM 01/02</span>
+</div>
+<div class="absolute top-4 right-1/4 flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="font-label-caps text-[9px] text-tertiary hidden md:inline">CAM 03/04</span>
+</div>
+<div class="absolute bottom-4 left-16 flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="font-label-caps text-[9px] text-tertiary hidden md:inline">CAM 05 BASE</span>
+</div>
+<div class="absolute bottom-4 right-16 flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="font-label-caps text-[9px] text-tertiary hidden md:inline">CAM 06 BASE</span>
+</div>
+<div class="absolute top-2 left-1/2 -translate-x-1/2 flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="font-label-caps text-[9px] text-tertiary hidden md:inline">CAM 07/08 HIGH-ANGLE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamic Log Streaming Simulation
+    const logContainer = document.getElementById('diagnostics-log-stream');
+    const btnRecalibrate = document.getElementById('btn-recalibrate');
+    const btnFailsafeSwitch = document.getElementById('btn-failsafe-switch');
+    const btnRestartRf = document.getElementById('btn-restart-rf');
+    const btnExportLog = document.getElementById('btn-export-log');
+    const btnClearLog = document.getElementById('btn-clear-log');
+
+    function getTimestamp() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      const ms = String(now.getMilliseconds()).padStart(3, '0');
+      return `${h}:${m}:${s}.${ms}`;
+    }
+
+    function appendLog(category, text, badgeColor = 'text-secondary-fixed-dim', bgBadge = 'bg-secondary-fixed-dim/10') {
+      if (!logContainer) return;
+      const entry = document.createElement('div');
+      entry.className = 'p-2 rounded bg-surface-container-low transition-colors hover:bg-surface-container';
+      entry.innerHTML = `
+        <div class="flex items-center justify-between text-on-surface-variant text-[11px] mb-1">
+          <span class="font-label-numeric ${badgeColor}">${getTimestamp()}</span>
+          <span class="font-label-caps ${badgeColor} ${bgBadge} px-1 rounded">${category}</span>
+        </div>
+        <p class="text-on-surface leading-tight font-body-sm">${text}</p>
+      `;
+      logContainer.insertBefore(entry, logContainer.firstChild);
+    }
+
+    if (btnRecalibrate) {
+      btnRecalibrate.addEventListener('click', function() {
+        appendLog('AUTO_CALIBRATE', '操作触发：全场 IEEE 1588v2 时钟基准重新对齐，时钟漂移收敛至 0.00004s。', 'text-secondary-fixed-dim', 'bg-secondary-fixed-dim/10');
+      });
+    }
+
+    if (btnFailsafeSwitch) {
+      btnFailsafeSwitch.addEventListener('click', function() {
+        appendLog('FAILSAFE_SWAP', '操作触发：主备链路热切换指令发送完成，副裁终端 #02 授权提升至备份裁决主控。', 'text-tertiary', 'bg-tertiary/10');
+      });
+    }
+
+    if (btnRestartRf) {
+      btnRestartRf.addEventListener('click', function() {
+        appendLog('RF_SUBSYSTEM', '操作触发：24秒射频通信模块重置，CH-11 频谱跳频自校准完毕，RSSI: -39dBm。', 'text-primary', 'bg-primary/10');
+      });
+    }
+
+    if (btnExportLog) {
+      btnExportLog.addEventListener('click', function() {
+        appendLog('SYS_SNAPSHOT', '系统已生成全量设备诊断快照包：CBB_DIAG_STADIUM01_' + Date.now() + '.tar.gz', 'text-on-surface', 'bg-surface-container');
+      });
+    }
+
+    if (btnClearLog && logContainer) {
+      btnClearLog.addEventListener('click', function() {
+        logContainer.innerHTML = '';
+        appendLog('STREAM_INIT', '日志缓冲区已重置，持续监听执裁总线硬件心跳包...', 'text-secondary-fixed-dim', 'bg-secondary-fixed-dim/10');
+      });
+    }
+
+    // Auto Periodic Heartbeat Ping
+    setInterval(function() {
+      const messages = [
+        ['PTP_BEACON', '周期性时钟广播包确认：主控端与 LED 屏控同步差 0.0001s。', 'text-secondary-fixed-dim', 'bg-secondary-fixed-dim/10'],
+        ['TABLET_ACK', '主裁判手持终端 #01 发送握手令牌，排他锁定存活中。', 'text-primary', 'bg-primary/10'],
+        ['IRS_SYNC', 'IRS 8 机位慢放帧率巡检：60fps 锁定中，无掉帧。', 'text-tertiary', 'bg-tertiary/10']
+      ];
+      const randomItem = messages[Math.floor(Math.random() * messages.length)];
+      appendLog(randomItem[0], randomItem[1], randomItem[2], randomItem[3]);
+      
+      // Limit total child items to 25 to preserve performance
+      while (logContainer && logContainer.children.length > 25) {
+        logContainer.removeChild(logContainer.lastChild);
+      }
+    }, 7000);
+  })();
+</script></main></div></body></html>

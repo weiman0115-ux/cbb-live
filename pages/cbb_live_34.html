@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#5f1500", "outline-variant": "#5b4039", "surface-container-highest": "#31353c", "secondary": "#bdf4ff", "inverse-on-surface": "#2d3137", "tertiary-container": "#c68300", "on-tertiary-fixed-variant": "#633f00", "inverse-primary": "#b02f00", "on-secondary-fixed": "#001f24", "surface-tint": "#ffb5a0", "surface-container-low": "#181c22", "on-background": "#dfe2eb", "surface-bright": "#353940", "surface-container-lowest": "#0a0e14", "primary-fixed": "#ffdbd1", "surface-dim": "#10141a", "primary-fixed-dim": "#ffb5a0", "on-primary-fixed-variant": "#862200", "on-tertiary-fixed": "#291800", "tertiary-fixed": "#ffddb4", "error": "#ffb4ab", "on-surface": "#dfe2eb", "on-tertiary": "#452b00", "secondary-container": "#00e3fd", "error-container": "#93000a", "surface": "#10141a", "on-error": "#690005", "on-primary-fixed": "#3b0900", "on-secondary-container": "#00616d", "surface-variant": "#31353c", "surface-container-high": "#262a31", "tertiary": "#ffb952", "secondary-fixed-dim": "#00daf3", "on-secondary": "#00363d", "tertiary-fixed-dim": "#ffb952", "primary": "#ffb5a0", "outline": "#ab8980", "on-error-container": "#ffdad6", "on-surface-variant": "#e4beb4", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "on-primary-container": "#541200", "background": "#10141a", "inverse-surface": "#dfe2eb", "primary-container": "#ff5722", "surface-container": "#1c2026", "on-tertiary-container": "#3c2500" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "2.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "display-score": ["Oswald"], "headline-xl-mobile": ["Oswald"], "headline-lg": ["Oswald"], "label-numeric": ["Oswald"], "label-caps": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "title-lg": ["Space Grotesk"], "body-md": ["Space Grotesk"], "headline-md": ["Oswald"], "body-sm": ["Space Grotesk"], "display-score-mobile": ["Oswald"], "title-md": ["Space Grotesk"], "headline-xl": ["Oswald"] }, "fontSize": { "display-score": ["80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-numeric": ["15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-score-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/20 bg-surface-container-lowest/50"><div class="flex items-center gap-space-sm"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase leading-none font-bold">CBB-LIVE</span><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">赛事中台 ADMIN</span></div></div></div><div class="px-space-md py-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-space-xs">核心导航 CORE MENU</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(255,87,34,0.35)]"><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="dashboard" href="cbb_live_0.1.html"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md tracking-tight">数据看板</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="seasons-rules" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">emoji_events</span><span class="font-body-md text-body-md tracking-tight">赛季赛制</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="schedules" href="cbb_live_28.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md tracking-tight">赛程排期</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="teams-players" href="cbb_live_5.html"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md tracking-tight">球队球员</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="live-court-ops" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sports_basketball</span><span class="font-body-md text-body-md tracking-tight">比赛操控</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="stream-content" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-body-md text-body-md tracking-tight">直播与内容</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="review-center" href="cbb_live_call_audit_reports.html"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md tracking-tight">审核中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="awards-selection" href="cbb_live_referee_evaluation_credit.html"><span class="material-symbols-outlined text-[20px]">military_tech</span><span class="font-body-md text-body-md tracking-tight">荣誉评选</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="analytics-reports" href="cbb_live_pdf.html"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-body-md text-body-md tracking-tight">报表中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="system-settings-logs" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-body-md text-body-md tracking-tight">系统配置与日志</span></a></nav><div class="p-space-md border-t border-outline-variant/20 bg-surface-container-lowest/80"><div class="flex items-center justify-between p-2 rounded bg-surface-container border border-outline-variant/30"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">shield</span><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface font-semibold">等保二级认证</span><span class="font-body-sm text-body-sm text-outline">SECURED 256-BIT</span></div></div><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#00e3fd]"></div></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">SUPER ADMIN / 赛事组委会</span></div><div class="h-4 w-px bg-outline-variant/40 hidden lg:block"></div><div class="items-center gap-2 bg-surface-container-high/60 px-space-sm py-1 rounded border border-outline-variant/20 hidden lg:flex"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm text-on-surface font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer">arrow_drop_down</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 bg-surface-container-low rounded border border-secondary-container/20 text-secondary"><span class="material-symbols-outlined text-[16px]">wifi_tethering</span><span class="font-label-numeric text-label-numeric tracking-wider">WS PUSH: ACTIVE | 18ms</span></div><button class="relative p-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container text-on-primary-container font-label-caps text-[9px] font-bold ring-2 ring-surface-container-lowest">4</span></button><div class="flex items-center gap-space-sm pl-2 border-l border-outline-variant/30"><div class="text-right hidden sm:block"><div class="font-title-md text-title-md text-on-surface leading-tight font-semibold">张主任</div><div class="font-body-sm text-body-sm text-outline leading-tight">超级管理员 · 体育教学部</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface select-none pb-12">
+<!-- 顶部沙盘情境 HUD 题库调度器 -->
+<header class="w-full bg-surface-container-lowest px-gutter-desktop py-space-md shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 bg-primary-container/20 text-primary px-space-sm py-1 rounded">
+<span class="material-symbols-outlined text-[18px] animate-spin text-primary">model_training</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">裁判模拟实训沙箱 · FIBA 标准演习</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-1 rounded">
+<span class="font-label-caps text-label-caps text-outline">题库编号:</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">EXAM-SCENARIO #08</span>
+</div>
+<div class="flex items-center gap-1 bg-tertiary-container/30 text-tertiary px-space-sm py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="font-label-caps text-label-caps uppercase font-semibold">加时高压争端复核</span>
+</div>
+</div>
+<!-- 难度标签及沙箱动作 -->
+<div class="flex items-center gap-1 overflow-x-auto py-1">
+<button class="px-2.5 py-1 rounded text-body-sm font-body-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors">常规考核</button>
+<button class="px-2.5 py-1 rounded text-body-sm font-body-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors">极限压哨</button>
+<button class="px-2.5 py-1 rounded text-body-sm font-body-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors">技术与违体纠纷</button>
+<button class="px-3 py-1 rounded text-body-sm font-body-sm bg-gradient-to-r from-primary-container to-tertiary-container text-white font-bold shadow-md shadow-primary-container/20 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+          加时争议判罚 (当前)
+        </button>
+<button class="px-2.5 py-1 rounded text-body-sm font-body-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors">随机突发题库</button>
+<div class="w-px h-4 bg-outline-variant/40 mx-1"></div>
+<button class="px-2 py-1 rounded text-body-sm font-body-sm bg-surface-container text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1" id="resetSandboxBtn">
+<span class="material-symbols-outlined text-[14px]">refresh</span>重置
+        </button>
+<button class="px-2 py-1 rounded text-body-sm font-body-sm bg-surface-container text-error hover:bg-error-container hover:text-on-error-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">close</span>退出(ESC)
+        </button>
+</div>
+</div>
+<!-- 考题核心情景折叠卡片 & 实时应试手感指标 -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-stretch">
+<!-- 考题详述 -->
+<div class="xl:col-span-8 bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-md mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">flag</span>
+<h1 class="font-title-md text-title-md font-bold text-on-surface">
+              加时赛加时争球与抢断出界争议 (OT 00:08.2) · 现场执裁与技术台录入指令
+            </h1>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase font-bold">
+            难度 9.8 / S+
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-primary font-semibold">考题情境：</strong>加时赛 OT1 决胜倒计时仅剩 <span class="text-tertiary font-label-numeric text-label-numeric font-bold">08.2</span> 秒，比分 92-91 主队领先1分！客队发边线球，主队 <strong class="text-on-surface">#11 郭林</strong> 飞身前扑抢断拍落皮球，球在客队 <strong class="text-on-surface">#03 吴鹏</strong> 腿部与主队指尖擦碰后滚出边线！裁判初判客队球权，主队主教练立即申请<span class="text-secondary font-semibold">【教练挑战 (Coach's Challenge)】</span>请求复核球权归属。
+        </p>
+<div class="mt-2 pt-2 bg-surface-container-low/60 rounded p-2 text-body-sm font-body-sm text-outline flex flex-wrap items-center gap-x-4 gap-y-1">
+<span class="text-on-surface font-medium">执行序列：</span>
+<span>① 冻结死球 (Space回拔08.2s)</span>
+<span>② 开启 IRS 复核模式</span>
+<span>③ 判定客队触球出界推翻判罚 (Overturn)</span>
+<span>④ 成功保留暂停扣除挑战</span>
+<span>⑤ 重置进攻时钟 14s 并恢复决胜</span>
+</div>
+</div>
+<!-- 实时手感与响应指标看板 -->
+<div class="xl:col-span-4 bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">考生实时指标 TELEMETRY</span>
+<span class="flex items-center gap-1 text-secondary font-label-numeric text-label-numeric">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            SAMPLING: 240Hz
+          </span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center my-auto">
+<div class="bg-surface-container-lowest/80 p-2 rounded">
+<span class="font-label-caps text-label-caps text-outline block">处置倒计</span>
+<span class="font-headline-md text-headline-md text-primary font-bold" id="examCountdown">14.6s</span>
+</div>
+<div class="bg-surface-container-lowest/80 p-2 rounded">
+<span class="font-label-caps text-label-caps text-outline block">按键时延</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">0.36<span class="font-body-sm text-body-sm text-outline">ms</span></span>
+</div>
+<div class="bg-surface-container-lowest/80 p-2 rounded">
+<span class="font-label-caps text-label-caps text-outline block">手感评级</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">S+</span>
+</div>
+<div class="bg-surface-container-lowest/80 p-2 rounded">
+<span class="font-label-caps text-label-caps text-outline block">改判捕获</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">4<span class="text-outline text-body-sm">/4</span></span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1">
+<span>累计沙箱演练录入: <strong class="text-on-surface">39</strong> 条</span>
+<span class="text-secondary">准确率: 100% 无撤回失误</span>
+</div>
+</div>
+</div>
+</header>
+<!-- 主交互操作工作区 (3列高保真栅格) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop px-gutter-desktop mt-space-md">
+<!-- 左侧: 2D 边线抢断争议落点雷达与 IRS 多机位联动 (4列) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- 2D 争议点半场微缩雷达 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">radar</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">争议落点雷达 &amp; 触球轨迹</h2>
+</div>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-highest px-2 py-0.5 rounded">
+            COORD: X:88% Y:12%
+          </span>
+</div>
+<!-- 篮球场 2D 半场 SVG 视图 -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center p-2">
+<!-- 场地线框 -->
+<svg class="w-full h-full text-outline-variant/40" fill="none" viewbox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+<!-- 球场边界 -->
+<rect height="280" stroke="currentColor" stroke-width="2" width="380" x="10" y="10"></rect>
+<!-- 半场中圈 (左侧) -->
+<path d="M10 90 A 60 60 0 0 1 10 210" stroke="currentColor" stroke-width="2"></path>
+<!-- 限制区禁区 (右侧篮筐) -->
+<rect height="100" stroke="currentColor" stroke-width="2" width="120" x="270" y="100"></rect>
+<!-- 罚球圈 -->
+<circle cx="270" cy="150" r="50" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2"></circle>
+<!-- 三分线弧度 -->
+<path d="M390 40 L330 40 A 180 180 0 0 0 330 260 L390 260" stroke="currentColor" stroke-width="2"></path>
+<!-- 篮筐与篮板 -->
+<line stroke="currentColor" stroke-width="4" x1="380" x2="380" y1="130" y2="170"></line>
+<circle cx="366" cy="150" r="10" stroke="currentColor" stroke-width="2"></circle>
+<!-- 郭林飞扑抢断轨迹线 (Primary 橙色) -->
+<path d="M300 90 Q340 40 360 28" fill="none" stroke="#ff5722" stroke-dasharray="3 3" stroke-width="2.5"></path>
+<!-- 触碰后皮球折射出底线轨迹 (Secondary 青色) -->
+<path d="M360 28 L375 8" fill="none" stroke="#00daf3" stroke-dasharray="2 2" stroke-width="2.5"></path>
+<!-- 争议事件发生地光标 -->
+<circle class="animate-ping" cx="360" cy="28" fill="#ff5722" fill-opacity="0.3" r="8"></circle>
+<circle cx="360" cy="28" fill="#ff5722" r="4"></circle>
+<!-- 球员站位散点 -->
+<!-- 主队 #11 郭林 -->
+<circle cx="352" cy="38" fill="#ff5722" r="7"></circle>
+<text fill="#541200" font-family="Space Grotesk" font-size="8" font-weight="bold" text-anchor="middle" x="352" y="41">11</text>
+<!-- 客队 #03 吴鹏 -->
+<circle cx="368" cy="26" fill="#00e3fd" r="7"></circle>
+<text fill="#001f24" font-family="Space Grotesk" font-size="8" font-weight="bold" text-anchor="middle" x="368" y="29">03</text>
+</svg>
+<!-- 悬浮标签提示 -->
+<div class="absolute bottom-3 left-3 bg-surface-container-high/90 px-2 py-1 rounded text-body-sm font-body-sm">
+<span class="text-primary font-semibold">● 郭林(#11)</span> 扑断 | 
+            <span class="text-secondary font-semibold">● 吴鹏(#03)</span> 腿部弹落出界
+          </div>
+</div>
+<!-- 争议帧判定依据卡片 -->
+<div class="mt-space-sm bg-surface-container-high/60 p-space-sm rounded-lg text-body-sm font-body-sm">
+<div class="flex items-center justify-between text-tertiary font-bold mb-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">slow_motion_video</span>
+              关键帧 Frame #2481 (08.22s)
+            </span>
+<span class="text-secondary font-label-caps text-label-caps">确凿证据 100%</span>
+</div>
+<p class="text-on-surface-variant">
+            慢镜头 0.25x 放大复核：皮球反弹撞击客队 #03 护腿弹向界外，主队 #11 掌心完全脱离皮球，改判判定理由完全成立。
+          </p>
+</div>
+</div>
+<!-- IRS 多机位回放切片面板 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">IRS 4K 多机位实时流</h3>
+</div>
+<span class="font-label-caps text-label-caps text-primary px-1.5 py-0.5 rounded bg-primary-container/20">4K 120FPS SYNC</span>
+</div>
+<!-- 机位切换选项卡 -->
+<div class="grid grid-cols-3 gap-1 mb-space-sm">
+<button class="px-2 py-1 rounded text-body-sm font-body-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors">
+            CAM 01 边线
+          </button>
+<button class="px-2 py-1 rounded text-body-sm font-body-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors">
+            CAM 02 俯视
+          </button>
+<button class="px-2 py-1 rounded text-body-sm font-body-sm bg-primary-container text-on-primary-container font-semibold transition-all">
+            CAM 03 主裁视角
+          </button>
+</div>
+<!-- 模拟回放画面窗口 -->
+<div class="relative aspect-video bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col justify-between p-3">
+<!-- 视频顶栏叠加 HUD -->
+<div class="flex items-center justify-between z-10">
+<div class="flex items-center gap-1.5 bg-black/60 px-2 py-0.5 rounded text-white font-label-numeric text-label-numeric">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>IRS PLAYBACK · 0.25X</span>
+</div>
+<span class="bg-black/60 px-2 py-0.5 rounded text-tertiary font-label-numeric text-label-numeric">
+              TIMECODE: 00:08:22:14
+            </span>
+</div>
+<!-- 模拟球场局部高精特写图像 -->
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Close-up slow motion broadcast replay shot of a high-stakes college basketball game sideline in dark arena lighting. High contrast stadium lights illuminate an intense tip of the basketball touching a player's white sneaker edge near the orange court line. Cyber stadium graphics and referee slow-mo timecode overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjZS2nGoLldiaO66DfSn46Z7z6hCP_YJELX1JLhgI2dBEZYHndMZe3RP3E0w9biz7xXzrYnD0faovRRmQdEQsB92CXOZHuFu9VPHFGpC_HVVNoZ_4Vyy9HQ8T1GyMFNFzypwEVfeV146z0KNTQ1-vpDcznPaoAgddGoHyhiziiuc9y_zbYUe9ERzTS0_vuWRi_RVpVo5Luxf_oXFjGtW2pEk8UVyhY3qL59d5nylPTRai8CB6fidwg7g"/>
+<!-- 视频底栏状态与操作条 -->
+<div class="flex items-center justify-between z-10 bg-black/70 px-2.5 py-1.5 rounded mt-auto">
+<div class="flex items-center gap-2">
+<button class="text-white hover:text-primary"><span class="material-symbols-outlined text-[18px]">replay_10</span></button>
+<button class="text-primary hover:text-white"><span class="material-symbols-outlined text-[20px]">pause</span></button>
+<button class="text-white hover:text-primary"><span class="material-symbols-outlined text-[18px]">forward_10</span></button>
+</div>
+<div class="w-1/2 bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-4/5"></div>
+</div>
+<span class="font-label-numeric text-label-numeric text-white text-xs">08.2s LOCK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 中侧: 比赛时钟核心、加时仲裁管线与快捷键矩阵 (5列) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- 核心记分与死球时钟 HUD -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<!-- 比赛状态顶标 -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-2 mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-headline-md text-headline-md font-bold tracking-wider text-primary uppercase">加时赛 · OT 1 终局</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-label-caps uppercase font-bold">
+            DEAD BALL · 死球复核中
+          </span>
+</div>
+<!-- 记分牌与大数显时钟模块 -->
+<div class="grid grid-cols-12 items-center gap-2 my-2">
+<!-- 主队分 -->
+<div class="col-span-4 flex flex-col items-center p-2 rounded-lg bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary font-bold">主队 · 飞鹰</span>
+<span class="font-display-score text-display-score text-primary leading-none font-bold">92</span>
+<span class="font-body-sm text-body-sm text-outline mt-1">全队犯规: 3</span>
+</div>
+<!-- 居中节时钟与进攻倒计 -->
+<div class="col-span-4 flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider mb-1">GAME CLOCK</span>
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold tracking-tight" id="gameClockDisplay">
+              00:08.2
+            </span>
+<div class="mt-2 flex items-center gap-1.5 bg-surface-container-high px-2 py-0.5 rounded">
+<span class="font-label-caps text-label-caps text-outline">SHOT CLOCK</span>
+<span class="font-headline-md text-headline-md text-error font-bold" id="shotClockDisplay">14.0</span>
+</div>
+</div>
+<!-- 客队分 -->
+<div class="col-span-4 flex flex-col items-center p-2 rounded-lg bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-secondary font-bold">客队 · 战车</span>
+<span class="font-display-score text-display-score text-secondary leading-none font-bold">91</span>
+<span class="font-body-sm text-body-sm text-error mt-1 font-semibold">全队犯规: 4 (Bonus)</span>
+</div>
+</div>
+<!-- 死球时钟控制快捷按钮行 -->
+<div class="grid grid-cols-3 gap-2 mt-space-sm pt-2">
+<button class="py-2 px-3 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-title-md font-semibold flex items-center justify-center gap-1 transition-colors" id="clockToggleBtn">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+            时钟冻结 [Space]
+          </button>
+<button class="py-2 px-3 rounded bg-surface-container-high hover:bg-surface-bright text-tertiary font-title-md text-title-md font-semibold flex items-center justify-center gap-1 transition-colors" id="resetShotClockBtn">
+<span class="material-symbols-outlined text-[18px]">history</span>
+            重置14秒 [F14]
+          </button>
+<button class="py-2 px-3 rounded bg-primary-container text-on-primary-container font-title-md text-title-md font-bold flex items-center justify-center gap-1 shadow-md shadow-primary-container/30">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+            IRS 裁决锁定
+          </button>
+</div>
+</div>
+<!-- 加时争议仲裁复合判定流水线 (OVERTURN PIPELINE 5步拆解) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">account_tree</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">争议仲裁改判管线 (OVERTURN PIPELINE)</h3>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">STEP 4 OF 5</span>
+</div>
+<div class="space-y-2">
+<!-- Step 1 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps flex items-center justify-center font-bold">✓</span>
+<span class="font-body-md text-body-md text-on-surface">① 主队主教练申请【挑战球权判定】(08.2s)</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">VERIFIED</span>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps flex items-center justify-center font-bold">✓</span>
+<span class="font-body-md text-body-md text-on-surface">② IRS 4K 逐帧复核：客队 #03 腿部最后触碰出界</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase font-semibold">CONFIRMED</span>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps flex items-center justify-center font-bold">✓</span>
+<span class="font-body-md text-body-md text-on-surface">③ 改判裁决 (Overturn)：推翻客队球权，改判主队</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">OVERTURNED</span>
+</div>
+<!-- Step 4: 当前待执行高亮 -->
+<div class="flex items-center justify-between p-2.5 rounded bg-primary-container/20 border-l-4 border-primary shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps flex items-center justify-center font-bold animate-pulse">4</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold">④ 扣除挑战额度：挑战成功 (不扣暂停)</span>
+<p class="font-body-sm text-body-sm text-outline">主队剩余挑战: 0/1 | 剩余暂停维持: 1 次</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-primary font-bold px-2 py-1 bg-primary/20 rounded">待回车确认</span>
+</div>
+<!-- Step 5 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest/60 text-outline">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-outline font-label-caps text-label-caps flex items-center justify-center font-bold">5</span>
+<span class="font-body-md text-body-md">⑤ 恢复加时赛：主队前场掷球入界 (14.0秒进攻倒计)</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase">PENDING</span>
+</div>
+</div>
+<!-- 确认改判执行横幅 -->
+<div class="mt-space-md bg-gradient-to-r from-primary-container to-tertiary-container p-3 rounded-lg flex items-center justify-between text-white shadow-lg shadow-primary-container/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span class="font-title-md text-title-md font-bold tracking-wide">按 [Enter] 即刻将改判结论广播至全馆大屏与统计流水！</span>
+</div>
+<button class="px-4 py-1.5 rounded bg-surface-container-lowest text-primary hover:bg-surface-bright font-title-md text-title-md font-bold transition-all transform active:scale-95" id="commitDecisionBtn">
+            即刻发布 [Enter]
+          </button>
+</div>
+</div>
+<!-- FIBA 键盘录入快捷键矩阵 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">FIBA 规范快捷录入键盘 (加时赛专属)</span>
+<span class="font-label-caps text-label-caps text-secondary font-mono">KEY-MAPPING: STRICT</span>
+</div>
+<div class="grid grid-cols-6 gap-2 text-center">
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-primary font-bold block">F2</span>
+<span class="font-label-caps text-label-caps text-outline">2分投篮</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-primary font-bold block">F3</span>
+<span class="font-label-caps text-label-caps text-outline">3分远投</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-tertiary font-bold block">1/0</span>
+<span class="font-label-caps text-label-caps text-outline">罚球命中/失</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-secondary font-bold block">R</span>
+<span class="font-label-caps text-label-caps text-outline">进攻/防守篮板</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-secondary font-bold block">A</span>
+<span class="font-label-caps text-label-caps text-outline">关键助攻</span>
+</div>
+<!-- 抢断高亮 -->
+<div class="bg-primary-container text-on-primary-container p-2 rounded shadow-md cursor-pointer animate-bounce">
+<span class="font-headline-md text-headline-md font-bold block">S</span>
+<span class="font-label-caps text-label-caps">扑地抢断(+1)</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-outline font-bold block">B</span>
+<span class="font-label-caps text-label-caps text-outline">盖帽</span>
+</div>
+<!-- 挑战判定键 -->
+<div class="bg-tertiary-container/40 p-2 rounded border border-tertiary cursor-pointer">
+<span class="font-headline-md text-headline-md text-tertiary font-bold block">C</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold">教练挑战</span>
+</div>
+<div class="bg-surface-container-high p-2 rounded hover:bg-primary/20 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-error font-bold block">F</span>
+<span class="font-label-caps text-label-caps text-outline">个人犯规</span>
+</div>
+<!-- 失误键 -->
+<div class="bg-surface-container-high p-2 rounded hover:bg-error-container/40 cursor-pointer transition-colors">
+<span class="font-headline-md text-headline-md text-error font-bold block">T</span>
+<span class="font-label-caps text-label-caps text-outline">出界失误(+1)</span>
+</div>
+<div class="col-span-2 bg-surface-container-high p-2 rounded hover:bg-surface-bright cursor-pointer flex flex-col justify-center">
+<span class="font-headline-md text-headline-md text-outline font-bold block">Ctrl+Z</span>
+<span class="font-label-caps text-label-caps text-outline">撤销上一步留痕</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 右侧面板: 演练审计流与争议裁决规则诊断器 (3列) -->
+<div class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- 实时事件审计卡片流水 -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex-1 flex flex-col">
+<div class="flex items-center justify-between mb-space-sm border-b border-outline-variant/20 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">实时审计流水</h3>
+</div>
+<span class="font-label-caps text-label-caps text-outline">IMMUTABLE LOG</span>
+</div>
+<div class="flex-1 space-y-2 overflow-y-auto max-h-[380px] pr-1" id="auditLogContainer">
+<!-- 待发布的改判事件预览 -->
+<div class="p-2.5 rounded bg-primary-container/10 border-l-2 border-primary">
+<div class="flex items-center justify-between text-primary font-label-numeric text-label-numeric font-bold mb-1">
+<span>00:08.2 · OT1</span>
+<span class="bg-primary-container text-on-primary-container text-[10px] px-1.5 py-0.2 rounded uppercase">PENDING EMIT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+<strong>[IRS 改判成功 · 球权反转]</strong> 主裁判通过慢动作复核，判定客队 <strong>#03 吴鹏</strong> 最后触球出界，原判客队前场球权推翻！改为主队前场掷球入界。
+            </p>
+<div class="mt-1 flex items-center gap-2 font-label-caps text-label-caps text-outline">
+<span class="text-primary font-semibold">主队 #11 郭林: 抢断 +1</span>
+<span class="text-error font-semibold">客队 #03: 失误 +1</span>
+</div>
+</div>
+<!-- 先前记录 -->
+<div class="p-2.5 rounded bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center justify-between text-outline font-label-numeric text-label-numeric mb-1">
+<span>00:08.2 · OT1</span>
+<span class="text-tertiary">COACH CHALLENGE</span>
+</div>
+<p class="font-body-sm text-body-sm leading-tight">
+              主队主教练申请教练挑战，质疑边线出界球权归属，技术台冻结死球时钟。
+            </p>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center justify-between text-outline font-label-numeric text-label-numeric mb-1">
+<span>00:15.4 · OT1</span>
+<span class="text-secondary">FIELD GOAL</span>
+</div>
+<p class="font-body-sm text-body-sm leading-tight">
+              主队 <strong>#23 张峰</strong> 突破急停抛投空心入网，得分 +2 (92-91 反超)。
+            </p>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center justify-between text-outline font-label-numeric text-label-numeric mb-1">
+<span>00:32.0 · OT1</span>
+<span class="text-error">TEAM FOUL</span>
+</div>
+<p class="font-body-sm text-body-sm leading-tight">
+              客队 <strong>#07 赵海</strong> 防守推人犯规，累计个人第5次犯规罚下，由 #14 替补登场。
+            </p>
+</div>
+</div>
+</div>
+<!-- 争议裁决规则诊断器 (FIBA OT CHALLENGE AUDIT) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">FIBA 规则合规诊断评级</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">military_tech</span>
+</div>
+<div class="space-y-space-sm text-body-sm font-body-sm">
+<div>
+<div class="flex justify-between text-outline mb-1">
+<span>回放介入决策时延</span>
+<span class="text-secondary font-label-numeric text-label-numeric">0.38s (标准 ≤ 1.50s)</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-outline mb-1">
+<span>球权归属判定精确度</span>
+<span class="text-primary font-label-numeric text-label-numeric">100.0% (高清帧率确凿)</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-outline mb-1">
+<span>死球时钟回拔准确率</span>
+<span class="text-tertiary font-label-numeric text-label-numeric">100.0% (精确回拔 08.2s)</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-full"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-2 rounded bg-surface-container-high flex items-center justify-between">
+<div>
+<div class="font-title-md text-title-md font-bold text-tertiary">CERT-A+ 国际裁判考核</div>
+<div class="font-body-sm text-body-sm text-outline">通过 FIBA 加时极限定性认证</div>
+</div>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">99.9</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 下侧: 双方在场涉事球员状态 (加时极限体力与犯规监控卡片) -->
+<div class="px-gutter-desktop mt-space-md">
+<div class="bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">在场涉事球员动态与决胜负荷监测 (OT1 在场阵容)</h3>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-body-sm text-body-sm text-outline">主队挑战额度: <strong class="text-primary">0/1 (本场已用完)</strong></span>
+<span class="font-body-sm text-body-sm text-outline">主队剩余暂停: <strong class="text-secondary">1 次 (挑战成功保留)</strong></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- 主队球员列表 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between mb-2 pb-1 border-b border-outline-variant/20">
+<span class="font-title-md text-title-md font-bold text-primary">计算机飞鹰 (主队 · 领先1分)</span>
+<span class="font-label-caps text-label-caps text-outline">POSSESSION: GAINED</span>
+</div>
+<div class="space-y-1.5">
+<!-- 郭林 (核心涉事人) -->
+<div class="flex items-center justify-between p-2 rounded bg-primary/10 border-l-2 border-primary">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric text-label-numeric text-primary font-bold text-base">#11</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-semibold">郭林 (PG)</span>
+<span class="font-body-sm text-body-sm text-primary ml-2 font-bold">★ 关键飞扑抢断 (+1)</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-numeric text-label-numeric text-on-surface font-semibold">42 MIN · 18分 6助 3断</div>
+<div class="font-body-sm text-body-sm text-outline">犯规: 2 · 体能储备 18%</div>
+</div>
+</div>
+<!-- 张峰 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-high/60">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric text-label-numeric text-outline font-bold">#23</span>
+<span class="font-body-md text-body-md text-on-surface">张峰 (SF) · 准备前场接球</span>
+</div>
+<div class="text-right">
+<div class="font-label-numeric text-label-numeric text-on-surface">31分 8板 5助</div>
+<div class="font-body-sm text-body-sm text-outline">犯规: 2</div>
+</div>
+</div>
+<!-- 其余三名球员缩略显示 -->
+<div class="grid grid-cols-3 gap-1 pt-1 text-center font-body-sm text-body-sm text-outline">
+<div class="p-1 bg-surface-container-lowest rounded">#15 李威 (PF · 12分 4犯)</div>
+<div class="p-1 bg-surface-container-lowest rounded">#05 陈晨 (SG · 8分 1犯)</div>
+<div class="p-1 bg-surface-container-lowest rounded">#33 王磊 (C · 14分 11板)</div>
+</div>
+</div>
+</div>
+<!-- 客队球员列表 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between mb-2 pb-1 border-b border-outline-variant/20">
+<span class="font-title-md text-title-md font-bold text-secondary">自动化战车 (客队 · 落后1分)</span>
+<span class="font-label-caps text-label-caps text-error font-bold">DEFENSE STANCE</span>
+</div>
+<div class="space-y-1.5">
+<!-- 吴鹏 (核心涉事人) -->
+<div class="flex items-center justify-between p-2 rounded bg-error-container/20 border-l-2 border-error">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric text-label-numeric text-secondary font-bold text-base">#03</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-semibold">吴鹏 (PG)</span>
+<span class="font-body-sm text-body-sm text-error ml-2 font-bold">边线停球被断 · 失误 (+1)</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-numeric text-label-numeric text-on-surface font-semibold">41 MIN · 24分 8助 4失误</div>
+<div class="font-body-sm text-body-sm text-outline">犯规: 3 · 体能储备 22%</div>
+</div>
+</div>
+<!-- 韩东 -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-high/60">
+<div class="flex items-center gap-2">
+<span class="font-label-numeric text-label-numeric text-outline font-bold">#10</span>
+<span class="font-body-md text-body-md text-on-surface">韩东 (SG) · 盯防反抢</span>
+</div>
+<div class="text-right">
+<div class="font-label-numeric text-label-numeric text-on-surface">22分 4板 4三分</div>
+<div class="font-body-sm text-body-sm text-outline">犯规: 3</div>
+</div>
+</div>
+<!-- 其余球员 (包含已罚下提示) -->
+<div class="grid grid-cols-3 gap-1 pt-1 text-center font-body-sm text-body-sm text-outline">
+<div class="p-1 bg-surface-container-lowest rounded">#21 肖凡 (SF · 14分 2犯)</div>
+<div class="p-1 bg-surface-container-lowest rounded">#08 刘洋 (C · 10分 8板)</div>
+<div class="p-1 bg-error-container/20 rounded text-error font-semibold">#14 替补 (替换#07五犯)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部状态栏 -->
+<footer class="fixed bottom-0 left-64 right-0 h-9 bg-surface-container-lowest/95 backdrop-blur border-t border-outline-variant/20 px-gutter flex items-center justify-between text-body-sm font-body-sm z-30">
+<div class="flex items-center gap-space-md text-outline">
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        CBB-LIVE SIMULATION ENGINE V2.4
+      </span>
+<span class="hidden md:inline">|</span>
+<span class="hidden md:inline">隔离沙箱 IRS 视频推流引擎已联结 (4K 120FPS)</span>
+<span class="hidden lg:inline">|</span>
+<span class="hidden lg:inline text-tertiary">SESSION: #SANDBOX-OT-9932</span>
+</div>
+<div class="flex items-center gap-space-sm text-outline font-label-caps text-label-caps">
+<span>全局键盘监听中 · 随时按 <strong class="text-on-surface">[ESC]</strong> 结算退出</span>
+</div>
+</footer>
+</div>
+<script>
+  // 简易考核倒计时与改判确认事件模拟
+  (function initSandbox() {
+    let timeLeft = 14.6;
+    const countdownEl = document.getElementById('examCountdown');
+    const commitBtn = document.getElementById('commitDecisionBtn');
+    const auditContainer = document.getElementById('auditLogContainer');
+    const clockDisplay = document.getElementById('gameClockDisplay');
+    const shotClockDisplay = document.getElementById('shotClockDisplay');
+    const clockToggleBtn = document.getElementById('clockToggleBtn');
+    const resetShotClockBtn = document.getElementById('resetShotClockBtn');
+    const resetSandboxBtn = document.getElementById('resetSandboxBtn');
+
+    // 倒计时递减
+    const timer = setInterval(() => {
+      if (timeLeft > 0) {
+        timeLeft = Math.max(0, timeLeft - 0.1);
+        if (countdownEl) {
+          countdownEl.textContent = timeLeft.toFixed(1) + 's';
+        }
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    // 确认改判并入账
+    function commitDecision() {
+      if (!commitBtn) return;
+      commitBtn.disabled = true;
+      commitBtn.classList.add('opacity-50');
+      commitBtn.textContent = '已广播入账 ✓';
+
+      // 动态向审计流水头部插入已确认日志
+      if (auditContainer) {
+        const item = document.createElement('div');
+        item.className = 'p-2.5 rounded bg-primary-container/20 border-l-4 border-primary animate-fadeIn';
+        item.innerHTML = `
+          <div class="flex items-center justify-between text-primary font-label-numeric text-label-numeric font-bold mb-1">
+            <span>00:08.2 · OT1</span>
+            <span class="bg-primary text-on-primary text-[10px] px-1.5 py-0.2 rounded uppercase">AUDITED & PUSHED</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface font-semibold leading-tight">
+            [裁决生效] 全馆大屏推流完成：主队挑战成功！球权交还主队，前场边线发球，进攻时钟维持 14 秒！
+          </p>
+        `;
+        auditContainer.prepend(item);
+      }
+    }
+
+    if (commitBtn) {
+      commitBtn.addEventListener('click', commitDecision);
+    }
+
+    // 键盘监听：Enter执行改判确认，Space模拟暂停
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        commitDecision();
+      } else if (e.code === 'Space') {
+        e.preventDefault();
+        if (clockDisplay) {
+          clockDisplay.classList.toggle('text-error');
+        }
+      }
+    });
+
+    if (resetShotClockBtn) {
+      resetShotClockBtn.addEventListener('click', () => {
+        if (shotClockDisplay) shotClockDisplay.textContent = '14.0';
+      });
+    }
+
+    if (resetSandboxBtn) {
+      resetSandboxBtn.addEventListener('click', () => {
+        location.reload();
+      });
+    }
+  })();
+</script></main></div></body></html>

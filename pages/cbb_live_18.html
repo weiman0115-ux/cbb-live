@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#5f1500", "outline-variant": "#5b4039", "surface-container-highest": "#31353c", "secondary": "#bdf4ff", "inverse-on-surface": "#2d3137", "tertiary-container": "#c68300", "on-tertiary-fixed-variant": "#633f00", "inverse-primary": "#b02f00", "on-secondary-fixed": "#001f24", "surface-tint": "#ffb5a0", "surface-container-low": "#181c22", "on-background": "#dfe2eb", "surface-bright": "#353940", "surface-container-lowest": "#0a0e14", "primary-fixed": "#ffdbd1", "surface-dim": "#10141a", "primary-fixed-dim": "#ffb5a0", "on-primary-fixed-variant": "#862200", "on-tertiary-fixed": "#291800", "tertiary-fixed": "#ffddb4", "error": "#ffb4ab", "on-surface": "#dfe2eb", "on-tertiary": "#452b00", "secondary-container": "#00e3fd", "error-container": "#93000a", "surface": "#10141a", "on-error": "#690005", "on-primary-fixed": "#3b0900", "on-secondary-container": "#00616d", "surface-variant": "#31353c", "surface-container-high": "#262a31", "tertiary": "#ffb952", "secondary-fixed-dim": "#00daf3", "on-secondary": "#00363d", "tertiary-fixed-dim": "#ffb952", "primary": "#ffb5a0", "outline": "#ab8980", "on-error-container": "#ffdad6", "on-surface-variant": "#e4beb4", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "on-primary-container": "#541200", "background": "#10141a", "inverse-surface": "#dfe2eb", "primary-container": "#ff5722", "surface-container": "#1c2026", "on-tertiary-container": "#3c2500" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "2.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "display-score": ["Oswald"], "headline-xl-mobile": ["Oswald"], "headline-lg": ["Oswald"], "label-numeric": ["Oswald"], "label-caps": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "title-lg": ["Space Grotesk"], "body-md": ["Space Grotesk"], "headline-md": ["Oswald"], "body-sm": ["Space Grotesk"], "display-score-mobile": ["Oswald"], "title-md": ["Space Grotesk"], "headline-xl": ["Oswald"] }, "fontSize": { "display-score": ["80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-numeric": ["15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-score-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/20 bg-surface-container-lowest/50"><div class="flex items-center gap-space-sm"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase leading-none font-bold">CBB-LIVE</span><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">赛事中台 ADMIN</span></div></div></div><div class="px-space-md py-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-space-xs">核心导航 CORE MENU</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(255,87,34,0.35)]"><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="dashboard" href="cbb_live_0.1.html"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md tracking-tight">数据看板</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="seasons-rules" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">emoji_events</span><span class="font-body-md text-body-md tracking-tight">赛季赛制</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="schedules" href="cbb_live_28.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md tracking-tight">赛程排期</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="teams-players" href="cbb_live_5.html"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md tracking-tight">球队球员</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="live-court-ops" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sports_basketball</span><span class="font-body-md text-body-md tracking-tight">比赛操控</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="stream-content" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-body-md text-body-md tracking-tight">直播与内容</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="review-center" href="cbb_live_call_audit_reports.html"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md tracking-tight">审核中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="awards-selection" href="cbb_live_referee_evaluation_credit.html"><span class="material-symbols-outlined text-[20px]">military_tech</span><span class="font-body-md text-body-md tracking-tight">荣誉评选</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="analytics-reports" href="cbb_live_pdf.html"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-body-md text-body-md tracking-tight">报表中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="system-settings-logs" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-body-md text-body-md tracking-tight">系统配置与日志</span></a></nav><div class="p-space-md border-t border-outline-variant/20 bg-surface-container-lowest/80"><div class="flex items-center justify-between p-2 rounded bg-surface-container border border-outline-variant/30"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">shield</span><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface font-semibold">等保二级认证</span><span class="font-body-sm text-body-sm text-outline">SECURED 256-BIT</span></div></div><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#00e3fd]"></div></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">SUPER ADMIN / 赛事组委会</span></div><div class="h-4 w-px bg-outline-variant/40 hidden lg:block"></div><div class="items-center gap-2 bg-surface-container-high/60 px-space-sm py-1 rounded border border-outline-variant/20 hidden lg:flex"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm text-on-surface font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer">arrow_drop_down</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 bg-surface-container-low rounded border border-secondary-container/20 text-secondary"><span class="material-symbols-outlined text-[16px]">wifi_tethering</span><span class="font-label-numeric text-label-numeric tracking-wider">WS PUSH: ACTIVE | 18ms</span></div><button class="relative p-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container text-on-primary-container font-label-caps text-[9px] font-bold ring-2 ring-surface-container-lowest">4</span></button><div class="flex items-center gap-space-sm pl-2 border-l border-outline-variant/30"><div class="text-right hidden sm:block"><div class="font-title-md text-title-md text-on-surface leading-tight font-semibold">张主任</div><div class="font-body-sm text-body-sm text-outline leading-tight">超级管理员 · 体育教学部</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Navigation Sub-bar / Active Console Breadcrumbs -->
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/80 flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-primary font-label-caps text-label-caps tracking-widest uppercase">
+<span class="material-symbols-outlined text-[16px]">sports_basketball</span>
+<span>控制台 CONSOLE</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface">比赛操控 (LIVE COURT OPS)</span>
+</div>
+<div class="h-3.5 w-0.5 bg-surface-container-highest"></div>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-caps text-label-caps">STANDBY 待命中 · 无指派比赛</span>
+</div>
+</div>
+<!-- Official Profile Badge -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-sm px-space-sm py-1 rounded bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md leading-none text-on-surface font-semibold">李明</span>
+<span class="font-label-caps text-label-caps px-1 py-0.2 rounded bg-primary-container text-on-primary-container font-bold">国家一级裁判员</span>
+</div>
+<span class="font-label-numeric text-[11px] text-outline tracking-wider leading-none mt-0.5">工号: REF-20240901 · 记录台执裁长</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+<span class="font-label-caps text-label-caps tracking-wider">REDIS 独占录入锁: RELEASED</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-lg"><div class="p-space-md rounded-xl bg-surface-container-high/90 border border-secondary/40 shadow-lg flex flex-wrap items-center justify-between gap-space-md transition-all" id="outbound-success-banner"><div class="flex items-start md:items-center gap-3 flex-1 min-w-[300px]"><div class="w-9 h-9 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-container flex-shrink-0 shadow-[0_0_8px_#00e3fd]"><span class="material-symbols-outlined text-[22px]">task_alt</span></div><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2 flex-wrap"><span class="font-title-md text-title-md text-secondary font-bold">总决赛执裁公报纸质出库与四方实体签收已归档留痕</span><span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] font-bold uppercase tracking-wider">VERIFIED ON-CHAIN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">凭证号：<span class="font-label-numeric text-on-surface font-semibold text-[13px]">OUTBOUND-VCH-20260628-CUBA-084</span> · 区块链哈希 <span class="font-label-numeric text-secondary text-[12px]">TX: 0x9f8c...3a12</span> 已上链固化，实体物料与封签文件已安全送达主场馆记录台席。</p></div></div><div class="flex items-center gap-2 flex-shrink-0"><button class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-highest border border-outline-variant/40 text-on-surface font-body-sm text-[12px] font-medium flex items-center gap-1.5 transition-colors" onclick="alert('【出库凭证留痕存证】\n凭证编码: OUTBOUND-VCH-20260628-CUBA-084\n四方签收人: 主裁判、现场技术代表、主客领队\n哈希值: 0x9f8c47b92e10a26d7c813a12\n状态: 邱德拔技术台正本就绪');"><span class="material-symbols-outlined text-secondary text-[16px]">receipt_long</span><span>调阅出库凭证存证</span></button><button class="p-1.5 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" onclick="document.getElementById('outbound-success-banner').remove();" title="关闭提示"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div>
+<!-- SECTION 1: Hardware & Duty Status HUD Telemetry (12-Col Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Hardware Telemetry Module -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">monitor_heart</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">技术台专机自检</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-caps text-[10px] font-bold">ALL PASS</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-outline flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>脚踏计时秒表</span>
+<span class="text-on-surface font-label-numeric">USB_HID · 正常</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-outline flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>场馆 LED 24S 副屏</span>
+<span class="text-on-surface font-label-numeric">HDMI-2 · 同步就绪</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-outline flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>双向 WebSocket 心跳</span>
+<span class="text-secondary font-label-numeric">11ms (RTT 全优)</span>
+</div>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-lowest/40 rounded px-2 flex items-center justify-between text-on-surface-variant font-label-caps text-[10px]">
+<span>终端 ID: CT-02-CONSOLE</span>
+<span>固件: V4.18.2-PRO</span>
+</div>
+</div>
+<!-- Today Court Schedule Status -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">今日赛事态势</span>
+</div>
+<span class="font-label-numeric text-[13px] text-primary">2026-09-15</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center my-1">
+<div class="p-2 rounded bg-surface-container">
+<div class="font-headline-lg text-headline-lg text-on-surface">4</div>
+<div class="font-label-caps text-[10px] text-outline uppercase">今日总场次</div>
+</div>
+<div class="p-2 rounded bg-surface-container">
+<div class="font-headline-lg text-headline-lg text-secondary">1</div>
+<div class="font-label-caps text-[10px] text-outline uppercase">正在进行中</div>
+</div>
+<div class="p-2 rounded bg-surface-container">
+<div class="font-headline-lg text-headline-lg text-tertiary">0</div>
+<div class="font-label-caps text-[10px] text-outline uppercase">李明指派(轮空)</div>
+</div>
+</div>
+<div class="text-on-surface-variant font-body-sm text-[12px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">info</span>
+<span>进行中场次正由 [2号台席 · 赵建国] 录入</span>
+</div>
+</div>
+<!-- Officiating Quality Score -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">military_tech</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">本季执裁质量</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-caps text-[10px] font-bold">GRADE A+ 全优</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2 rounded bg-surface-container">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">12</span>
+<span class="font-label-caps text-[10px] text-outline">GAMES</span>
+</div>
+<span class="font-body-sm text-[11px] text-outline">已完赛执裁</span>
+</div>
+<div class="p-2 rounded bg-surface-container">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-secondary">99.8%</span>
+<span class="font-label-caps text-[10px] text-outline">ACC</span>
+</div>
+<span class="font-body-sm text-[11px] text-outline">判罚合规评定</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 font-body-sm text-[12px]">
+<span class="text-outline">场均录入事件: <strong class="text-on-surface font-label-numeric">142条</strong></span>
+<span class="text-outline">误录撤销率: <strong class="text-tertiary font-label-numeric">0.4%</strong></span>
+</div>
+</div>
+<!-- Live Broadcast Lock & Protocol -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">gavel</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">录入锁权限机制</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container text-outline">PRD V2.0</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high space-y-1">
+<div class="flex items-center justify-between font-label-caps text-[11px]">
+<span class="text-outline">排他分布式锁</span>
+<span class="text-secondary font-bold">STANDBY IDLE</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-0"></div>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">开赛前 30 分钟持人脸/指派凭证自动抢占控制权。</p>
+</div>
+<button class="w-full py-1.5 rounded bg-surface-container hover:bg-surface-container-highest transition-colors text-on-surface font-label-caps text-[11px] flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px]">sync_alt</span>
+<span>检测主备节点热备状态</span>
+</button>
+</div>
+</section>
+<!-- SECTION 2: Hero Standby & Empty State Feature Card -->
+<section class="relative rounded-xl bg-surface-container-low shadow-xl p-space-xl overflow-hidden">
+<!-- Ambient Graphic Backdrops -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -top-10 w-72 h-72 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<!-- Visual Centerpiece: Dynamic SVG Tactical Stopwatch / Basketball Court Radar -->
+<div class="w-full max-w-sm flex-shrink-0 flex flex-col items-center justify-center">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Outer Tactical Radar Ring -->
+<svg class="w-full h-full text-surface-container-highest" viewbox="0 0 240 240">
+<circle class="opacity-40" cx="120" cy="120" fill="none" r="110" stroke="currentColor" stroke-dasharray="6 6" stroke-width="2"></circle>
+<circle class="opacity-30" cx="120" cy="120" fill="none" r="92" stroke="currentColor" stroke-width="1.5"></circle>
+<!-- FIBA Keyhole & Court Arc lines in minimalist dark sports aesthetic -->
+<rect class="opacity-50" fill="none" height="75" stroke="currentColor" stroke-width="2" width="90" x="75" y="45"></rect>
+<path class="opacity-60" d="M 60 120 A 60 60 0 0 0 180 120" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path class="opacity-30" d="M 40 120 A 80 80 0 0 0 200 120" fill="none" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Standby Arc in Primary Orange Accent -->
+<circle class="opacity-90 transform -rotate-45 origin-center" cx="120" cy="120" fill="none" r="92" stroke="#FF5722" stroke-dasharray="80 360" stroke-linecap="round" stroke-width="3"></circle>
+<!-- Free throw circle dashed -->
+<circle class="opacity-60" cx="120" cy="120" fill="none" r="30" stroke="#00E5FF" stroke-dasharray="4 4" stroke-width="1.5"></circle>
+</svg>
+<!-- Center Metallic Industrial Whistle & Tech Timer Icon Stack -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<div class="w-20 h-20 rounded-xl bg-surface-container-high flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary text-[42px]">sports</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-numeric text-[11px] tracking-widest font-bold">READY TO DISPATCH</span>
+</div>
+</div>
+</div>
+<div class="mt-2 text-center">
+<span class="font-label-caps text-label-caps text-outline tracking-wider block">TERMINAL LOCAL TIME</span>
+<span class="font-label-numeric text-[18px] text-on-surface font-semibold tracking-widest" id="live-console-clock">15:42:08 CST</span>
+</div>
+</div>
+<!-- Descriptive Copy and Tactical Directives -->
+<div class="flex-1 space-y-space-md text-left">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-caps text-label-caps font-bold">STANDBY PROTOCOL</span>
+<span class="font-label-numeric text-body-sm text-outline">SESSION ID: SESS-20260915-REF01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-caps text-label-caps font-bold border border-secondary-container/30 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_8px_#00e3fd]"></span>总决赛执裁公文与纸质凭证已完备归档 (G7 READY)</span></div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-wide uppercase">
+              当前暂无待执裁比赛排期
+            </h1>
+<p class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">
+              NO ASSIGNED MATCHES IN PROGRESS · CONSOLE IS RESTRICTED
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest/70 space-y-2">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                依据 <strong class="text-on-surface">《CBB-Live 赛事操控与数据安全规范 V2.0》</strong>，现场录入员与记录台裁判仅在本人已分配比赛的 <strong class="text-primary font-semibold">【开赛前 30 分钟】</strong> 自动激活比赛操控台并获取 Redis 分布式排他写入锁。系统检测到您当前未被指派正在进行中的即时场次。
+              </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-2 p-1.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>下一场受指派执裁：男子半决赛 (9月17日)</span>
+</div>
+<div class="flex items-center gap-2 p-1.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock_clock</span>
+<span>操控台解锁时限：距开赛前 30 分钟</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="px-space-lg py-2.5 rounded bg-gradient-to-r from-primary-container to-inverse-primary text-white font-title-md text-title-md font-bold tracking-wide uppercase shadow-md hover:brightness-110 active:scale-95 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">sports_score</span>
+<span>进入模拟演练沙箱 (PRACTICE MODE)</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md font-semibold transition-all flex items-center gap-2" id="refresh-assign-btn">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>刷新指派状态</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-outline hover:text-on-surface font-body-md text-body-md transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+<span>申请加场授权码</span>
+</button>
+</div>
+<!-- Documentation Help Link -->
+<div class="pt-1 flex items-center gap-4 text-outline font-body-sm text-body-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>查阅 2026 FIBA 执裁与技术统计操作规范 (PDF)</span>
+</a>
+<span>•</span>
+<span class="text-outline">支持快捷键: F2(两分) / F3(三分) / R(篮板) / A(助攻) / F(犯规)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Upcoming Assigned Matches (Next in Pipeline) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">event_upcoming</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">我的后续执裁赛程日程表 (Upcoming Assigned Matches)</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-caps text-label-caps">2 场预定指派</span>
+</div>
+<a class="font-body-sm text-body-sm text-primary hover:underline flex items-center gap-1" href="#">
+<span>查看赛事编排总表</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-md">
+<!-- Match 1 Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-caps text-label-caps font-bold">男子组 · 4强半决赛</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">MATCH ID: #M-SF01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary border border-secondary-container/30 font-label-caps text-[11px] font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-secondary">inventory_2</span><span>执裁公报实体正本已签收就位 (SEAL-BAG-01)</span></span></div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">计算机飞鹰 vs 自动化战车</h3>
+</div>
+<!-- Countdown Pill -->
+<div class="text-right flex flex-col items-end">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-numeric text-[13px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+<span>距开赛 47:18:00</span>
+</span>
+<span class="font-body-sm text-[11px] text-outline mt-1">开赛前30分钟解锁操控台</span>
+</div>
+</div>
+<!-- Arena & Rosters Details -->
+<div class="grid grid-cols-2 gap-space-md py-space-sm bg-surface-container-lowest/50 rounded-lg px-space-md mb-space-md">
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] text-outline uppercase block">场地信息 (COURT VENUE)</span>
+<div class="flex items-center gap-1.5 text-on-surface font-body-md text-body-md font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">stadium</span>
+<span>邱德拔体育馆 · 主球场</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">比赛时间: 2026-09-17 19:00 CST</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] text-outline uppercase block">我的执裁席位 (ASSIGNED ROLE)</span>
+<div class="flex items-center gap-1.5 text-secondary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>主裁判 (Lead Referee)</span>
+</div>
+<span class="font-body-sm text-[11px] text-outline block">持场上红黑第一判决权与即时回放确认权</span>
+</div>
+</div>
+<!-- Team Visuals & Crew Members -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[11px] text-outline uppercase">同台执裁组:</span>
+<div class="flex items-center gap-1 text-on-surface font-body-sm text-body-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container">副裁判: 王刚</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">统计员: 陈晓</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">计时员: 周亮</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface text-body-sm font-medium">查看两队大名单</button>
+<button class="px-3 py-1 rounded bg-surface-container text-outline cursor-not-allowed text-body-sm" disabled="">操控台未激活</button>
+</div>
+</div>
+</div>
+<!-- Match 2 Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-caps text-label-caps font-bold">女子组 · 季军争夺战</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">MATCH ID: #W-F03</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">经管金狮 vs 外文战队</h3>
+</div>
+<!-- Countdown Pill -->
+<div class="text-right flex flex-col items-end">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-numeric text-[13px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span>
+<span>距开赛 90:48:00</span>
+</span>
+<span class="font-body-sm text-[11px] text-outline mt-1">排期已确认 · 待就绪</span>
+</div>
+</div>
+<!-- Arena & Rosters Details -->
+<div class="grid grid-cols-2 gap-space-md py-space-sm bg-surface-container-lowest/50 rounded-lg px-space-md mb-space-md">
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] text-outline uppercase block">场地信息 (COURT VENUE)</span>
+<div class="flex items-center gap-1.5 text-on-surface font-body-md text-body-md font-medium">
+<span class="material-symbols-outlined text-secondary text-[18px]">stadium</span>
+<span>邱德拔体育馆 · 二号副馆</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">比赛时间: 2026-09-19 14:30 CST</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] text-outline uppercase block">我的执裁席位 (ASSIGNED ROLE)</span>
+<div class="flex items-center gap-1.5 text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-[18px]">assignment_ind</span>
+<span>台席记录长 (Table Chief)</span>
+</div>
+<span class="font-body-sm text-[11px] text-outline block">负责总记分表复核、全场犯规统计与换人哨令</span>
+</div>
+</div>
+<!-- Team Visuals & Crew Members -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[11px] text-outline uppercase">同台执裁组:</span>
+<div class="flex items-center gap-1 text-on-surface font-body-sm text-body-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container">主裁判: 孙培</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">副裁判: 刘明宇</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">统计员: 李华</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface text-body-sm font-medium">查看两队大名单</button>
+<button class="px-3 py-1 rounded bg-surface-container text-outline cursor-not-allowed text-body-sm" disabled="">操控台未激活</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Recent Officiating History & Audit Logs -->
+<section class="p-space-lg rounded-xl bg-surface-container-low shadow-md space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">近期执裁历史与数据快照留痕 (Recent Officiated Games)</h2>
+<span class="font-label-caps text-label-caps text-outline">已固化不可篡改存证</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>区块链数字存证哈希验证通过</span>
+</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container text-outline font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-space-md">比赛日期 / 组别</th>
+<th class="py-3 px-space-md">对阵与比分</th>
+<th class="py-3 px-space-md">执裁席位</th>
+<th class="py-3 px-space-md">录入事件</th>
+<th class="py-3 px-space-md">撤销误录 (审计)</th>
+<th class="py-3 px-space-md">锁状态</th>
+<th class="py-3 px-space-md text-right">报告与存证</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/20 font-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-numeric text-[14px] text-on-surface font-semibold">2026-09-14</div>
+<div class="font-body-sm text-[11px] text-outline">男子 1/4 决赛</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-on-surface">经管</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-headline-md text-headline-md leading-none text-primary">75 : 78</span>
+<span class="font-semibold text-on-surface">计算机</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-[11px] text-primary">主裁判</span>
+</td>
+<td class="py-3.5 px-space-md font-label-numeric text-on-surface">
+                156 条事件
+              </td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-tertiary font-label-caps text-[11px]">1次 (Q3 边线球补正)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>LOCKED / 已归档</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-[12px] flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">play_circle</span>
+<span>事件流回放</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-body-sm text-[12px] flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>执裁底单</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="font-label-numeric text-[14px] text-on-surface font-semibold">2026-09-11</div>
+<div class="font-body-sm text-[11px] text-outline">小组赛 第5轮</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-on-surface">机械</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-headline-md text-headline-md leading-none text-secondary">68 : 62</span>
+<span class="font-semibold text-on-surface">土木</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-[11px] text-secondary">记录台长</span>
+</td>
+<td class="py-3.5 px-space-md font-label-numeric text-on-surface">
+                138 条事件
+              </td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-caps text-[11px]">0次 (零失误)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="flex items-center gap-1 text-secondary font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>LOCKED / 已归档</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-[12px] flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">play_circle</span>
+<span>事件流回放</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-body-sm text-[12px] flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>执裁底单</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION 5: Operational Support & Hotline Footer -->
+<section class="p-space-md rounded-xl bg-surface-container-lowest border-t-0 flex flex-wrap items-center justify-between gap-space-md text-outline font-body-sm text-body-sm">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">support_agent</span>
+<span>现场技术委员会调度专线: <strong class="text-on-surface font-label-numeric">内线 8022 / 138-0000-8888</strong></span>
+</div>
+<div class="hidden md:flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">engineering</span>
+<span>场馆驻点网络工程师: <strong class="text-on-surface">刘工 (驻点席: 邱德拔B1机房)</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-label-caps">TLS 1.3 / AES-256 全链路留痕</span>
+</div>
+<span class="font-label-numeric text-[11px] text-surface-container-highest">NODE_ID: BJ-QDB-AP04</span>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple Clock for Court Side Operations
+  function updateConsoleClock() {
+    const clockEl = document.getElementById('live-console-clock');
+    if (clockEl) {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      clockEl.textContent = `${h}:${m}:${s} CST`;
+    }
+  }
+  setInterval(updateConsoleClock, 1000);
+
+  // Micro-interaction for Assignment Refresh
+  const refreshBtn = document.getElementById('refresh-assign-btn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', function() {
+      const icon = this.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.add('animate-spin');
+        setTimeout(() => {
+          icon.classList.remove('animate-spin');
+          alert('【已完成实时赛事排期与锁状态刷新】\n您当前仍处于待命轮空状态。距下次指派开赛激活还有 47 小时。');
+        }, 600);
+      }
+    });
+  }
+</script></main></div></body></html>

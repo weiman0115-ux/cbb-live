@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#10141a", "surface-container": "#1c2026", "secondary-container": "#00e3fd", "error": "#ffb4ab", "on-tertiary": "#452b00", "surface-container-low": "#181c22", "outline-variant": "#5b4039", "on-secondary-fixed-variant": "#004f58", "on-background": "#dfe2eb", "inverse-primary": "#b02f00", "on-secondary-container": "#00616d", "on-tertiary-container": "#3c2500", "surface-variant": "#31353c", "outline": "#ab8980", "secondary": "#bdf4ff", "on-surface-variant": "#e4beb4", "surface-container-lowest": "#0a0e14", "surface-bright": "#353940", "error-container": "#93000a", "surface-container-highest": "#31353c", "on-primary-fixed": "#3b0900", "primary": "#ffb5a0", "on-tertiary-fixed-variant": "#633f00", "primary-container": "#ff5722", "secondary-fixed-dim": "#00daf3", "tertiary-container": "#c68300", "tertiary-fixed": "#ffddb4", "on-secondary-fixed": "#001f24", "inverse-on-surface": "#2d3137", "secondary-fixed": "#9cf0ff", "on-secondary": "#00363d", "primary-fixed-dim": "#ffb5a0", "on-surface": "#dfe2eb", "primary-fixed": "#ffdbd1", "background": "#10141a", "on-primary-container": "#541200", "on-error": "#690005", "on-primary": "#5f1500", "on-tertiary-fixed": "#291800", "tertiary": "#ffb952", "on-primary-fixed-variant": "#862200", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "surface-container-high": "#262a31", "tertiary-fixed-dim": "#ffb952", "surface-tint": "#ffb5a0", "surface-dim": "#10141a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-desktop": "1.5rem", "gutter": "1rem", "space-md": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "display-score": [ "Oswald" ], "body-md": [ "Space Grotesk" ], "display-score-mobile": [ "Oswald" ], "title-md": [ "Space Grotesk" ], "headline-xl": [ "Oswald" ], "label-numeric": [ "Oswald" ], "body-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Oswald" ], "headline-md": [ "Oswald" ], "label-caps": [ "Space Grotesk" ], "headline-lg": [ "Oswald" ], "title-lg": [ "Space Grotesk" ], "body-lg": [ "Space Grotesk" ] }, "fontSize": { "display-score": [ "80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-score-mobile": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "title-md": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "label-numeric": [ "15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "24px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-6"><div class="flex items-center gap-3"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEoxwcYFcZSalXSzifAZ-Xl9UP0DApSWCWxnL0FJygpXtov_RQqhOwTeZE423e9FFg0ZXUOve0W-BB0fgXJqLHkUu_Owrn1rPOwLjS9Psx30bj79cOB2YBAVcuRpomZoFkxjd8nDzxHLkTbUpRKujVqNftbjO2l3qAohkB9coPEOsdCqI3RLPpOduSP4Edom8UIVGTHTVxnTeubEkgArOEPmoHMDxv-4O2mdJaQTEVPQeh_2T8SA5bdw8"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">CBB<span class="text-primary-container">-LIVE</span></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">高校篮球执裁中台</span></div></div><div class="hidden lg:flex items-center px-space-sm py-space-xs rounded bg-surface-container gap-2"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-primary-container uppercase">VARSITY LIVE OPS</span></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-surface-container text-primary-container font-title-md"><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="match-overview" href="cbb_live_g_finals_01.html">赛程管理</a><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="referee-roster" href="cbb_live_national_referee_roster.html">裁判中心</a><a aria-current="page" class="px-space-md py-space-sm rounded transition-colors bg-surface-container text-primary-container font-title-md" data-path="technical-stats" href="cbb_live_box_score_telemetry.html">技术台终端</a><a class="px-space-md py-space-sm rounded font-title-md text-title-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audit-reports" href="cbb_live_call_audit_reports.html">审计中心</a></nav></div><div class="flex items-center gap-4"><div class="hidden md:flex items-center gap-2 px-space-sm py-space-xs rounded bg-surface-container-high"><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider">TECH DESK</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-body-sm text-body-sm text-on-surface-variant">主控端 01</span></div><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-title-md text-title-md text-on-surface leading-none">主裁判长 · 竞赛组</span><span class="font-body-sm text-body-sm text-primary-fixed-dim">国家一级裁判员</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-40 flex flex-col pt-20 pb-6 shadow-[1px_0_12px_rgba(0,0,0,0.35)]"><div class="px-space-lg mb-space-md flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">执裁运营矩阵</span><span class="font-label-numeric text-label-numeric text-tertiary">CUBA / DIV-A</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-title-md"><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="match-overview" href="cbb_live_g_finals_01.html"><span class="material-symbols-outlined text-[20px]">sports_basketball</span><span class="font-body-md text-body-md">赛事总览</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="schedule-orchestration" href="cbb_live_g_finals_01.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">赛程编排</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="referee-roster" href="cbb_live_national_referee_roster.html"><span class="material-symbols-outlined text-[20px]">sports</span><span class="font-body-md text-body-md">裁判名册与评级</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="referee-evaluation" href="cbb_live_referee_evaluation_credit.html"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md">裁判考评与信用中枢</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="audit-reports" href="cbb_live_call_audit_reports.html"><span class="material-symbols-outlined text-[20px]">gavel</span><span class="font-body-md text-body-md">判罚审计报告与争议复核</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded transition-all gap-3 bg-primary-container text-on-primary-container font-title-md" data-path="technical-stats" href="cbb_live_box_score_telemetry.html"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">技术台高阶统计</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="device-diagnostics" href="cbb_live_device_sync_diagnostics.html"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-body-md text-body-md">执裁设备诊断</span></a><a class="flex items-center px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-3" data-path="system-settings" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">系统配置</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">24S 计时中枢</span><span class="font-label-numeric text-label-numeric text-secondary-fixed-dim">SYNCHRONIZED</span></div><span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">timer</span></div></div></aside><div class="pl-72"><main class="relative pt-16 w-full px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full pb-16">
+<!-- Top Match Banner & Telemetry Header -->
+<div class="relative w-full rounded-xl bg-surface-container-low shadow-xl p-space-lg mb-space-lg overflow-hidden">
+<div class="absolute -right-20 -top-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-24 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-center justify-between gap-6">
+<!-- Teams Matchup Block -->
+<div class="flex flex-wrap items-center gap-6 sm:gap-10">
+<!-- Home Team -->
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center shadow-md">
+<span class="font-headline-lg text-headline-lg text-primary-container tracking-wider">CS</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container">HOME 主队</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">总战绩 7-1</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface tracking-wide">计算机学院雄鹰队</span>
+</div>
+<div class="font-display-score text-display-score text-primary-container ml-2">78</div>
+</div>
+<!-- Center Match Status Pill -->
+<div class="flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-surface-container-high shadow-inner">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest">FINAL ARCHIVED</span>
+</div>
+<div class="font-label-numeric text-headline-md text-tertiary">Q4 00:00.0</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CUBA 阳光组 淘汰赛 R4</span>
+</div>
+<!-- Away Team -->
+<div class="flex items-center gap-4">
+<div class="font-display-score text-display-score text-on-surface">75</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-variant text-on-surface">AWAY 客队</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">总战绩 6-2</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface tracking-wide">经济管理学院飞人队</span>
+</div>
+<div class="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center shadow-md">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed tracking-wider">SEM</span>
+</div>
+</div>
+</div>
+<!-- Desk Credentials & Referee Seal -->
+<div class="flex flex-wrap items-center gap-4 bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">技术台记录员 / 操作台</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">TECH-OP #25 · 严立诚</span>
+</div>
+<div class="w-px h-8 bg-surface-variant hidden sm:block"></div>
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">主裁判复核签字</span>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-secondary-fixed-dim tracking-wide">王峰 (FIBA-1)</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[16px]">verified</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container text-[20px]">draw</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Action Toolbar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-space-lg">
+<!-- View Switcher -->
+<div class="inline-flex rounded-lg bg-surface-container-low p-1 shadow-sm">
+<button class="px-space-md py-space-xs rounded font-title-md text-body-md transition-all bg-primary-container text-on-primary-container shadow-md flex items-center gap-2" id="tab-btn-home" onclick="switchTeam('home')">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+        计算机学院 (主队 78)
+      </button>
+<button class="px-space-md py-space-xs rounded font-title-md text-body-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-2" id="tab-btn-away" onclick="switchTeam('away')">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+        经济管理学院 (客队 75)
+      </button>
+</div>
+<!-- Official Actions -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-md flex items-center gap-2 shadow-sm transition-colors" onclick="triggerToast('已生成标准 FIBA Box-Score 打印单')">
+<span class="material-symbols-outlined text-[18px]">print</span>
+        打印官方技术单
+      </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-md flex items-center gap-2 shadow-sm transition-colors" onclick="triggerToast('Box-Score 统计数据正导出为 Excel/PDF')">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+        导出标准表 (PDF/XLSX)
+      </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-variant text-secondary-fixed-dim font-title-md text-body-md flex items-center gap-2 shadow-sm transition-colors" onclick="toggleHashModal()">
+<span class="material-symbols-outlined text-[18px]">tag</span>
+        链上验真哈希
+      </button>
+</div>
+</div>
+<!-- Advanced Box-Score Data Table Module -->
+<div class="rounded-xl bg-surface-container-low shadow-xl p-space-md mb-space-lg">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">query_stats</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide" id="current-roster-title">计算机学院 · 全量技术统计明细 (ADVANCED ROSTER TELEMETRY)</h2>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant">标准计算规则: FIBA / NBA TS% &amp; eFG%</span>
+<span class="font-label-numeric text-label-numeric px-space-xs py-0.5 rounded bg-surface-container text-tertiary">14 球员出场记录</span>
+</div>
+</div>
+<!-- Responsive Scrollable Data Grid -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse select-text">
+<thead>
+<tr class="bg-surface-container font-label-caps text-label-caps text-on-surface-variant uppercase">
+<th class="py-space-sm px-space-sm rounded-l">NO.</th>
+<th class="py-space-sm px-space-sm min-w-[130px]">球员姓名</th>
+<th class="py-space-sm px-space-sm">先发</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">MIN</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">PTS</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">FGM/A</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">FG%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">3PM/A</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">3P%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">FTM/A</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">FT%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">OREB</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">DREB</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">REB</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">AST</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">STL</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">BLK</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">TO</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">PF</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">+/-</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">TS%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">eFG%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right">USG%</th>
+<th class="py-space-sm px-space-sm font-label-numeric text-right rounded-r text-tertiary">EFF</th>
+</tr>
+</thead>
+<!-- Home Team Roster Rows -->
+<tbody class="font-body-md text-body-md text-on-surface divide-y divide-transparent" id="home-roster-body">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-primary-fixed">#11</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>周振宇</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">PG</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-primary-container">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">36:12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">24</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">8/16</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/9</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">44.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">80.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+11</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">65.9</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">62.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">26.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">28</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-primary-fixed">#23</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>陆子默</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">SG</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-primary-container">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">32:45</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">18</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">6/14</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">42.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3/7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">42.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3/4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">75.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">57.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">53.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">22.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">19</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-primary-fixed">#34</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>陈俊豪</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">SF</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-primary-container">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">29:10</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">5/11</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">45.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">33.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">18.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">14</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-primary-fixed">#15</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>韩明远</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">PF</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-primary-container">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">27:30</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">9</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">9</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">15.2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">15</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-primary-fixed">#32</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>赵铁峰</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">C</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-primary-container">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">24:45</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">57.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">57.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">57.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">13.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">19</td>
+</tr>
+<!-- Bench Players -->
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-on-surface-variant">#07</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>孙一凡</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">G</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-on-surface-variant">BENCH</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">18:20</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2/5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">40.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">33.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">14.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">7</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-on-surface-variant">#19</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>魏凌轩</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">F</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-on-surface-variant">BENCH</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">15:18</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">33.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">33.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">33.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">10.2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">4</td>
+</tr>
+</tbody>
+<!-- Away Team Roster Rows (Hidden by default, switched via JS) -->
+<tbody class="hidden font-body-md text-body-md text-on-surface divide-y divide-transparent" id="away-roster-body">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-secondary-fixed">#03</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>高瑞泽</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">PG</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-secondary-fixed-dim">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">38:15</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">29</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">10/21</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">47.6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">5/12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">41.6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">100.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">63.7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">59.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">31.2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">26</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-secondary-fixed">#10</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>李凯文</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">SG</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-secondary-fixed-dim">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">34:00</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">17</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">6/15</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">40.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2/7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">28.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3/3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">100.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">52.1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">46.6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">22.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">14</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-secondary-fixed">#21</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>张博伦</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">SF</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-secondary-fixed-dim">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">31:12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">13</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">5/12</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">41.6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1/4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">25.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2/2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">100.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">45.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">19.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">18</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-secondary-fixed">#35</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>王靖宇</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">C</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-secondary-fixed-dim">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">26:40</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">10</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4/9</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">44.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2/4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">50.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">10</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">46.5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">44.4</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">16.3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">17</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-sm font-label-numeric text-label-numeric text-secondary-fixed">#12</td>
+<td class="py-space-sm px-space-sm flex items-center gap-2 font-title-md">
+<span>沈嘉树</span>
+<span class="font-label-caps text-label-caps px-1 rounded bg-surface-variant text-on-surface-variant">PF</span>
+</td>
+<td class="py-space-sm px-space-sm"><span class="font-label-caps text-label-caps text-secondary-fixed-dim">STARTER</span></td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">22:10</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold">6</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3/7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">42.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0.0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">0/0</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">-</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold">5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">1</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">2</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">-5</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">42.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">42.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">13.8</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold">9</td>
+</tr>
+</tbody>
+<!-- Team Totals Aggregate Row -->
+<tfoot>
+<tr class="bg-surface-container-high font-title-md text-on-surface shadow-inner" id="team-totals-row">
+<td class="py-space-sm px-space-sm font-headline-md text-headline-md tracking-wider rounded-l" colspan="3">
+              TEAM TOTALS 全队合计
+            </td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">200:00</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-primary-container font-bold text-headline-md" id="tot-pts">78</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-fg">30/67</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-fgpct">44.8%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-3p">9/24</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-3ppct">37.5%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-ft">9/13</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-ftpct">69.2%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-oreb">11</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-dreb">30</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed font-bold" id="tot-reb">41</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-ast">20</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-stl">7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-blk">7</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-to">11</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-pf">17</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-secondary-fixed">+3</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-ts">53.6%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right" id="tot-efg">51.5%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right">100%</td>
+<td class="py-space-sm px-space-sm font-label-numeric text-right text-tertiary font-bold rounded-r" id="tot-eff">102</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<!-- Advanced Pace & Four Factors Metrics Ribbon -->
+<div class="mt-space-md grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">回合速率 PACE</span>
+<span class="font-display-score-mobile text-headline-xl text-on-surface">74.2</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">联盟均值 +2.1</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">进攻效率 OFF-RTG</span>
+<span class="font-display-score-mobile text-headline-xl text-primary-container">105.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">每百回合得分</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">防守效率 DEF-RTG</span>
+<span class="font-display-score-mobile text-headline-xl text-secondary-fixed-dim">101.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">每百回合失分</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">净效率 NET-RTG</span>
+<span class="font-display-score-mobile text-headline-xl text-tertiary">+4.1</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">决胜时刻防守制胜</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">助攻失误比 AST/TO</span>
+<span class="font-display-score-mobile text-headline-xl text-on-surface">1.82</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">20 助攻 / 11 失误</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col shadow-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">有效命中率 eFG%</span>
+<span class="font-display-score-mobile text-headline-xl text-primary-container">51.5%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">三分加权有效率</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Analysis & Shot Radar Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Lead Tracker & Quarter Momentum Chart -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low shadow-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim">show_chart</span>
+<span class="font-title-lg text-title-lg text-on-surface">四节走势与领先分差跟踪 (Lead Tracker)</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">计算机学院 (+11)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary-fixed-dim"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">经管学院 (+8)</span>
+</div>
+</div>
+</div>
+<!-- Quarter Breakdown Pills -->
+<div class="grid grid-cols-4 gap-2 mb-space-md">
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Q1</span>
+<div class="font-label-numeric text-label-numeric text-on-surface">22 - 18</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Q2</span>
+<div class="font-label-numeric text-label-numeric text-on-surface">19 - 22</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Q3</span>
+<div class="font-label-numeric text-label-numeric text-on-surface">18 - 20</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center bg-primary-container/10">
+<span class="font-label-caps text-label-caps text-primary-container">Q4 (CLUTCH)</span>
+<div class="font-label-numeric text-label-numeric text-primary-container font-bold">19 - 15</div>
+</div>
+</div>
+<!-- Lead Flow Visual Line SVG -->
+<div class="relative w-full h-44 bg-surface-container rounded-lg p-2 flex flex-col justify-between overflow-hidden shadow-inner">
+<!-- Zero / Balance Line -->
+<div class="absolute inset-x-0 top-1/2 h-px bg-surface-variant border-dashed"></div>
+<div class="absolute right-3 top-2 font-label-caps text-label-caps text-primary-container">主队最大领先: +11 (Q1 02:40)</div>
+<div class="absolute right-3 bottom-2 font-label-caps text-label-caps text-secondary-fixed-dim">客队最大领先: +8 (Q3 04:12)</div>
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 600 140">
+<defs>
+<lineargradient id="leadGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff5722" stop-opacity="0.3"></stop>
+<stop offset="50%" stop-color="#ff5722" stop-opacity="0"></stop>
+<stop offset="100%" stop-color="#00daf3" stop-opacity="0.3"></stop>
+</lineargradient>
+</defs>
+<path d="M 0 70 L 40 50 L 90 35 L 140 60 L 190 75 L 250 90 L 300 110 L 360 85 L 420 95 L 480 65 L 530 48 L 600 58" fill="none" stroke="#ff5722" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 0 70 L 40 50 L 90 35 L 140 60 L 190 75 L 250 90 L 300 110 L 360 85 L 420 95 L 480 65 L 530 48 L 600 58 L 600 70 L 0 70 Z" fill="url(#leadGrad)"></path>
+<!-- Key Event Waypoints -->
+<circle cx="90" cy="35" fill="#ff5722" r="4"></circle>
+<circle cx="300" cy="110" fill="#00daf3" r="4"></circle>
+<circle cx="530" cy="48" fill="#ff5722" r="4"></circle>
+</svg>
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant pt-1">
+<span>TIP-OFF</span>
+<span>END OF Q1</span>
+<span>HALF-TIME</span>
+<span>END OF Q3</span>
+<span>FINAL BUZZER</span>
+</div>
+</div>
+<!-- Lead Changes & Tie Stats -->
+<div class="flex items-center justify-around pt-space-sm text-center">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">交替领先次数</span>
+<div class="font-headline-md text-headline-md text-on-surface">9 次</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">比分打平次数</span>
+<div class="font-headline-md text-headline-md text-on-surface">6 次</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">领先保持总时长</span>
+<div class="font-headline-md text-headline-md text-primary-container">23:14 (58.1%)</div>
+</div>
+</div>
+</div>
+<!-- Comparative Scoring Breakdown & Zone Efficiency -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low shadow-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">category</span>
+<span class="font-title-lg text-title-lg text-on-surface">专项战术得分比对 (TACTICAL SPLIT)</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CS vs SEM</span>
+</div>
+<!-- Comparison Bars -->
+<div class="space-y-space-md">
+<!-- Paint Points -->
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-1">
+<span class="font-bold text-primary-container">42 PTS</span>
+<span class="text-on-surface-variant">禁区得分 (Paint Pts)</span>
+<span class="font-bold text-secondary-fixed">36 PTS</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 53.8%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 46.2%"></div>
+</div>
+</div>
+<!-- Fast Break Points -->
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-1">
+<span class="font-bold text-primary-container">16 PTS</span>
+<span class="text-on-surface-variant">快攻转换得分 (Fastbreak Pts)</span>
+<span class="font-bold text-secondary-fixed">11 PTS</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 59.2%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 40.8%"></div>
+</div>
+</div>
+<!-- 2nd Chance Points -->
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-1">
+<span class="font-bold text-primary-container">14 PTS</span>
+<span class="text-on-surface-variant">二次进攻得分 (2nd Chance Pts)</span>
+<span class="font-bold text-secondary-fixed">8 PTS</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 63.6%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 36.4%"></div>
+</div>
+</div>
+<!-- Points off Turnovers -->
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-1">
+<span class="font-bold text-primary-container">18 PTS</span>
+<span class="text-on-surface-variant">利用失误得分 (Pts off TO)</span>
+<span class="font-bold text-secondary-fixed">15 PTS</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 54.5%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 45.5%"></div>
+</div>
+</div>
+<!-- Bench Points -->
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-1">
+<span class="font-bold text-primary-container">15 PTS</span>
+<span class="text-on-surface-variant">替补席得分 (Bench Pts)</span>
+<span class="font-bold text-secondary-fixed">20 PTS</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 42.8%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 57.2%"></div>
+</div>
+</div>
+</div>
+<!-- Shot Area Split Cards -->
+<div class="grid grid-cols-3 gap-2 pt-space-md">
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">篮下 (0-4ft)</span>
+<div class="font-label-numeric text-label-numeric text-primary-container">18/28 (64%)</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">中距离 (Mid-Range)</span>
+<div class="font-label-numeric text-label-numeric text-on-surface">3/15 (20%)</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">远投 (Beyond 3PT)</span>
+<div class="font-label-numeric text-label-numeric text-tertiary">9/24 (37.5%)</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Blockchain Hash & Integrity Verification Modal (Overlay State) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-4" id="hash-modal">
+<div class="w-full max-w-xl rounded-xl bg-surface-container-low shadow-2xl p-space-lg flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">国家高校体育数据区块链存证凭证</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleHashModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        该场比赛已完结并经裁判长数字秘钥签署。全量 Box-Score 原始击键日志、投篮时空坐标与时间同步戳已完成哈希锚定，具备法律与中国大学生体育协会认可的不可篡改效力。
+      </p>
+<div class="p-space-md rounded bg-surface-container space-y-2">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ROOT TELEMETRY HASH (SHA-256)</span>
+<span class="font-label-numeric text-body-sm text-secondary-fixed break-all select-all">0x8a92f03b9148dce0924ea108faec5702bbd097c5e2194dfa1835bc403612d4fa</span>
+</div>
+<div class="flex flex-col pt-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">CHIEF REFEREE PUBLIC KEY SEAL</span>
+<span class="font-label-numeric text-body-sm text-on-surface select-all">REF-WFENG#9014::ED25519-VERIFIED</span>
+</div>
+<div class="flex justify-between pt-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant">区块高度: #1,849,203</span>
+<span class="font-label-caps text-label-caps text-tertiary">同步状态: FINALIZED 12/12 NODES</span>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-md" onclick="triggerToast('哈希及数字凭证已复制到剪贴板')">
+          复制存证哈希
+        </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-title-md text-body-md shadow-md" onclick="toggleHashModal()">
+          确认并返回中台
+        </button>
+</div>
+</div>
+</div>
+<!-- Operational Feedback Toast -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none rounded-lg bg-surface-container-high shadow-2xl px-space-md py-space-sm flex items-center gap-3" id="toast-pill">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+<span class="font-title-md text-body-md text-on-surface" id="toast-text">操作已执行</span>
+</div>
+</div>
+<script>
+  function switchTeam(team) {
+    const homeBtn = document.getElementById('tab-btn-home');
+    const awayBtn = document.getElementById('tab-btn-away');
+    const homeBody = document.getElementById('home-roster-body');
+    const awayBody = document.getElementById('away-roster-body');
+    const title = document.getElementById('current-roster-title');
+
+    // Totals references
+    const pts = document.getElementById('tot-pts');
+    const fg = document.getElementById('tot-fg');
+    const fgpct = document.getElementById('tot-fgpct');
+    const tp = document.getElementById('tot-3p');
+    const tppct = document.getElementById('tot-3ppct');
+    const ft = document.getElementById('tot-ft');
+    const ftpct = document.getElementById('tot-ftpct');
+    const oreb = document.getElementById('tot-oreb');
+    const dreb = document.getElementById('tot-dreb');
+    const reb = document.getElementById('tot-reb');
+    const ast = document.getElementById('tot-ast');
+    const stl = document.getElementById('tot-stl');
+    const blk = document.getElementById('tot-blk');
+    const to = document.getElementById('tot-to');
+    const pf = document.getElementById('tot-pf');
+    const ts = document.getElementById('tot-ts');
+    const efg = document.getElementById('tot-efg');
+    const eff = document.getElementById('tot-eff');
+
+    if (team === 'home') {
+      homeBtn.className = "px-space-md py-space-xs rounded font-title-md text-body-md transition-all bg-primary-container text-on-primary-container shadow-md flex items-center gap-2";
+      awayBtn.className = "px-space-md py-space-xs rounded font-title-md text-body-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-2";
+      homeBody.classList.remove('hidden');
+      awayBody.classList.add('hidden');
+      title.textContent = '计算机学院 · 全量技术统计明细 (ADVANCED ROSTER TELEMETRY)';
+
+      // Set Home Totals
+      pts.textContent = '78';
+      fg.textContent = '30/67';
+      fgpct.textContent = '44.8%';
+      tp.textContent = '9/24';
+      tppct.textContent = '37.5%';
+      ft.textContent = '9/13';
+      ftpct.textContent = '69.2%';
+      oreb.textContent = '11';
+      dreb.textContent = '30';
+      reb.textContent = '41';
+      ast.textContent = '20';
+      stl.textContent = '7';
+      blk.textContent = '7';
+      to.textContent = '11';
+      pf.textContent = '17';
+      ts.textContent = '53.6%';
+      efg.textContent = '51.5%';
+      eff.textContent = '102';
+    } else {
+      awayBtn.className = "px-space-md py-space-xs rounded font-title-md text-body-md transition-all bg-primary-container text-on-primary-container shadow-md flex items-center gap-2";
+      homeBtn.className = "px-space-md py-space-xs rounded font-title-md text-body-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-2";
+      awayBody.classList.remove('hidden');
+      homeBody.classList.add('hidden');
+      title.textContent = '经济管理学院 · 全量技术统计明细 (ADVANCED ROSTER TELEMETRY)';
+
+      // Set Away Totals
+      pts.textContent = '75';
+      fg.textContent = '28/64';
+      fgpct.textContent = '43.7%';
+      tp.textContent = '8/24';
+      tppct.textContent = '33.3%';
+      ft.textContent = '11/13';
+      ftpct.textContent = '84.6%';
+      oreb.textContent = '8';
+      dreb.textContent = '22';
+      reb.textContent = '30';
+      ast.textContent = '13';
+      stl.textContent = '6';
+      blk.textContent = '7';
+      to.textContent = '9';
+      pf.textContent = '14';
+      ts.textContent = '53.8%';
+      efg.textContent = '50.0%';
+      eff.textContent = '84';
+    }
+  }
+
+  function toggleHashModal() {
+    const modal = document.getElementById('hash-modal');
+    modal.classList.toggle('hidden');
+  }
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toast-pill');
+    const toastText = document.getElementById('toast-text');
+    toastText.textContent = message;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 2800);
+  }
+</script></main></div></body></html>

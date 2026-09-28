@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#00616d", "surface-container": "#1c2026", "on-secondary-fixed-variant": "#004f58", "background": "#10141a", "surface-tint": "#ffb5a0", "error-container": "#93000a", "secondary-fixed": "#9cf0ff", "surface-container-high": "#262a31", "surface-container-low": "#181c22", "primary-fixed": "#ffdbd1", "surface": "#10141a", "on-primary-fixed-variant": "#862200", "outline-variant": "#5b4039", "outline": "#ab8980", "on-tertiary-fixed-variant": "#633f00", "surface-bright": "#353940", "secondary-fixed-dim": "#00daf3", "error": "#ffb4ab", "secondary-container": "#00e3fd", "on-error": "#690005", "inverse-primary": "#b02f00", "inverse-on-surface": "#2d3137", "on-primary-container": "#541200", "secondary": "#bdf4ff", "on-surface": "#dfe2eb", "surface-variant": "#31353c", "inverse-surface": "#dfe2eb", "on-surface-variant": "#e4beb4", "on-secondary": "#00363d", "on-tertiary-fixed": "#291800", "tertiary-fixed-dim": "#ffb952", "primary-container": "#ff5722", "on-background": "#dfe2eb", "tertiary-container": "#c68300", "primary": "#ffb5a0", "primary-fixed-dim": "#ffb5a0", "surface-dim": "#10141a", "tertiary": "#ffb952", "on-primary": "#5f1500", "on-tertiary": "#452b00", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001f24", "tertiary-fixed": "#ffddb4", "on-primary-fixed": "#3b0900", "surface-container-lowest": "#0a0e14", "surface-container-highest": "#31353c", "on-tertiary-container": "#3c2500" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "margin": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": [ "Space Grotesk" ], "headline-xl": [ "Oswald" ], "body-sm": [ "Space Grotesk" ], "headline-md": [ "Oswald" ], "title-md": [ "Space Grotesk" ], "label-numeric": [ "Oswald" ], "label-caps": [ "Space Grotesk" ], "title-lg": [ "Space Grotesk" ], "display-score": [ "Oswald" ], "body-md": [ "Space Grotesk" ], "headline-lg": [ "Oswald" ], "headline-xl-mobile": [ "Oswald" ], "display-score-mobile": [ "Oswald" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "label-numeric": [ "15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "title-lg": [ "18px", { "lineHeight": "24px", "fontWeight": "700" } ], "display-score": [ "80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" } ], "display-score-mobile": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" } ] } } } };</script><style id="light-theme-vars">html.light{--c-surface-container-lowest:#ffffff;--c-surface-container-low:#f5f5f5;--c-surface-container:#eeeeee;--c-surface-container-high:#e0e0e0;--c-surface-container-highest:#bdbdbd;--c-surface:#fafafa;--c-surface-dim:#fafafa;--c-surface-bright:#ffffff;--c-on-surface:#1a1a1a;--c-on-surface-variant:#5f6368;--c-background:#fafafa;--c-on-background:#1a1a1a;--c-outline:#ab8980;--c-outline-variant:#e0d6d2;--c-surface-variant:#e4beb4;--c-inverse-surface:#1a1a1a;--c-inverse-on-surface:#dfe2eb;--c-surface-tint:#ff5722}html.light body{background:#fafafa!important;color:#1a1a1a!important}html.light .bg-surface{background:#fafafa!important}html.light .bg-surface-container-lowest{background:#ffffff!important}html.light .bg-surface-container-low{background:#f5f5f5!important}html.light .bg-surface-container{background:#eeeeee!important}html.light .bg-surface-container-high{background:#e0e0e0!important}html.light .bg-surface-container-highest{background:#bdbdbd!important}html.light .bg-surface-dim{background:#fafafa!important}html.light .bg-surface-bright{background:#ffffff!important}html.light .text-on-surface{color:#1a1a1a!important}html.light .text-on-surface-variant{color:#5f6368!important}html.light .bg-background{background:#fafafa!important}html.light .text-on-background{color:#1a1a1a!important}html.light .border-surface-container-high{border-color:#e0e0e0!important}html.light .border-surface-container-highest{border-color:#bdbdbd!important}html.light .border-surface-variant{border-color:#e0d6d2!important}html.light .bg-surface-container-lowest\/80{background:rgba(255,255,255,0.8)!important}html.light .bg-surface-container-lowest\/60{background:rgba(255,255,255,0.6)!important}html.light .bg-surface-container-lowest\/90{background:rgba(255,255,255,0.9)!important}html.light .bg-surface\/85{background:rgba(250,250,250,0.85)!important}html.light .bg-surface-container-low\/80{background:rgba(245,245,245,0.8)!important}html.light header{background:rgba(250,250,250,0.85)!important}html.light .shadow-\[0_4px_24px_rgba\(0\,0\,0\,0\.4\)\]{box-shadow:0 4px 24px rgba(0,0,0,0.08)!important}html.light .bg-surface-container-highest\/20{background:rgba(189,189,189,0.2)!important}html.light .from-surface-container-high{--tw-gradient-from:#e0e0e0!important}html.light .to-surface-container-lowest{--tw-gradient-to:#ffffff!important}html.light .bg-surface-tint{background:#ff5722!important}html.light .ring-surface{--tw-ring-color:#fafafa!important}html.light .ring-surface-container-low{--tw-ring-color:#f5f5f5!important}html.light .bg-primary-container\/10{background:rgba(255,87,34,0.1)!important}html.light .bg-primary-container\/20{background:rgba(255,87,34,0.2)!important}html.light .bg-primary-container\/15{background:rgba(255,87,34,0.15)!important}html.light .bg-secondary-container\/10{background:rgba(0,227,253,0.1)!important}html.light .bg-secondary-container\/15{background:rgba(0,227,253,0.15)!important}html.light .bg-secondary-container\/20{background:rgba(0,227,253,0.2)!important}html.light .bg-tertiary\/20{background:rgba(255,185,82,0.2)!important}html.light .bg-tertiary-container\/15{background:rgba(198,131,0,0.15)!important}html.light .bg-tertiary-container\/20{background:rgba(198,131,0,0.2)!important}html.light .bg-primary-container\/30{background:rgba(255,87,34,0.3)!important}html.light .bg-error-container\/15{background:rgba(147,0,10,0.15)!important}html.light .text-on-primary{color:#5f1500!important}html.light .text-on-secondary{color:#00363d!important}html.light .text-on-tertiary{color:#452b00!important}html.light .text-on-error{color:#690005!important}html.light .text-primary{color:#b02f00!important}html.light .text-secondary{color:#00616d!important}html.light .text-tertiary{color:#633f00!important}html.light .text-error{color:#c0000a!important}html.light .border-surface-container{border-color:#eeeeee!important}html.light .divide-surface-container-high>*>*{border-color:#e0e0e0!important}html.light .bg-surface-variant{background:#e4beb4!important}html.light .text-on-surface-variant\/60{color:rgba(95,99,104,0.6)!important}html.light .placeholder\:text-on-surface-variant\/60::placeholder{color:rgba(95,99,104,0.6)!important}html.light .bg-surface-container-low\/90{background:rgba(245,245,245,0.9)!important}html.light .from-primary-container{--tw-gradient-from:#ff5722!important}html.light .via-tertiary{--tw-gradient-via:#ffb952!important}html.light .to-secondary-container{--tw-gradient-to:#00e3fd!important}html.light .text-primary-fixed-dim{color:#b02f00!important}html.light .text-on-primary-container{color:#541200!important}html.light .text-on-secondary-container{color:#00616d!important}html.light .bg-inverse-surface{background:#1a1a1a!important}html.light .text-inverse-on-surface{color:#5f6368!important}html.light .bg-primary\/10{background:rgba(255,181,160,0.1)!important}html.light .ring-primary-container\/40{--tw-ring-color:rgba(255,87,34,0.4)!important}html.light .ring-primary-container{--tw-ring-color:#ff5722!important}html.light .bg-primary{background:#ffb5a0!important}html.light .text-on-primary{color:#5f1500!important}html.light .text-primary-container{color:#ff5722!important}html.light .bg-surface-container-highest\/20{background:rgba(189,189,189,0.2)!important}html.light .text-surface-container-highest{color:#9e9e9e!important}html.light .fill-surface-container-highest{fill:#9e9e9e!important}html.light .fill-secondary-container{fill:#00e3fd!important}html.light .bg-surface-container-lowest\/50{background:rgba(255,255,255,0.5)!important}html.light .ring-2{--tw-ring-shadow:none!important}html.light .text-on-tertiary-fixed{color:#291800!important}html.light .text-tertiary-fixed{color:#633f00!important}html.light .bg-tertiary-fixed{background:#ffddb4!important}html.light .text-on-primary-fixed{color:#3b0900!important}html.light .text-primary-fixed{color:#b02f00!important}html.light .text-secondary-fixed-dim{color:#00616d!important}html.light .bg-secondary-fixed{background:#9cf0ff!important}html.light .text-on-secondary-fixed{color:#001f24!important}html.light .text-tertiary-fixed-dim{color:#633f00!important}html.light .text-on-tertiary-fixed-variant{color:#633f00!important}html.light .text-on-primary-fixed-variant{color:#862200!important}html.light .text-on-secondary-fixed-variant{color:#004f58!important}html.light .text-primary-fixed-dim{color:#b02f00!important}html.light .bg-primary-fixed{background:#ffdbd1!important}html.light .bg-primary-fixed-dim{background:#ffb5a0!important}html.light .bg-secondary-container{background:#00e3fd!important}html.light .bg-tertiary-container{background:#c68300!important}html.light .bg-error-container{background:#93000a!important}html.light .bg-secondary-fixed-dim{background:#00daf3!important}html.light .bg-tertiary-fixed-dim{background:#ffb952!important}html.light .bg-primary-container{background:#ff5722!important}html.light .bg-secondary{background:#bdf4ff!important}html.light .bg-tertiary{background:#ffb952!important}html.light .bg-error{background:#ffb4ab!important}html.light .bg-outline{background:#ab8980!important}html.light .bg-outline-variant{background:#e0d6d2!important}html.light .bg-inverse-primary{background:#b02f00!important}html.light .bg-surface-tint{background:#ffb5a0!important}html.light .border-primary-container{border-color:#ff5722!important}html.light .border-secondary-container{border-color:#00e3fd!important}html.light .border-tertiary{border-color:#ffb952!important}html.light .border-error{border-color:#ffb4ab!important}html.light .bg-black\/80{background:rgba(0,0,0,0.4)!important}html.light .bg-surface-container\/80{background:rgba(238,238,238,0.8)!important}html.light .bg-surface-container\/60{background:rgba(238,238,238,0.6)!important}html.light .bg-surface-container\/90{background:rgba(238,238,238,0.9)!important}html.light .bg-surface-container-low\/50{background:rgba(245,245,245,0.5)!important}html.light .bg-surface-container-low\/60{background:rgba(245,245,245,0.6)!important}html.light .bg-surface-container-low\/70{background:rgba(245,245,245,0.7)!important}html.light .bg-surface-container-low\/90{background:rgba(245,245,245,0.9)!important}html.light .bg-surface-container-lowest\/50{background:rgba(255,255,255,0.5)!important}html.light .bg-surface-container-lowest\/60{background:rgba(255,255,255,0.6)!important}html.light .bg-surface-container-lowest\/70{background:rgba(255,255,255,0.7)!important}html.light .bg-surface-container-lowest\/90{background:rgba(255,255,255,0.9)!important}html.light .bg-surface-container-high\/50{background:rgba(224,224,224,0.5)!important}html.light .bg-surface-container-high\/80{background:rgba(224,224,224,0.8)!important}html.light .bg-surface-container-highest\/10{background:rgba(189,189,189,0.1)!important}html.light .bg-surface-container-highest\/15{background:rgba(189,189,189,0.15)!important}html.light .bg-surface-container-highest\/20{background:rgba(189,189,189,0.2)!important}html.light .bg-surface-container-highest\/30{background:rgba(189,189,189,0.3)!important}html.light .bg-surface-container-highest\/40{background:rgba(189,189,189,0.4)!important}html.light .bg-surface-container-highest\/50{background:rgba(189,189,189,0.5)!important}html.light .bg-surface\/50{background:rgba(250,250,250,0.5)!important}html.light .bg-surface\/60{background:rgba(250,250,250,0.6)!important}html.light .bg-surface\/70{background:rgba(250,250,250,0.7)!important}html.light .bg-surface\/80{background:rgba(250,250,250,0.8)!important}html.light .bg-surface\/90{background:rgba(250,250,250,0.9)!important}html.light .bg-primary-container\/5{background:rgba(255,87,34,0.05)!important}html.light .bg-primary-container\/10{background:rgba(255,87,34,0.08)!important}html.light .bg-primary-container\/15{background:rgba(255,87,34,0.12)!important}html.light .bg-primary-container\/20{background:rgba(255,87,34,0.15)!important}html.light .bg-primary-container\/30{background:rgba(255,87,34,0.25)!important}html.light .bg-primary-container\/40{background:rgba(255,87,34,0.35)!important}html.light .bg-primary-container\/50{background:rgba(255,87,34,0.45)!important}html.light .bg-secondary-container\/5{background:rgba(0,180,220,0.05)!important}html.light .bg-secondary-container\/10{background:rgba(0,180,220,0.08)!important}html.light .bg-secondary-container\/15{background:rgba(0,180,220,0.12)!important}html.light .bg-secondary-container\/20{background:rgba(0,180,220,0.15)!important}html.light .bg-secondary-container\/30{background:rgba(0,180,220,0.2)!important}html.light .bg-tertiary-container\/10{background:rgba(198,131,0,0.08)!important}html.light .bg-tertiary-container\/15{background:rgba(198,131,0,0.12)!important}html.light .bg-tertiary-container\/20{background:rgba(198,131,0,0.15)!important}html.light .bg-tertiary-container\/30{background:rgba(198,131,0,0.2)!important}html.light .bg-tertiary-container\/40{background:rgba(198,131,0,0.3)!important}html.light .bg-tertiary-container\/50{background:rgba(198,131,0,0.4)!important}html.light .bg-tertiary-container\/60{background:rgba(198,131,0,0.5)!important}html.light .bg-tertiary-container\/70{background:rgba(198,131,0,0.6)!important}html.light .bg-tertiary-container\/80{background:rgba(198,131,0,0.7)!important}html.light .bg-tertiary\/10{background:rgba(255,185,82,0.08)!important}html.light .bg-tertiary\/15{background:rgba(255,185,82,0.12)!important}html.light .bg-tertiary\/20{background:rgba(255,185,82,0.15)!important}html.light .bg-tertiary\/30{background:rgba(255,185,82,0.2)!important}html.light .bg-tertiary\/40{background:rgba(255,185,82,0.3)!important}html.light .bg-tertiary\/50{background:rgba(255,185,82,0.4)!important}html.light .bg-tertiary\/60{background:rgba(255,185,82,0.5)!important}html.light .bg-tertiary\/80{background:rgba(255,185,82,0.7)!important}html.light .bg-error-container\/10{background:rgba(147,0,10,0.08)!important}html.light .bg-error-container\/15{background:rgba(147,0,10,0.12)!important}html.light .bg-error-container\/20{background:rgba(147,0,10,0.15)!important}html.light .bg-error\/10{background:rgba(255,180,171,0.1)!important}html.light .bg-error\/15{background:rgba(255,180,171,0.15)!important}html.light .bg-error\/20{background:rgba(255,180,171,0.2)!important}html.light .from-surface-container-high{--tw-gradient-from:rgba(224,224,224,0.9)!important;--tw-gradient-stops:rgba(224,224,224,0.9),rgba(255,255,255,1)!important}html.light .from-surface-container-lowest{--tw-gradient-from:rgba(255,255,255,0.9)!important}html.light .from-surface-container-low{--tw-gradient-from:rgba(245,245,245,0.9)!important}html.light .from-surface{--tw-gradient-from:rgba(250,250,250,0.9)!important}html.light .from-surface-container{--tw-gradient-from:rgba(238,238,238,0.9)!important}html.light .from-surface-container-high\/90{--tw-gradient-from:rgba(224,224,224,0.9)!important}html.light .from-primary-container\/30{--tw-gradient-from:rgba(255,87,34,0.3)!important}html.light .from-primary-container{--tw-gradient-from:rgba(255,87,34,1)!important}html.light .to-surface-container-lowest{--tw-gradient-to:rgba(255,255,255,1)!important}html.light .to-surface-container-low{--tw-gradient-to:rgba(245,245,245,1)!important}html.light .to-surface{--tw-gradient-to:rgba(250,250,250,1)!important}html.light .to-surface-container{--tw-gradient-to:rgba(238,238,238,1)!important}html.light .to-surface-container-high{--tw-gradient-to:rgba(224,224,224,1)!important}html.light .via-surface\/60{--tw-gradient-via:rgba(250,250,250,0.6)!important}html.light .via-surface-container{--tw-gradient-via:rgba(238,238,238,0.8)!important}html.light .via-tertiary{--tw-gradient-via:rgba(255,185,82,0.8)!important}html.light .via-primary-container{--tw-gradient-via:rgba(255,87,34,0.8)!important}html.light .hover\:bg-primary-container\/15:hover{background:rgba(255,87,34,0.12)!important}html.light .hover\:bg-primary-container\/90:hover{background:rgba(255,87,34,0.9)!important}html.light .hover\:bg-surface-container-high\/80:hover{background:rgba(224,224,224,0.8)!important}html.light .hover\:bg-surface-container-low\/80:hover{background:rgba(245,245,245,0.8)!important}html.light .hover\:bg-surface-bright\/80:hover{background:rgba(255,255,255,0.8)!important}html.light .hover\:bg-surface-container:hover{background:rgba(238,238,238,1)!important}html.light .text-on-surface-variant\/40{color:rgba(95,99,104,0.5)!important}html.light .text-on-surface-variant\/50{color:rgba(95,99,104,0.6)!important}html.light .text-on-surface-variant\/60{color:rgba(120,125,130,0.65)!important}html.light .text-on-surface-variant\/70{color:rgba(120,125,130,0.7)!important}html.light .text-on-surface-variant\/80{color:rgba(120,125,130,0.8)!important}html.light .text-surface-container-highest\/20{color:rgba(150,150,150,0.3)!important}html.light .text-surface-container-highest\/30{color:rgba(150,150,150,0.4)!important}html.light .text-on-surface\/60{color:rgba(26,26,26,0.6)!important}html.light .text-on-surface\/80{color:rgba(26,26,26,0.8)!important}html.light .text-primary\/50{color:rgba(176,47,0,0.5)!important}html.light .text-primary\/80{color:rgba(176,47,0,0.8)!important}html.light .text-secondary\/50{color:rgba(0,97,109,0.5)!important}html.light .text-secondary\/80{color:rgba(0,97,109,0.8)!important}html.light .text-tertiary\/50{color:rgba(99,63,0,0.5)!important}html.light .text-tertiary\/80{color:rgba(99,63,0,0.8)!important}html.light .placeholder\:text-on-surface-variant\/40::placeholder{color:rgba(120,125,130,0.4)!important}html.light .placeholder\:text-on-surface-variant\/50::placeholder{color:rgba(120,125,130,0.5)!important}html.light .placeholder\:text-on-surface-variant\/60::placeholder{color:rgba(120,125,130,0.6)!important}html.light .placeholder\:text-on-surface-variant\/70::placeholder{color:rgba(120,125,130,0.7)!important}html.light .border-surface-container-high\/50{border-color:rgba(224,224,224,0.5)!important}html.light .border-surface-container-highest\/20{border-color:rgba(189,189,189,0.3)!important}html.light .border-surface-container-highest\/30{border-color:rgba(189,189,189,0.4)!important}html.light .border-surface-container-highest\/50{border-color:rgba(189,189,189,0.5)!important}html.light .border-surface-container-low\/50{border-color:rgba(245,245,245,0.5)!important}html.light .border-surface\/30{border-color:rgba(250,250,250,0.5)!important}html.light .border-surface\/50{border-color:rgba(200,200,200,0.5)!important}html.light .ring-surface\/80{--tw-ring-color:rgba(250,250,250,0.8)!important}html.light .ring-surface-container-low\/50{--tw-ring-color:rgba(245,245,245,0.5)!important}html.light .ring-surface-container-low\/80{--tw-ring-color:rgba(245,245,245,0.8)!important}html.light .ring-primary-container\/20{--tw-ring-color:rgba(255,87,34,0.2)!important}html.light .ring-primary-container\/30{--tw-ring-color:rgba(255,87,34,0.3)!important}html.light .ring-primary-container\/50{--tw-ring-color:rgba(255,87,34,0.5)!important}html.light .divide-surface-container-high\/50>*{border-color:rgba(224,224,224,0.5)!important}html.light .divide-surface-container-highest\/20>*{border-color:rgba(189,189,189,0.3)!important}html.light .shadow-2xl{box-shadow:0 8px 30px rgba(0,0,0,0.08)!important}html.light .shadow-lg{box-shadow:0 4px 15px rgba(0,0,0,0.06)!important}html.light .shadow-md{box-shadow:0 2px 8px rgba(0,0,0,0.05)!important}html.light .shadow-\[0_4px_24px_rgba\(0\,0\,0\,0\.4\)\]{box-shadow:0 2px 12px rgba(0,0,0,0.06)!important}html.light .shadow-\[0_8px_32px_rgba\(0\,0\,0\,0\.3\)\]{box-shadow:0 4px 20px rgba(0,0,0,0.08)!important}html.light .shadow-\[0_4px_24px_rgba\(0\,0\,0\,0\.6\)\]{box-shadow:0 2px 12px rgba(0,0,0,0.06)!important}html.light .backdrop-blur-xl{backdrop-filter:blur(12px) saturate(180%)!important}html.light .text-surface-variant{color:#9e9e9e!important}html.light .text-surface-tint{color:#ff5722!important}html.light .text-inverse-primary{color:#ff5722!important}html.light .text-outline{color:#ab8980!important}html.light .text-outline-variant{color:#cab6b0!important}html.light .fill-surface-container-high{fill:#e0e0e0!important}html.light .fill-surface-container{fill:#eeeeee!important}html.light .fill-surface-container-low{fill:#f5f5f5!important}html.light .fill-on-surface-variant{fill:#5f6368!important}html.light .fill-on-surface{fill:#1a1a1a!important}html.light .fill-primary-container{fill:#ff5722!important}html.light .stroke-surface-container-highest{stroke:#9e9e9e!important}html.light .stroke-surface-container-high{stroke:#e0e0e0!important}html.light .stroke-on-surface-variant{stroke:#5f6368!important}html.light .stroke-on-surface{stroke:#1a1a1a!important}html.light .stroke-primary-container{stroke:#ff5722!important}html.light .opacity-20{opacity:0.3!important}html.light .opacity-30{opacity:0.4!important}html.light .opacity-40{opacity:0.5!important}html.light .opacity-50{opacity:0.6!important}html.light .opacity-60{opacity:0.7!important}html.light .opacity-70{opacity:0.8!important}html.light .opacity-80{opacity:0.85!important}html.light [class*="bg-surface-container-low/95"]{background-color:rgba(245,245,245,0.95)!important}html.light [class*="bg-surface-container-low/"]{background-color:rgba(245,245,245,0.9)!important}html.light [class*="bg-surface-container/95"]{background-color:rgba(238,238,238,0.95)!important}html.light [class*="bg-surface-container/"]{background-color:rgba(238,238,238,0.9)!important}html.light [class*="bg-surface-container-high/"]{background-color:rgba(224,224,224,0.85)!important}html.light [class*="bg-surface-container-highest/"]{background-color:rgba(200,200,200,0.5)!important}html.light [class*="bg-surface-container-lowest/"]{background-color:rgba(255,255,255,0.95)!important}html.light [class*="bg-surface/95"]{background-color:rgba(250,250,250,0.95)!important}html.light [class*="bg-surface/"]{background-color:rgba(250,250,250,0.9)!important}html.light .border-white\/10{border-color:rgba(200,200,200,0.2)!important}html.light .border-white\/20{border-color:rgba(200,200,200,0.3)!important}html.light .border-white\/5{border-color:rgba(200,200,200,0.1)!important}</style></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm group" data-path="home" href="cbb_live_28.html"><img alt="CBB-Live 赛事系统 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwr-u5ZgV27zc7W72mU-Mm-j66HpwO9QX3CoUCgvGp23SoJdbeukqnurWkRisQFRo_zL95NVJ4hiM7dxV9m-qTibsBoxkNPF3NMh4yX0KKN3rBCmavsoB8ywUA8eudH3he7NRL_75lrhcpG_A6nP40nyUoFvOkqz7Rj7HD-9H8TYjC61K8kfre9H1fUJFsAAkGYNxPUQ0hKp1gTyBYCeFbQZ2lRYvu124yZzedKwH60dXiCI22GSOPBg"/><div class="flex flex-col leading-none"><span class="font-headline-md text-headline-md tracking-wider text-on-surface group-hover:text-primary transition-colors">CBB-LIVE</span><span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">校园篮球联赛</span></div></a><div class="h-6 w-px bg-surface-container-highest mx-space-xs hidden xl:block"></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded cursor-pointer hover:bg-surface-container transition-colors"><span class="font-body-sm text-body-sm text-on-surface-variant">2026学年秋季联赛</span><span class="font-label-caps text-label-caps bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded">进行中</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div><nav class="hidden lg:flex items-center gap-1 overflow-x-auto py-1" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="home" href="cbb_live_28.html">首页</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="tournament-home" href="cbb_live_vs.html">赛事主页</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="schedule-results" href="cbb_live_29.html">赛程与赛果</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="live-court" href="cbb_live_78_75.html">实时观战</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="data-center" href="cbb_live_15.html">数据中心</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="game-reports" href="cbb_live_12.html">战报精选</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="community" href="cbb_live_14.html">互动社区</a><a class="px-3 py-1.5 rounded text-on-surface-variant font-title-md text-title-md hover:text-on-surface transition-colors whitespace-nowrap" data-path="honor-awards" href="cbb_live_mvp.html">荣誉评选</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden 2xl:flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-52 h-8 pl-8 pr-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="模糊搜索球队/球员/赛程" type="text" onkeydown="if(event.key==='Enter'){var q=this.value.trim();if(!q)return;var p=/赛程|比赛|schedule/i.test(q)?'cbb_live_29.html':/战报|集锦|回放|社区/i.test(q)?'cbb_live_12.html':/荣誉|mvp|评选/i.test(q)?'cbb_live_mvp.html':'cbb_live_15.html';location.href=p+'?q='+encodeURIComponent(q)}"/></div><button class="relative w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><button id="theme-toggle-btn" class="relative w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button" title="切换主题颜色"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><a class="hidden md:flex items-center gap-1 h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary font-title-md text-body-sm rounded transition-colors" data-path="ugc-post" href="cbb_live_12.html"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>精彩打卡</span></a><div class="flex items-center gap-space-xs pl-space-xs"><a href="cbb_live_3.html" class="w-9 h-9 rounded-full overflow-hidden ring-2 ring-primary-container/40 hover:ring-primary-container transition-all cursor-pointer block"><img alt="用户头像" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7kKlq06UIQdtf0T4LVQK8b4nDf1Eq_EFc6nY0gvNWGwrbeKvHWSAYNWV8XKvFEE6P-_kggJUUwfaW743WArPFxJ3zim8nMIpdNj1AUNPOgCuy9AphOYbBmAOn57ClyGZrdJEDfQwp1129QwfdiTey3TvY-Dm-pL5vOyFUgeCdKhgsWld0CYKhTgUoHaGJQzGlqNp1z7wHd5VPsabYgPCAgdqHr0jhc6Xnw0pSarG6"/></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface cursor-pointer hidden xl:inline" href="cbb_live_student_login.html">登录 / 学号绑定</a></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- 1. Top Broadcast & Announcement Marquee (公告栏) -->
+<section class="w-full bg-surface-container-lowest px-gutter-desktop py-space-xs shadow-sm">
+<div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm overflow-hidden w-full md:w-auto">
+<div class="flex items-center gap-1.5 shrink-0 bg-primary-container/20 text-primary-container px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">赛事公告</span>
+</div>
+<div class="truncate flex items-center gap-space-xs text-on-surface">
+<span class="font-body-sm text-body-sm truncate text-on-surface">
+            今日男篮半决赛 <strong class="text-primary font-semibold">计算机学院 vs 机械工程学院</strong> 准时于 19:00 体育馆主馆开赛，支持在线 1080P 高清推流与实时弹幕互动！
+          </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm hidden lg:inline">· 10分钟前发布</span>
+<a class="shrink-0 font-body-sm text-body-sm text-secondary hover:text-secondary-fixed transition-colors underline ml-1" href="cbb_live_78_75.html">查看详情</a>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2 bg-surface-container px-space-sm py-1 rounded">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">
+          2026学年秋季联赛 · 半决赛阶段 · 共50场已赛38场
+        </span>
+</div>
+</div>
+</section>
+<div class="max-w-[1600px] w-full mx-auto px-gutter-desktop py-space-md space-y-space-lg">
+<!-- 2. Hero Showcase: Split Layout (65% Banner 轮播 + 35% 直播入口卡片) -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-stretch">
+<!-- Left: Dynamic Sports Hero Banner Carousel (65% / 8 cols) -->
+<div class="xl:col-span-8 relative bg-surface-container-low rounded-xl overflow-hidden shadow-xl flex flex-col justify-between p-space-md md:p-space-lg min-h-[380px] group">
+<!-- Background Imagery with Gradient Scrim -->
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Intense collegiate varsity basketball match action under dramatic stadium arena lights with glowing floor reflections, deep shadows, electric orange ambiance, players jumping for high-stake rebound" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCakd9FJ4eyR22_9sCDfpERHRCWesQ_PblMLkUR-Oy67IwjJ0f6-qsgrPBsy8UR6BojbwGk3wabA5KkUtl7sNK6E2yO8k1b4sfS6ZyfvO8ViVcFsKlSu5tFH9tAUtcSlozqlndMx2V0W3KTPNzHKVGUAaA7R_D95R7yeui0R0FQmvh4K3AftkuO__yPP1OacgH7-p1_C4gtVzgYxSZCHuuRNiyjIXBI4zKLrZPkc061-wkrryjK7RtYPQ')"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<!-- Top Badges within Banner -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="bg-primary-container text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded shadow-sm">男子甲组 · 半决赛决战夜</span>
+<span class="bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded">ROUND OF 4 · GAME 1</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant bg-surface-container-lowest/60 px-2 py-1 rounded backdrop-blur-md font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">stadium</span>
+<span>邱德拔体育馆·中央场地</span>
+</div>
+</div>
+<!-- Carousel Textual Hero Content -->
+<div class="relative z-10 space-y-space-sm max-w-2xl mt-8">
+<div class="flex items-center gap-2">
+<span class="w-2 h-6 bg-primary-container rounded-sm"></span>
+<span class="font-headline-md text-headline-md tracking-wider text-secondary">巅峰对决 · 2026秋季四强争霸</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight drop-shadow-md">
+            无畏拼搏，热血主场！
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            八强突围赛全胜之师“计算机飞鹰”硬碰防守铁军“机械风暴”，本届校赛最强得分机器陈志远与内线盖帽王张峰正面交锋，胜者直通总决赛！
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-primary-container to-inverse-primary text-on-primary font-title-md text-title-md px-5 py-2.5 rounded shadow-lg shadow-primary-container/25 hover:brightness-110 transition-all" href="cbb_live_78_75.html">
+<span class="material-symbols-outlined text-[20px]">smart_display</span>
+<span>进入实时观战</span>
+</a>
+<a class="inline-flex items-center gap-1.5 bg-surface-container-high/90 hover:bg-surface-bright text-on-surface font-title-md text-body-md px-4 py-2.5 rounded backdrop-blur-md transition-colors" href="cbb_live_vs.html">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>查看淘汰赛对阵图</span>
+</a>
+</div>
+</div>
+<!-- Carousel Indicators & Nav controls -->
+<div class="relative z-10 flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-8 h-1.5 rounded-full bg-primary-container"></span>
+<span class="w-2.5 h-1.5 rounded-full bg-surface-container-highest hover:bg-primary transition-colors cursor-pointer"></span>
+<span class="w-2.5 h-1.5 rounded-full bg-surface-container-highest hover:bg-primary transition-colors cursor-pointer"></span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded bg-surface-container-high/80 text-on-surface flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-high/80 text-on-surface flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Key Live Match Card (35% / 4 cols) -->
+<div class="xl:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-xl relative overflow-hidden">
+<!-- Live Match Tag & Viewers Bar -->
+<div>
+<div class="flex items-center justify-between gap-space-xs pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 bg-error-container text-on-error font-label-caps text-label-caps px-2 py-0.5 rounded uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>正在直播 LIVE</span>
+</span>
+<span class="bg-surface-container-highest text-secondary font-label-caps text-label-caps px-2 py-0.5 rounded">重点焦点战</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim font-label-numeric text-label-numeric">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span>3,428 人在看</span>
+</div>
+</div>
+<!-- Scoreboard Section -->
+<div class="bg-surface-container rounded-lg p-space-sm space-y-space-sm relative">
+<!-- Period & Timer -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase pb-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>第4节 (4TH QUARTER)</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold px-2 py-0.5 rounded bg-surface-container-lowest">02:45</span>
+</div>
+<!-- Teams & Big Score -->
+<div class="grid grid-cols-7 items-center text-center py-space-xs">
+<!-- Home Team -->
+<div class="col-span-3 flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center p-1 shadow-md">
+<span class="material-symbols-outlined text-primary-container text-[28px]">sports_basketball</span>
+</div>
+<span class="font-title-lg text-title-md text-on-surface font-bold">计算机学院</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">主队 · 飞鹰</span>
+<div class="flex gap-1 mt-1">
+<span class="w-2.5 h-1 bg-primary-container rounded-sm"></span>
+<span class="w-2.5 h-1 bg-primary-container rounded-sm"></span>
+<span class="w-2.5 h-1 bg-primary-container rounded-sm"></span>
+<span class="w-2.5 h-1 bg-surface-variant rounded-sm"></span>
+<span class="w-2.5 h-1 bg-surface-variant rounded-sm"></span>
+</div>
+</div>
+<!-- Center Big Digits -->
+<div class="col-span-1 flex flex-col items-center justify-center">
+<div class="flex items-center justify-center gap-1 font-display-score text-[36px] lg:text-[42px] leading-none text-on-surface">
+<span class="text-primary-container font-bold">68</span>
+<span class="text-on-surface-variant/40 text-[24px]">:</span>
+<span class="text-secondary font-bold">65</span>
+</div>
+<span class="font-label-caps text-label-caps text-error mt-1 uppercase">分差 3 分</span>
+</div>
+<!-- Away Team -->
+<div class="col-span-3 flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center p-1 shadow-md">
+<span class="material-symbols-outlined text-secondary font-semibold text-[28px]">shield</span>
+</div>
+<span class="font-title-lg text-title-md text-on-surface font-bold">经济管理学院</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">客队 · 磐石</span>
+<div class="flex gap-1 mt-1">
+<span class="w-2.5 h-1 bg-secondary rounded-sm"></span>
+<span class="w-2.5 h-1 bg-secondary rounded-sm"></span>
+<span class="w-2.5 h-1 bg-surface-variant rounded-sm"></span>
+<span class="w-2.5 h-1 bg-surface-variant rounded-sm"></span>
+<span class="w-2.5 h-1 bg-surface-variant rounded-sm"></span>
+</div>
+</div>
+</div>
+<!-- Real-time Mini Telemetry Badges -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="bg-surface-container-low px-2 py-1.5 rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">计院 3分</span>
+<span class="font-label-numeric text-label-numeric text-primary-container">42.3% (11/26)</span>
+</div>
+<div class="bg-surface-container-low px-2 py-1.5 rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">经管 篮板</span>
+<span class="font-label-numeric text-label-numeric text-secondary">34个 (前12)</span>
+</div>
+</div>
+</div>
+<!-- Realtime Danmaku Stream Teaser -->
+<div class="mt-space-sm space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">forum</span>
+<span>现场互动弹幕</span>
+</span>
+<span class="text-primary font-body-sm text-body-sm hover:underline cursor-pointer">发弹幕</span>
+</div>
+<div class="bg-surface-container-lowest/80 rounded p-2 text-on-surface space-y-1 font-body-sm text-body-sm">
+<p class="truncate"><span class="text-primary-container font-semibold">@信息楼库里:</span> 计院最后两分钟三分太神了！稳住！🔥</p>
+<p class="truncate"><span class="text-secondary font-semibold">@经管啦啦队长:</span> 经管内线强攻造杀伤，防守咬住还能翻盘！</p>
+</div>
+</div>
+</div>
+<!-- CTA & Technical Specs -->
+<div class="pt-space-sm space-y-2">
+<a class="w-full py-2.5 bg-gradient-to-r from-primary-container to-on-primary-fixed-variant hover:brightness-110 text-on-primary font-title-md text-title-md rounded flex items-center justify-center gap-2 shadow-lg transition-all" href="cbb_live_78_75.html">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>立即进入现场观战 (含回放/集锦)</span>
+</a>
+<div class="flex items-center justify-between px-1 text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">hd</span>
+<span>1080P 60FPS 极速原画</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">graphic_eq</span>
+<span>双声道现场收音</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. 今日赛程模块 (Today's Matches) -->
+<section class="space-y-space-md">
+<!-- Header with Date tab switcher & Gender pill filter -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-1.5 flex-wrap">
+<div class="flex items-center gap-1.5 mr-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">calendar_month</span>
+<span class="font-headline-md text-headline-md text-on-surface">赛程全览</span>
+</div>
+<!-- Date Tabs -->
+<div class="flex items-center bg-surface-container rounded p-1">
+<button class="px-3 py-1 font-title-md text-body-sm text-on-surface-variant hover:text-on-surface transition-colors rounded">昨日战果 (3)</button>
+<button class="px-3 py-1 font-title-md text-body-sm bg-primary-container text-on-primary rounded shadow-sm">今日焦点 (4 场)</button>
+<button class="px-3 py-1 font-title-md text-body-sm text-on-surface-variant hover:text-on-surface transition-colors rounded">明日预告 (2)</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-between md:justify-end">
+<!-- Gender Pill Filter -->
+<div class="flex items-center bg-surface-container rounded p-1">
+<button class="px-2.5 py-0.5 font-label-caps text-label-caps bg-surface-container-highest text-on-surface rounded">全部</button>
+<button class="px-2.5 py-0.5 font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface">男子组 (M)</button>
+<button class="px-2.5 py-0.5 font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface">女子组 (F)</button>
+</div>
+<a class="font-title-md text-body-sm text-primary hover:text-primary-fixed transition-colors flex items-center gap-1 shrink-0" href="cbb_live_29.html">
+<span>完整日历</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 4 Match Cards Responsive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 (Live) -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group hover:bg-surface-container-high transition-colors">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-2">
+<span class="bg-error-container text-on-error px-2 py-0.5 rounded font-bold uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>LIVE 第4节 02:45</span>
+</span>
+<span class="text-on-surface">体育馆主馆</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mb-3">男子组 · 半决赛 G1</div>
+<!-- Teams / Score Line -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-bold text-body-sm">计</div>
+<span class="font-title-md text-title-md text-on-surface">计算机学院</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-primary-container">68</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center font-bold text-body-sm">经</div>
+<span class="font-title-md text-title-md text-on-surface">经济管理学院</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary">65</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary">激战进行中</span>
+<a class="px-3 py-1 bg-primary-container text-on-primary font-title-md text-body-sm rounded hover:brightness-110 flex items-center gap-1" href="cbb_live_78_75.html">
+<span>观战</span>
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+</a>
+</div>
+</div>
+<!-- Card 2 (Upcoming - Women) -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group hover:bg-surface-container-high transition-colors">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-fixed-dim"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-2">
+<span class="bg-surface-container-highest text-tertiary px-2 py-0.5 rounded font-bold uppercase">
+                倒计时 00:25:12
+              </span>
+<span class="text-on-surface">副馆 1号场</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mb-3">女子组 · 小组赛 B组</div>
+<!-- Teams -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-body-sm">外</div>
+<span class="font-title-md text-title-md text-on-surface">外国语学院</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface-variant">-</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-body-sm">生</div>
+<span class="font-title-md text-title-md text-on-surface">生命科学院</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface-variant">-</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">今日 19:30 开赛</span>
+<button class="px-3 py-1 bg-surface-container-highest hover:bg-surface-bright text-on-surface font-title-md text-body-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span>
+<span>预约</span>
+</button>
+</div>
+</div>
+<!-- Card 3 (Upcoming - Men) -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group hover:bg-surface-container-high transition-colors">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-container-highest"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-2">
+<span class="bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
+                即将开赛
+              </span>
+<span class="text-on-surface">体育馆主馆</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mb-3">男子组 · 半决赛 G2</div>
+<!-- Teams -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-body-sm">自</div>
+<span class="font-title-md text-title-md text-on-surface">自动化学院</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface-variant">-</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-body-sm">建</div>
+<span class="font-title-md text-title-md text-on-surface">建筑与规划学院</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface-variant">-</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">今日 20:45 开赛</span>
+<button class="px-3 py-1 bg-surface-container-highest hover:bg-surface-bright text-on-surface font-title-md text-body-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span>
+<span>预约</span>
+</button>
+</div>
+</div>
+<!-- Card 4 (Finished - Women) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-variant"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps mb-2">
+<span class="bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
+                已完赛 FINAL
+              </span>
+<span class="text-on-surface">西区训练馆</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mb-3">女子组 · 小组赛 A组</div>
+<!-- Teams / Final Score -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-bold text-body-sm">软</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">软件学院</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">54</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-body-sm">文</div>
+<span class="font-title-md text-title-md">人文艺术学院</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface-variant">48</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">下午 16:30 完赛</span>
+<a class="px-2.5 py-1 bg-surface-container hover:bg-surface-bright text-secondary font-title-md text-body-sm rounded flex items-center gap-1" href="cbb_live_15.html">
+<span>技术统计</span>
+<span class="material-symbols-outlined text-[14px]">query_stats</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Dual-Column Core Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (70% / 8 cols or 8.4 equivalent in 12-grid) -->
+<div class="lg:col-span-8 space-y-space-xl">
+<!-- A. 热门战报精选 (news_reports[hot]) -->
+<section class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 bg-primary-container rounded"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">热门战报精选</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">深度赛评 · 录像剪辑</span>
+</div>
+<a class="font-title-md text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-0.5" href="cbb_live_12.html">
+<span>更多战报</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Featured Game Recap Card -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+<div class="grid grid-cols-1 md:grid-cols-12">
+<!-- Thumbnail -->
+<div class="md:col-span-5 relative min-h-[220px] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Exciting basketball buzzer beater shot celebration inside university indoor court, ecstatic collegiate players embracing with fans roaring in background, dramatic volumetric lighting in warm amber tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuOUGxeDROzwSJdoXnE0_DaMPhahz5h1aMTNz_lG93g0RQlfDSZ6tpf2IUAKyFZEC2EBZIWfXfjvI5uG2Pk57J_qWrktynkDw-QgkZe4RHKvb7dSqhmTOiBp7CRaEiATuBxobeZjL2iqxZeFNx8mgPNiPWjKeuMroUTWirMj0UT82nq-sWyJgVZQEy25DssQHRA59hC7cGW_J4i8LoXBAnKJAhq9ChHXJ7TdlEqRYYLuedklBk93yW7Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent md:hidden"></div>
+<div class="absolute top-2.5 left-2.5 bg-primary-container text-on-primary font-label-caps text-label-caps px-2 py-0.5 rounded shadow">
+                  全场焦点
+                </div>
+</div>
+<!-- Content details -->
+<div class="md:col-span-7 p-space-md flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex flex-wrap items-center gap-1.5 mb-2">
+<span class="font-label-caps text-label-caps bg-surface-container text-primary-container px-2 py-0.5 rounded">#男篮四分之一决赛</span>
+<span class="font-label-caps text-label-caps bg-surface-container text-secondary px-2 py-0.5 rounded">#加时绝杀</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-auto">2小时前发布</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors leading-snug">
+                    【战报】终场绝杀！自动化学院加时险胜建筑学院挺进四强，陈志远独砍31分荣膺单场MVP
+                  </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                    常规时间最后2.4秒陈志远底角飘逸中投扳平比分！加时赛连突带投独得9分，统治攻防两端，送出关键切球捍卫主场胜利。
+                  </p>
+</div>
+<!-- MVP Embed Mini Pod -->
+<div class="bg-surface-container rounded-lg p-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of athletic male basketball varsity player jersey #7, concentrated gaze, studio sports lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdt-dItBmRS-obHztHfHu1Qk-GLczIGqTbcJaL8knWnUZUZqKbQJ5NTnZ3_GBAVLjseEdv0UmmO5VfHzJMBWnne-WWTsI59nZGZTe3M82XMXwU6_t9oYa3IyylII2TEW7uja8Z77IFq4b45G--1OZnOi6wmvnD_oK_YyQb2bpI8RS8doNzRjGiuzAO9MizSf3QmxvBLf2SPvVaHTSXrI5KTgoJSe2B0l6BsF7RDs6nz_YFHlRYuIPuOQ"/>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-title-md text-body-md text-on-surface font-semibold">陈志远</span>
+<span class="font-label-caps text-label-caps bg-tertiary-container text-on-tertiary-container px-1 py-0.2 rounded">MVP</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">自动化学院 · 后卫 #7</span>
+</div>
+</div>
+<!-- Stats trio -->
+<div class="flex items-center gap-3 text-right">
+<div>
+<div class="font-label-numeric text-label-numeric text-primary font-bold">31</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">得分</div>
+</div>
+<div>
+<div class="font-label-numeric text-label-numeric text-on-surface font-bold">12</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">篮板</div>
+</div>
+<div>
+<div class="font-label-numeric text-label-numeric text-secondary font-bold">+18</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">正负值</div>
+</div>
+</div>
+</div>
+<!-- Footer counts -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>1.2w</span>
+</span>
+<span class="flex items-center gap-1 hover:text-primary cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>856</span>
+</span>
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat_bubble</span>
+<span>124</span>
+</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary hover:underline cursor-pointer">阅读全文 →</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary 2 News Items -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-sm flex gap-space-sm items-start hover:bg-surface-container transition-colors group">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Female college basketball player making a fast break dribble pass during tournament, crisp athletic court action shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXPTwA0qEDf8-YvkHs78hGyOyAbIYmuOe9w4NL7l2Wx4aguspuA_18Y-g7dZiZH1Z_ob85dEA5q4qKXnZKUFBgUzn_YXmij4Kj2M3Gqv6EgBFss6vHSpCFhcqAae8UHhiQ0FMoTA7rRhh1HqWhgx7JNo1idHJVfIZS1BPuyfytt6ITJEPIem3XcfTdEu2V_ZzB59YYiyc3ZZTaFstYt2vXyFHX-pYpkIg3Oka3rn0edbvcuwVDgOsS0A"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/80 text-on-surface font-label-caps text-label-caps px-1 rounded">图文</span>
+</div>
+<div class="flex flex-col justify-between h-24 min-w-0 flex-1">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-tertiary bg-surface-container px-1 rounded">女篮A组</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4小时前</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors mt-1">
+                    软件学院女篮54-48战胜人文，豪取三连胜挺进八强
+                  </h4>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>最终比分 54 - 48</span>
+<span class="text-secondary hover:underline cursor-pointer flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>战报PDF</span>
+</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex gap-space-sm items-start hover:bg-surface-container transition-colors group">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Basketball coach holding tactical whiteboard drawing offensive plays surrounded by university team in sports arena huddle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFL5ABEGNHE0hqHM3P6ESJpsSuiLwXyrdeI4akiC_Aw9I_yNGOzXfePrwIAydwqIMjO0Ce9gHlSq8r56b7WLSwM-3QGNk7kDhm1NguR5R9WUzMWUgpRvpbdP4lP8lvslDhEZV73w-8NElPTEIiZlShAcbSxu7SK3hTmO-HjJJv58gs6VlgkhBnGhK7BD_eQujyDmuF8YrEVbZvzBMpHRkqjviKRIZh1hbmTdSsgmOrrFCszchWvCLp0A"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/80 text-on-surface font-label-caps text-label-caps px-1 rounded">深度</span>
+</div>
+<div class="flex flex-col justify-between h-24 min-w-0 flex-1">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container px-1 rounded">战术复盘</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6小时前</span>
+</div>
+<h4 class="font-title-md text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors mt-1">
+                    深度战术拆解：计算机学院“高位双挡拆+外线电梯门”攻防体系
+                  </h4>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>9.4k 浏览</span>
+<span class="text-secondary hover:underline cursor-pointer flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>数据长图</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- B. 精彩瞬间打卡瀑布流 (posts[featured]) -->
+<section class="space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 bg-secondary-container rounded"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">精彩瞬间打卡</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">师生现场微社区</span>
+</div>
+<button class="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary-container to-inverse-primary text-on-primary font-title-md text-body-sm px-3.5 py-1.5 rounded shadow hover:brightness-110 transition-all">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+<span>+ 快捷发布打卡</span>
+</button>
+</div>
+<!-- Grid of 3 user UGC cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-start">
+<!-- Post 1 (With Embedded Match Card Snippet) -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow hover:bg-surface-container transition-colors flex flex-col justify-between">
+<div>
+<div class="h-44 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High flying university basketball player executing an athletic one handed reverse layup against defender under glowing arena lights, sharp freeze motion photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKp9VqPLXcmr5GhbnBHuIk98Ws22cGdKEitHePNeDCIuU75A_Z_Ph8jjhZdSAOT_V_IwRe9Np96IIAfDhnUpowzMAZHdP7r07KHFJ1iNM77Pfc3ueH8xkMswYP9oIWcsEB0af5drKwzn1EGu3lBv8BcfeQUKVF8GAwhc_MTHRTpK3sigGtYuOwlIuAa02VEdJ7ii57YE7XoQqUEQzQ-ObVrsBKqEbRG60McBSEFwL8kt6hLGIV40qn4w"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-on-surface font-label-caps text-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary">photo_camera</span>
+<span>馆内东看台2排</span>
+</div>
+</div>
+<div class="p-space-sm space-y-2">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[10px]">小林</div>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">@篮球小林同学</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-auto">35分前</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3">
+                    今晚体育馆气氛燃炸了！系队学长这记滞空拉杆太帅了！附上单节战术打卡记录，全场都在呐喊！🔥🏀
+                  </p>
+<!-- Embedded Match Card Snippet -->
+<div class="bg-surface-container rounded p-2 flex items-center justify-between text-on-surface font-label-caps text-label-caps">
+<span class="truncate">关联: 男子半决赛 计算机 vs 经管</span>
+<span class="text-primary-container font-label-numeric text-label-numeric font-bold shrink-0">计院 +8</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 hover:text-primary cursor-pointer">
+<span class="material-symbols-outlined text-[16px] text-primary">favorite</span>
+<span>342</span>
+</span>
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>45</span>
+</span>
+<span class="material-symbols-outlined text-[16px] hover:text-on-surface cursor-pointer">share</span>
+</div>
+</div>
+<!-- Post 2 (Cheering Stand) -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow hover:bg-surface-container transition-colors flex flex-col justify-between">
+<div>
+<div class="h-44 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Collegiate sports fan cheering stand with students waving orange university banners, shouting, wearing custom varsity jerseys, vibrant energy and celebration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5bm8IjFQ4iWKprWB9SOzZrw1eXcUYTK63q3b5eZvOIbCGL_hz5_kA8c4LGGY8tboifG_nMGUsG93Dxn9p0g4egpSAcPkXMpgvSa2eqR1t_pJGwMLbo49_EC26J2r02Aas5voDFHIQKNwVyhO2JV7dpXQq6vzfBuczBKStE4z01KTbtlz7Tz8hsuWWKvWLYT8v_JMkvq5KlCnqMzbYwonRsiHLIYRkS-0dGYF53UF6zJaq9uHhQe21BQ"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-on-surface font-label-caps text-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">groups</span>
+<span>经管助威团方阵</span>
+</div>
+</div>
+<div class="p-space-sm space-y-2">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-[10px]">啦啦</div>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">@经管学生会啦啦队</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-auto">1小时前</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3">
+                    不管比分如何，我们永远是你们最坚强的后盾！第六人的声浪不会停，下一节继续拼抢到底！
+                  </p>
+</div>
+</div>
+<div class="p-space-sm pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 hover:text-primary cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+<span>189</span>
+</span>
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>22</span>
+</span>
+<span class="material-symbols-outlined text-[16px] hover:text-on-surface cursor-pointer">share</span>
+</div>
+</div>
+<!-- Post 3 (Custom Poster & Official Recommend) -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow hover:bg-surface-container transition-colors flex flex-col justify-between">
+<div>
+<div class="h-44 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Graphic design basketball game day poster with bold typography, dark cyberpunk collegiate basketball court illustration and lightning visual effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1mX3vijY8thpyYSw3KIfv_ZZ8-36kaA7cQpNH34AYgBi0uS2vtAe2fyVJska4gj6Vk9JH0pf3N6vWxCpxF9ykOC4Dn7FEye5FaUV4FAUv1kvcbivbpXCpk-HSTQA9Q_eSaP_XLT6m5peZNWS4KeS8YVHDC-Vx_aiQLIjE2V2pD8dCrkKBjz4g-T9Mz9EMcv3nmiItEnVDimHDUtjwX1dMUCCfuv_qLJ8gtF_HjqdJNh1huAc3eAt2dg"/>
+<span class="absolute top-2 right-2 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow">
+                    官方推荐
+                  </span>
+</div>
+<div class="p-space-sm space-y-2">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold text-[10px]">美院</div>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">@设计系阿强</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-auto">2小时前</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3">
+                    通宵为系队手绘的半决赛应援海报！“展翅凌空，飞鹰必胜”，喜欢的校友可自取打印去现场举牌助威！
+                  </p>
+</div>
+</div>
+<div class="p-space-sm pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 hover:text-primary cursor-pointer">
+<span class="material-symbols-outlined text-[16px] text-primary">favorite</span>
+<span>520</span>
+</span>
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>68</span>
+</span>
+<span class="material-symbols-outlined text-[16px] hover:text-on-surface cursor-pointer">share</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column (30% Sidebar / 4 cols) -->
+<aside class="lg:col-span-4 space-y-space-lg">
+<!-- A. 热门投票评选入口 (elections[active]) -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-lg space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">how_to_vote</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">赛季荣誉评选</h3>
+</div>
+<span class="bg-primary-container/20 text-primary-container font-label-caps text-label-caps px-2 py-0.5 rounded">
+              投票进行中
+            </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-headline-md text-headline-md text-on-surface">2026学年男篮常规赛 MVP</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              绑定认证在校学号可参与，每人每日限投1票。截止日期：本周日 24:00。
+            </p>
+</div>
+<!-- Top 2 Candidates Mini-cards -->
+<div class="space-y-space-sm">
+<!-- Candidate 1 -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a tall varsity basketball center smiling in team white and orange uniform with campus crest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJmiVKx-7cm1nDZe6ccsbLkVYySv8fMr90lQTVVt-ROHfOrSjKqNSd1BFzCu-gXxERMKxL0hVnTAXYVTWKzHEYv3ycikM_flBZOw07ZKtbe-wIXACEvvaZFZETBa-dWNc1NzwuE-egBtCKAGLYclIsMvnudXb1RfHRCk2yd7vYNb9JTOjhhvTiw5uQQs2Q8rKvvW70NQntWp08Kh6IuzUXW4nR-pAbCqu07N447sNmiGj3cft0XnzTQg"/>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md text-on-surface truncate">张峰</span>
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-1 rounded">#23 C</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">计算机学院 · 场均24.5分</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-label-numeric text-label-numeric text-primary font-bold">42%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">1,420票</div>
+</div>
+</div>
+<!-- Candidate 2 -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of collegiate basketball point guard wearing blue away jersey looking focused and determined" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYvl1hXOG0_nP-uYfLrEbmInWrJ5sRZ3hyjwY4h3J9o822vC4x5OZ37tokjp2Qqg5R7uXm_5bl84Mkh74FRVNXR0zRapJUuZSWi1DTV01LH58VdWNNj1r6iMKSUZsHGaFptCTeaLp_bipL1OBPf4E_TxC2zVF12Q85Tp9yOLvb9QzNyb4xBUtLZrrBFAXEPAvCsGQ_s4fpQ3JKK0MyqxYUGmStYaz581Kt43h-r7GSlDICC-EXDFQ_Bg"/>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md text-on-surface truncate">李默</span>
+<span class="font-label-caps text-label-caps text-secondary bg-secondary/10 px-1 rounded">#10 PG</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">经济管理学院 · 场均18.2分</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-label-numeric text-label-numeric text-secondary font-bold">38%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">1,280票</div>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-gradient-to-r from-tertiary-container to-tertiary text-on-tertiary font-title-md text-body-md rounded shadow hover:brightness-110 transition-all flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>立即投票 (一人一票)</span>
+</button>
+</section>
+<!-- B. 球员多维度数据排行榜 (player_season_stats[top10]) -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-lg space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">leaderboard</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">联赛榜单</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">实时计算</span>
+</div>
+<!-- Metric Tabs -->
+<div class="flex items-center justify-between bg-surface-container rounded p-1 font-label-caps text-label-caps">
+<button class="px-2 py-1 bg-primary-container text-on-primary rounded font-bold">得分 (PPG)</button>
+<button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors">篮板 (RPG)</button>
+<button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors">助攻 (APG)</button>
+<button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors">正负 (+/-)</button>
+</div>
+<!-- Top 5 Ranked Players List -->
+<div class="space-y-space-xs">
+<!-- Rank 1 (Gold) -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-headline-sm text-label-numeric font-bold shrink-0">1</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of basketball player Zhang Feng smiling confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCclgI1rS28D_6K1a2N1dTOwLXe5SGPZpjT6W8cPfuMzOMxSbvi-Odoy9V64iSERv4H3RvsRkG-ed_LhZTZqxz1F2KyNpy-hP9E9gj8EzeEx4HSvuLxi3TO8HH3NoZMkvAVMH11XlfYKCwb39cNpCSSuXOqsJpNA3j0mmUA-syYJ8MR2KI863xmfpg82RLU6P2QULDXkXOWASgmfOh4YAq2NSLAMbB83Z4oepvCDF5yveKDQv2KcK6spg"/>
+</div>
+<div class="truncate">
+<div class="font-title-md text-body-md text-on-surface font-semibold truncate">张峰 <span class="text-on-surface-variant font-normal">#23</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">计算机学院 · 8场</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric text-headline-md text-primary font-bold">24.5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">分/场</span>
+</div>
+</div>
+<!-- Rank 2 (Silver) -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 h-5 rounded-full bg-on-surface-variant/40 text-on-surface flex items-center justify-center font-headline-sm text-label-numeric font-bold shrink-0">2</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of energetic shooting guard player from automation academy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6zjBGJqzaGiwsZGCWW8rlkUWQkeq6QtGVagky3PGQ2RQwPHxNlf_FacdTNbeD-3fCxYFQkaHn17fxt3UBZNmuXMg6gSn984vbzMuBELtKQMlAvuaIJzDrESbffFWwv1X4MM1tRE4bcU_5jJdsAjhPGH2hJ2cWRQBZlJGKJOhvDJDVewhy_sqEkBNcJJxhuNnyOe82WFdeLqxkhErIrjq2RKflj4jv5hwAnbFg-H4Q6inauzLf1VOgSA"/>
+</div>
+<div class="truncate">
+<div class="font-title-md text-body-md text-on-surface font-semibold truncate">陈志远 <span class="text-on-surface-variant font-normal">#7</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">自动化学院 · 7场</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric text-headline-md text-on-surface font-bold">22.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">分/场</span>
+</div>
+</div>
+<!-- Rank 3 (Bronze) -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 h-5 rounded-full bg-outline-variant text-primary-fixed flex items-center justify-center font-headline-sm text-label-numeric font-bold shrink-0">3</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of basketball player Li Mo point guard looking sharp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANfSxsx1ersGyGddLutJok96TERTTFewLLbvhXogRRxmH6aqIUJ9xTVdXtAdMmqesIMg-DP0EgMALS7T0HXnchEInqcLhCiFolpGWrGIq5y42LuJJ0TPjO0qer0JP8hLVSn-tM836ivKc6Ym2IxhcWYDNY9va7NKJhWR96JZTaQGfLCGtWmoLjeFBTamtvxhtcTWZHDRSxGMfP8JJrj60ihzihLU3g-k0G_1xV6NYuj3X85GdvyiQVmA"/>
+</div>
+<div class="truncate">
+<div class="font-title-md text-body-md text-on-surface font-semibold truncate">李默 <span class="text-on-surface-variant font-normal">#10</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">经济管理学院 · 8场</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric text-headline-md text-on-surface font-bold">19.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">分/场</span>
+</div>
+</div>
+<!-- Rank 4 -->
+<div class="flex items-center justify-between p-2 rounded hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 h-5 flex items-center justify-center font-label-numeric text-label-numeric text-on-surface-variant shrink-0">4</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of athletic power forward wearing red jersey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKkmm9A2v8NTJvyFaTxaAIlqi2B7mAlH6-QpFGbp98X58KfQ6B0fUAXp0gL1VNgK2IqI4FT7nGSxP_gdZJKdYugFQ2l3DnuY35jjfSxuwROCq6Y9DO94RW1tzcLu77NAar-W-X0kpmuoqnXKgb9kS_EnBAehSzAFT6HwsqwX2YFiwV8YcZqNoVyU7hQ8Lk7Tw2TywalcendqusNouabofjYL5u6IARMtBqQfH774MyMMrgJgVBzQKA4Q"/>
+</div>
+<div class="truncate">
+<div class="font-title-md text-body-md text-on-surface font-semibold truncate">王崇 <span class="text-on-surface-variant font-normal">#15</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">建筑学院 · 7场</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">18.6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">分/场</span>
+</div>
+</div>
+<!-- Rank 5 -->
+<div class="flex items-center justify-between p-2 rounded hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 h-5 flex items-center justify-center font-label-numeric text-label-numeric text-on-surface-variant shrink-0">5</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of basketball center player Zhao Rui in dark sports jersey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARqD1ntJQxb_snnV154iqA7QI1DKjb2F2TnMD9LRLV2XpGTV1o9aBDSueH6NlkyH470XIzC0eYRp79hfbwsD-ogZOIHxAobXrJBeLihEeRTdId48FECmRbnPoMTa03DFx6zJjMTz9ZpeJPKeinKZwG7qplrEP7FO8ngOcNlpTh_MPP15hE9MYbI-EeEek_wmpHUtBc1Mwg8-x5CM7PJNyT3mPs6RVx0kaWlMrTf2GRd1hx-zIdk2uZTg"/>
+</div>
+<div class="truncate">
+<div class="font-title-md text-body-md text-on-surface font-semibold truncate">赵睿 <span class="text-on-surface-variant font-normal">#34</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">机械工程学院 · 8场</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">17.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">分/场</span>
+</div>
+</div>
+</div>
+<a class="block text-center py-2 bg-surface-container hover:bg-surface-bright text-secondary font-title-md text-body-sm rounded transition-colors" href="cbb_live_15.html">
+            查看完整数据中心与进阶高阶指标 →
+          </a>
+</section>
+</aside>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant mt-space-xl"><div class="w-full px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><img alt="CBB-Live Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwr-u5ZgV27zc7W72mU-Mm-j66HpwO9QX3CoUCgvGp23SoJdbeukqnurWkRisQFRo_zL95NVJ4hiM7dxV9m-qTibsBoxkNPF3NMh4yX0KKN3rBCmavsoB8ywUA8eudH3he7NRL_75lrhcpG_A6nP40nyUoFvOkqz7Rj7HD-9H8TYjC61K8kfre9H1fUJFsAAkGYNxPUQ0hKp1gTyBYCeFbQZ2lRYvu124yZzedKwH60dXiCI22GSOPBg"/><span class="font-headline-sm text-headline-md text-on-surface tracking-wide">CBB-LIVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">高校男女篮联赛一体化运营系统。连接场上每一次扣杀防守与场下千万师生呐喊。</p></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface">赛事导航</h4><ul class="space-y-1 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">男子甲组甲级联赛</li><li class="hover:text-primary transition-colors cursor-pointer">女子精英超级杯</li><li class="hover:text-primary transition-colors cursor-pointer">全明星投票及新星榜</li></ul></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface">技术支持与媒体</h4><ul class="space-y-1 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">云端毫秒级推流说明</li><li class="hover:text-primary transition-colors cursor-pointer">裁判与记录台接入终端</li><li class="hover:text-primary transition-colors cursor-pointer">高校体育协会媒体授权</li></ul></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface">系统状态</h4><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm text-on-surface">实时网络数据流服务正常</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">低延迟推流节点已覆盖各大校区场馆</p></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><span class="font-body-sm text-body-sm">© 2026 Campus Basketball Association &amp; CBB-Live System. All rights reserved.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm"><span>校体委会技术认证</span><span>安全备案号: EDU-SPORTS-2026-X9</span></div></div></div></footer><script id="theme-toggle-script">(function(){var KEY='cbb-theme';function getTheme(){var t=localStorage.getItem(KEY);if(!t){t='dark';}return t;}function applyTheme(t){var html=document.documentElement;if(t==='light'){html.classList.remove('dark');html.classList.add('light');}else if(t==='dark'){html.classList.remove('light');html.classList.add('dark');}else if(t==='system'){var prefersDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;if(prefersDark){html.classList.remove('light');html.classList.add('dark');}else{html.classList.remove('dark');html.classList.add('light');}}updateIcon(t);}function updateIcon(t){var btn=document.getElementById('theme-toggle-btn');if(!btn)return;var icon=btn.querySelector('.material-symbols-outlined');var label=btn.querySelector('.theme-label');var icons={dark:'dark_mode',light:'light_mode',system:'brightness_auto'};var labels={dark:'深色',light:'浅色',system:'跟随'};if(icon)icon.textContent=icons[t]||'dark_mode';if(label)label.textContent=labels[t]||'深色';}function cycleTheme(){var current=getTheme();var next=current==='dark'?'light':current==='light'?'system':'dark';localStorage.setItem(KEY,next);applyTheme(next);}function initTheme(){var t=getTheme();applyTheme(t);var btn=document.getElementById('theme-toggle-btn');if(btn){btn.addEventListener('click',cycleTheme);}if(window.matchMedia){window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(getTheme()==='system'){applyTheme('system');}});}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initTheme);}else{initTheme();}})();</script></body></html>

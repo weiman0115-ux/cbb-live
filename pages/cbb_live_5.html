@@ -1,0 +1,910 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#dfe2eb","surface-bright":"#353940","secondary-container":"#00e3fd","surface-tint":"#ffb5a0","surface-container-lowest":"#0a0e14","on-surface":"#dfe2eb","surface-dim":"#10141a","on-tertiary-fixed-variant":"#633f00","primary-fixed-dim":"#ffb5a0","on-primary-fixed-variant":"#862200","on-surface-variant":"#e4beb4","surface-container":"#1c2026","primary-fixed":"#ffdbd1","on-secondary-container":"#00616d","tertiary-container":"#c68300","surface-container-low":"#181c22","on-secondary-fixed":"#001f24","secondary":"#bdf4ff","on-secondary":"#00363d","outline":"#ab8980","tertiary-fixed":"#ffddb4","surface-container-high":"#262a31","surface":"#10141a","primary":"#ffb5a0","background":"#10141a","secondary-fixed-dim":"#00daf3","on-primary-fixed":"#3b0900","on-secondary-fixed-variant":"#004f58","secondary-fixed":"#9cf0ff","error":"#ffb4ab","on-error-container":"#ffdad6","on-tertiary":"#452b00","tertiary":"#ffb952","on-tertiary-container":"#3c2500","tertiary-fixed-dim":"#ffb952","primary-container":"#ff5722","inverse-primary":"#b02f00","on-primary":"#5f1500","on-tertiary-fixed":"#291800","surface-variant":"#31353c","outline-variant":"#5b4039","inverse-surface":"#dfe2eb","surface-container-highest":"#31353c","inverse-on-surface":"#2d3137","on-error":"#690005","error-container":"#93000a","on-primary-container":"#541200"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem",gutter:"1rem",margin:"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"body-lg":["Space Grotesk"],"display-score-mobile":["Oswald"],"title-lg":["Space Grotesk"],"headline-md":["Oswald"],"body-sm":["Space Grotesk"],"headline-xl":["Oswald"],"body-md":["Space Grotesk"],"display-score":["Oswald"],"headline-xl-mobile":["Oswald"],"label-numeric":["Oswald"],"label-caps":["Space Grotesk"],"headline-lg":["Oswald"],"title-md":["Space Grotesk"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-score-mobile":["48px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"700"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-score":["80px",{lineHeight:"84px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"700"}],"label-numeric":["15px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex items-center gap-space-sm"><span class="font-title-lg text-title-lg tracking-tight uppercase text-on-surface">CBB-Live 赛事管理中台</span><span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed text-body-sm font-label-caps uppercase tracking-wider">SUPER ADMIN / 赛事组委会</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-3 py-1 rounded bg-surface-container text-body-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">calendar_month</span><span class="font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="hidden lg:flex items-center gap-3 px-3 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span><span class="font-label-caps text-body-sm text-secondary tracking-wider uppercase">WS PUSH: ACTIVE</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-1 font-label-numeric text-body-sm text-on-surface-variant"><span>延迟:</span><span class="text-secondary font-bold">18ms</span></div></div><div class="relative flex items-center justify-center w-9 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-numeric text-[10px] font-bold">4</span></div><div class="flex items-center gap-space-sm pl-2"><div class="hidden md:flex flex-col text-right"><span class="font-title-md text-body-md text-on-surface font-semibold leading-tight">张主任</span><span class="font-body-sm text-body-sm text-on-surface-variant">(超级管理员) · 体育教学部</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 flex flex-col py-space-md shadow-[1px_0_12px_rgba(0,0,0,0.3)]"><div class="px-space-md mb-3"><div class="px-3 py-1.5 rounded bg-surface-container text-body-sm text-on-surface-variant flex items-center justify-between"><span class="font-label-caps tracking-wider uppercase">CORE NAVIGATION</span><span class="material-symbols-outlined text-[14px]">tune</span></div></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="dashboard" href="cbb_live_0.1.html"><span class="font-body-md text-body-md">数据看板</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="season-config" href="cbb_live_2.html"><span class="font-body-md text-body-md">赛季赛制</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="schedule-management" href="cbb_live_g_finals_01.html"><span class="font-body-md text-body-md">赛程排期</span></a><a aria-current="page" class="flex items-center justify-between px-3 py-2.5 rounded transition-all group bg-primary-container text-on-primary-container font-bold" data-path="team-player-roster-audit" href="cbb_live_5.html"><span class="font-body-md text-body-md">球队球员</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-console" href="cbb_live_30_live_ops.html"><span class="font-body-md text-body-md">比赛操控</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-and-media" href="cbb_live_30_live_ops.html"><span class="font-body-md text-body-md">直播与内容</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="audit-center" href="cbb_live_call_audit_reports.html"><span class="font-body-md text-body-md">审核中心</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="honors-and-awards" href="cbb_live_referee_evaluation_credit.html"><span class="font-body-md text-body-md">荣誉评选</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="export-reports" href="cbb_live_pdf.html"><span class="font-body-md text-body-md">报表中心</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="system-logs" href="cbb_live_2.html"><span class="font-body-md text-body-md">系统配置与日志</span></a></nav><div class="mt-auto px-space-md pt-space-sm border-t border-surface-container"><div class="p-3 rounded bg-surface-container flex items-center justify-between text-body-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">shield</span><span>安全等级二级</span></div><span class="font-label-caps text-[10px] text-secondary">SECURED</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><main class="relative pt-16 bg-surface flex-1 w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<!-- 1. TOP OPERATIONAL BAR & AUDIT TELEMETRY HUD -->
+<div class="flex flex-col gap-space-md">
+<!-- Breadcrumb & Top Controls Row -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-8 bg-primary-container rounded-DEFAULT"></div>
+<div>
+<div class="flex items-center gap-2 font-label-caps text-on-surface-variant uppercase tracking-widest text-[11px]">
+<span>赛事运营中台</span>
+<span class="text-outline-variant">/</span>
+<span>球队与球员管理</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">ROSTER AUDIT V2.4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-wide uppercase flex items-center gap-3">
+              名单审核与参赛资格中心
+              <span class="font-label-caps text-body-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed border-0 font-semibold tracking-wider">PRD §六.2 状态机在线</span>
+</h1>
+</div>
+</div>
+<!-- Division & Season Controls -->
+<div class="flex items-center gap-2 sm:ml-4 bg-surface-container px-2 py-1.5 rounded-lg">
+<div class="flex bg-surface-container-lowest p-0.5 rounded-DEFAULT">
+<button class="px-3 py-1 rounded-DEFAULT font-title-md text-body-sm bg-primary-container text-on-primary font-bold shadow-sm flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">sports_basketball</span>
+              男子组 (MEN'S)
+            </button>
+<button class="px-3 py-1 rounded-DEFAULT font-title-md text-body-sm text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">sports_handball</span>
+              女子组 (WOMEN'S)
+            </button>
+</div>
+<span class="text-on-surface-variant/40 text-body-sm">|</span>
+<div class="flex items-center gap-1.5 text-body-sm text-on-surface-variant px-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-numeric font-medium text-on-surface">2026学年秋季联赛 · 第8轮窗口期</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Group -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-2 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-sm flex items-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">upload_file</span>
+<span>批量导入名单 (Excel)</span>
+</button>
+<button class="px-3 py-2 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-sm flex items-center gap-1.5 transition-colors shadow-sm" title="导出规范: 2026学年秋季联赛_球队球员_20260915.xlsx">
+<span class="material-symbols-outlined text-[18px] text-tertiary">download</span>
+<span>导出资格表 (PRD §十八.1)</span>
+</button>
+<button class="px-3 py-2 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-sm flex items-center gap-1.5 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">add_circle</span>
+<span>新建参赛球队</span>
+</button>
+<button class="px-3.5 py-2 rounded-DEFAULT bg-primary-container hover:bg-inverse-primary text-on-primary font-title-md text-body-sm flex items-center gap-1.5 transition-all shadow-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-bold">一键通过待审名单 (3)</span>
+</button>
+</div>
+</div>
+<!-- Eligibility KPI Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- KPI 1: Scale & Qualified Ratio -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between shadow-md relative overflow-hidden group">
+<div class="space-y-1 z-10">
+<div class="flex items-center gap-2 font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+            参赛规模与资格大盘 (ALL LEAGUE)
+          </div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score text-[42px] leading-none text-on-surface tracking-tight">192</span>
+<span class="font-title-md text-body-sm text-on-surface-variant">名在册球员 / 16支院系战队</span>
+</div>
+<div class="flex items-center gap-3 pt-1 text-body-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-label-numeric text-[13px] font-bold">合规率 98.4%</span>
+<span class="text-on-surface-variant text-body-sm">189 人合格 · 3 人待复核</span>
+</div>
+</div>
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98.4, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-numeric text-label-numeric font-bold text-secondary">98%</span>
+</div>
+</div>
+<!-- KPI 2: Pending Audits Queue -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between shadow-md relative overflow-hidden group">
+<div class="space-y-1 z-10">
+<div class="flex items-center gap-2 font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-tertiary">assignment_late</span>
+            待办审核队列 (PENDING QUEUE)
+          </div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score text-[42px] leading-none text-tertiary tracking-tight">03</span>
+<span class="font-title-md text-body-sm text-on-surface-variant">项待审批变更</span>
+</div>
+<div class="flex items-center gap-2 pt-1 text-body-sm">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[10px] font-bold">1 伤病替补补录</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">1 号码变更</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">1 学籍复核</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[28px] animate-bounce">pending_actions</span>
+</div>
+</div>
+<!-- KPI 3: Suspensions & Sanctions -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between shadow-md relative overflow-hidden group">
+<div class="space-y-1 z-10">
+<div class="flex items-center gap-2 font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-error">gavel</span>
+            违规与停赛风控 (DISCIPLINE)
+          </div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score text-[42px] leading-none text-error tracking-tight">02</span>
+<span class="font-title-md text-body-sm text-on-surface-variant">名球员处于禁赛生效期</span>
+</div>
+<div class="flex items-center gap-2 pt-1 text-body-sm">
+<span class="px-1.5 py-0.5 rounded bg-error-container/30 text-error font-label-caps text-[11px] font-semibold">自动化战车 #15 (技犯累计停赛1场)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-caps text-[11px]">土木巨石 #08 (注册冻结)</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-error-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-[28px]">block</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. TEAM ROSTER CAROUSEL / QUICK SELECTOR -->
+<div class="space-y-2">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2 font-label-caps text-on-surface-variant uppercase tracking-wider text-[11px]">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>男子组参赛战队速查 (MENS DIVISION ROSTERS · 8 TEAMS)</span>
+</div>
+<div class="text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>支持快捷键盘 [←] [→] 切换聚焦队伍</span>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-high"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+<!-- Team Card 1: Active Focus (Computer Science) -->
+<div class="bg-surface-container p-3.5 rounded-xl shadow-lg relative cursor-pointer transition-all border-l-4 border-primary-container">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-headline-md font-bold text-headline-md shadow-inner">
+              CS
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight font-bold">计算机·飞鹰战队</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">领队: 李晨 (T2018042)</p>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-label-caps text-[10px] font-bold">已锁定</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low p-2 rounded-lg flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant">球员: <span class="text-on-surface font-bold font-label-numeric">12人</span> (首发5/替7)</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container" title="主色: 炽热橙"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-lowest" title="副色: 深空黑"></span>
+</div>
+</div>
+</div>
+<!-- Team Card 2: Active Request Pending (Automation) -->
+<div class="bg-surface-container-low hover:bg-surface-container p-3.5 rounded-xl shadow-sm relative cursor-pointer transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary font-headline-md font-bold text-headline-md">
+              AU
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight font-bold">自动化·战车战队</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">领队: 陈工 (T2020115)</p>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[10px] font-bold">1项待决</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container p-2 rounded-lg flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant">球员: <span class="text-on-surface font-bold font-label-numeric">12人</span> (含1人禁赛)</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container" title="主色: 工业青"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary" title="副色: 荧光黄"></span>
+</div>
+</div>
+</div>
+<!-- Team Card 3: Business -->
+<div class="bg-surface-container-low hover:bg-surface-container p-3.5 rounded-xl shadow-sm relative cursor-pointer transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary font-headline-md font-bold text-headline-md">
+              BM
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight font-bold">经管·金狮战队</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">领队: 刘副教授</p>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-label-caps text-[10px] font-bold">已锁定</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container p-2 rounded-lg flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant">球员: <span class="text-on-surface font-bold font-label-numeric">12人</span> (全员合规)</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-on-background"></span>
+</div>
+</div>
+</div>
+<!-- Team Card 4: Mechanical (Active Injury Mutation) -->
+<div class="bg-surface-container-low hover:bg-surface-container p-3.5 rounded-xl shadow-sm relative cursor-pointer transition-all ring-1 ring-tertiary/40">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface font-headline-md font-bold text-headline-md">
+              ME
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight font-bold">机械·重装机甲</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">领队: 赵老师 (T2019088)</p>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary-container/20 text-primary-fixed font-label-caps text-[10px] font-bold animate-pulse">补录申报中</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container p-2 rounded-lg flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant">在册: <span class="text-tertiary font-bold font-label-numeric">11人</span> + 1申请</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+</div>
+</div>
+<!-- Team Card 5: Civil Eng -->
+<div class="bg-surface-container-low hover:bg-surface-container p-3.5 rounded-xl shadow-sm relative cursor-pointer transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-error font-headline-md font-bold text-headline-md">
+              CE
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight font-bold">土木·巨石战队</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">领队: 孙老师</p>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container/30 text-error font-label-caps text-[10px] font-bold">学籍复审</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container p-2 rounded-lg flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant">球员: <span class="text-on-surface font-bold font-label-numeric">12人</span> (1待定)</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. MAIN CONTENT WORKSPACE: TWO-COLUMN SPLIT VIEW -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: 8 COLS (65% width equivalent) - PLAYER ROSTER TABLE -->
+<div class="lg:col-span-8 flex flex-col space-y-space-md">
+<div class="bg-surface-container p-space-md rounded-xl shadow-md space-y-space-md">
+<!-- Table Header & Multi-Filter Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide uppercase">球员大名单与参赛资格核验表</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">当前聚焦：计算机学院·飞鹰战队 (含联查待审人员)</p>
+</div>
+</div>
+<!-- Quick Search & Actions -->
+<div class="flex items-center gap-2">
+<div class="relative w-56">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 bg-surface-container-lowest rounded text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="搜索球员/学号/号码..." type="text"/>
+</div>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" title="过滤高级属性">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" title="刷新最新CAS学籍数据">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills Row -->
+<div class="flex flex-wrap items-center gap-1.5 text-body-sm pb-1">
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase mr-1">资格筛选:</span>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-caps text-[11px] font-bold">全部 (12)</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-secondary font-label-caps text-[11px]">合规 ELIGIBLE (9)</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-tertiary font-label-caps text-[11px] flex items-center gap-1">
+<span>待审 PENDING (2)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-error font-label-caps text-[11px]">停赛 DISQUALIFIED (1)</button>
+<span class="text-on-surface-variant/30 mx-1">|</span>
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase mr-1">位置:</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-[10px]">PG 控卫</button>
+<button class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-[10px]">SG 分卫</button>
+<button class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-[10px]">SF 小前</button>
+<button class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-[10px]">PF 大前</button>
+<button class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-[10px]">C 中锋</button>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto rounded-lg shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-caps text-[11px] tracking-wider uppercase">
+<th class="py-3 px-3">号码 / 球员姓名</th>
+<th class="py-3 px-3">学号 / 院系班级</th>
+<th class="py-3 px-3">资格状态机 (PRD §六.2)</th>
+<th class="py-3 px-3">身体/注册信息</th>
+<th class="py-3 px-3">本季出场 / 纪律</th>
+<th class="py-3 px-3 text-right">资格操作</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-md">
+<!-- Row 1: Starter Captain Eligible -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-[20px] font-bold text-primary w-8 text-center bg-surface-container-highest/60 rounded py-0.5">#23</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dynamic portrait of a varsity basketball point guard wearing collegiate jersey number 23, sharp stadium key lighting, high contrast athletic expression, dark cinematic arena background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1hbTjYzHzHOGR7eP0u_HBQKxHaIGI1afW5MrRShTxUaqKjosoQ0LxwUwyPpwcZqaw_2hSWNDh4dBS7mAIr64V-U1oP4tkQ-f70mHCu6yhj-kcvKsHvJMJQCW1hQ6ot6y6khoHLy3qVPQRce9KvA-fyB41NXf3zpQe09O3r3V4UFwct_fBn4UVWjdSXlzj01RcJh-taKeIqO-9Jva6GrumeImAwx0u92majc9nJ4R5MdaT84f3EQ9Zxg"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">张峰</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary font-label-caps text-[9px] font-bold">首发 PG</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container/40 text-tertiary font-label-caps text-[9px]">队长</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">计算机科学与技术</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2023010492</div>
+<div class="text-body-sm text-on-surface-variant">计科 2301 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    ELIGIBLE (合规)
+                  </div>
+<div class="text-[10px] text-secondary/70 flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> CAS学籍与体检全通
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">188cm / 82kg</div>
+<div class="text-on-surface-variant text-[11px]">注册: 2026-08-28</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">8场 24.5分 6.4助</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span>犯规 14次</span>
+<span class="text-secondary font-bold">· 0技犯</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface text-body-sm flex items-center gap-1" title="查看档案">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+                      档案
+                    </button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant" title="调整">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Starter Eligible -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-[20px] font-bold text-on-surface w-8 text-center bg-surface-container-highest/60 rounded py-0.5">#11</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Athletic portrait of a young varsity small forward with jersey number 11, intense focus, rim lighting, sports studio background with warm orange accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpoL-dwC1zS80uNg50n5Ve6-3Agq1ILE7dzCyfra9PbZ_-bQ6MlhEZ9IMPOyQWCypIIz35KMEqu06O-pzbVfN5c0Hd3wr6xuQar_5BD0_5EZP9SwNxXEXEGJQTsCf3ALQe72TUt6AKGKRqGZKn2mdkMUfkFAfUNs9pYvcCvBadKvRCy33F20apIYlms7wqftL9Z5CLksAC44hVc36hNo45iNbEhB8oiw0XiMcuYuFKEI8oLNJpBWcuqw"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">王磊</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary font-label-caps text-[9px] font-bold">首发 SF</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">人工智能方向</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2022010831</div>
+<div class="text-body-sm text-on-surface-variant">计科 2202 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    ELIGIBLE (合规)
+                  </div>
+<div class="text-[10px] text-secondary/70 flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> CAS学籍已复核
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">196cm / 90kg</div>
+<div class="text-on-surface-variant text-[11px]">注册: 2026-08-28</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">8场 18.2分 9.1板</div>
+<div class="text-[11px] text-on-surface-variant">犯规 11次 · 0技犯</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container-highest text-on-surface text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+                      档案
+                    </button>
+<button class="p-1 rounded bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Pending Jersey Mutation (Automation Transfer/Change) -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1">
+<span class="font-label-numeric text-[16px] text-on-surface-variant line-through">#12</span>
+<span class="text-tertiary">→</span>
+<span class="font-label-numeric text-[20px] font-bold text-tertiary w-8 text-center bg-tertiary-container/30 rounded py-0.5">#24</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of a collegiate male basketball athlete with serious expression, industrial jersey accents, crisp rim lighting, modern dark aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlWxjhktBpF9A3uf9w9Xk5a2HZw8XyiYNqgsQ1rJfs0WBEkxVbNkEqe9YhguV8kKTrWvhd-Izw9j61nlNmytG57igZGjBRbr8zrnQ0SsrOHkNPipDXRN37OUsr13ge1CSj5z3tyDUmXXfZghsX36UONTjjmsWxPzRvRPD7XWGTfZCzI-sJRkvQWWdyV9P8WOG7z_THFn07iuwh7rIT-qHsfo5vA_LLm7UUTAeyrStvHsKVaKF7eUC6Q"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">李牧</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[9px]">替补 SG</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container/40 text-tertiary font-label-caps text-[9px] font-bold">号码变更中</span>
+</div>
+<span class="font-label-caps text-[10px] text-tertiary uppercase">自动化学院·战车战队</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2024020119</div>
+<div class="text-body-sm text-on-surface-variant">自控 2401 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                    PENDING (号码审批)
+                  </div>
+<div class="text-[10px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+                    由李领队提交 · 拟改为 #24
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">185cm / 78kg</div>
+<div class="text-on-surface-variant text-[11px]">申报: 2026-09-14</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">6场 8.4分 2.1助</div>
+<div class="text-[11px] text-on-surface-variant">犯规 6次 · 0技犯</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-tertiary-container hover:bg-tertiary text-on-tertiary-container font-title-md text-body-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">draw</span>
+                      审核号码
+                    </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Transfer / Injury Replacement Active (Mechanical Engineering) -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-[20px] font-bold text-secondary w-8 text-center bg-secondary-container/20 rounded py-0.5">#19</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young muscular basketball center candidate, wearing athletic tank top, direct dynamic studio lighting with electric cyan backlight highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZBYdho7axbYuKInDhX_gYbngHOGNY_loqEuRZc-MDNWl0unhxuh_icuhzbnYc863DsT3wqrTnuA5q5R__kg45I4EHME2f-_yGV_Zf6FDHa_ADpUXnCka4gAqfFUuts032KquCWaj1MkywGAJbpd8EB_KZLglIbP-SEmgA1SUI443Fi2WR9dYIV5VIHSiOvKVQ-sXVZy_cRQLsFvduyxx28N68O35z6Sjy8YN34-e8qe1FI1w8vGmvUw"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">郑凯文</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/20 text-secondary font-label-caps text-[9px] font-bold">替补 C/PF</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container/20 text-primary-fixed font-label-caps text-[9px] font-bold">伤病补录申报</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">机械工程学院·重装机甲</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2024040299</div>
+<div class="text-body-sm text-on-surface-variant">机械 2402 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/20 text-secondary font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span>
+                    TRANSFERRING (替补审核)
+                  </div>
+<div class="text-[10px] text-secondary flex items-center gap-1 mt-0.5">
+                    替下: 骨折球员 #09 孙昊
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">201cm / 98kg</div>
+<div class="text-on-surface-variant text-[11px]">CAS查重: 无冲突</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">0场 (本赛季新录入)</div>
+<div class="text-[11px] text-secondary">资格就绪待批复</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-title-md text-body-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+                      立即批审
+                    </button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Disqualified / Suspension Penalty -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-[20px] font-bold text-error w-8 text-center bg-error-container/30 rounded py-0.5">#15</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up sports portrait of an aggressive varsity basketball forward in dark cyan uniform, intense athletic glare, sharp stadium strobe light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOAe0fllfIPhfh5ce_yEmATdQcsIvcgeehtMpaOS_p1elYSll2uqXOL70vZColaWrk_VxVVgmSl49i_T2LTitMvmUl_zWk68Ycmjw3fVZIOIJVohIRmFTC_RDE6uZ5NXL4iteA8rLbCx_zBYk63ea3ZhfUOV2hjyvZ-OBY-pdlCwsFONIIR-j7y17qMJrc84JhdxEpLIZr1lxqHYPB25ZGnbaFzmwi5GyEyYZ_dNzf8syVk5l68SRwnA"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">钱博</span>
+<span class="px-1.5 py-0.2 rounded bg-error-container/40 text-error font-label-caps text-[9px] font-bold">停赛中 DISQUALIFIED</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">自动化学院·战车战队</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2022020419</div>
+<div class="text-body-sm text-on-surface-variant">测控 2201 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container/30 text-error font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">block</span>
+                    DISQUALIFIED (停赛1场)
+                  </div>
+<div class="text-[10px] text-error flex items-center gap-1 mt-0.5">
+                    第7轮违体+技犯触发自动停赛
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">193cm / 88kg</div>
+<div class="text-on-surface-variant text-[11px]">解禁: 2026-09-20</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">7场 14.0分 7.2板</div>
+<div class="text-[11px] text-error font-bold">累计技犯 2次 (赛纪处分)</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-highest text-error text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">report</span>
+                      纪律令
+                    </button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Bench Eligible -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-[20px] font-bold text-on-surface w-8 text-center bg-surface-container-highest/60 rounded py-0.5">#03</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young collegiate basketball guard smiling confidently, wearing number 3 team jersey, dynamic low key arena background lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpb1vy1VjYggVRA8IhwZf9rd97Zwwxp_GXsX-XWKnOR6O_1MicDLSA7otEgbd-AEnukxmyFH0yaElgJe9qIXTJGN4cJP39MGjgJoLTxmIEy_itSl3Ai7V10o7e-_BXtjSQU6J-C1PezmEKFO8qAS63QHW0mRy4416QzJMmyLN5bNpe4Xh3oT8iWEpw8MlIFKr9RSbyTP3iTLmBFlxjhvoCPp1Y7dFYE8vj7-nKPnDPxzaFjdyN-u4ctA"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-on-surface font-bold">赵子强</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[9px]">替补 SG</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">计算机科学与技术</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric font-medium text-on-surface">2024010512</div>
+<div class="text-body-sm text-on-surface-variant">计科 2401 班</div>
+</td>
+<td class="py-3 px-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-caps text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    ELIGIBLE (合规)
+                  </div>
+<div class="text-[10px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+                    已完成学籍与健康承诺书
+                  </div>
+</td>
+<td class="py-3 px-3 text-body-sm">
+<div class="text-on-surface">182cm / 75kg</div>
+<div class="text-on-surface-variant text-[11px]">注册: 2026-08-30</div>
+</td>
+<td class="py-3 px-3">
+<div class="font-label-numeric text-on-surface font-medium">5场 6.2分 1.8助</div>
+<div class="text-[11px] text-on-surface-variant">犯规 4次 · 0技犯</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container-highest text-on-surface text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+                      档案
+                    </button>
+<button class="p-1 rounded bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Status Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span>显示 1 - 6 of 12 名球员 (计算机学院·飞鹰)</span>
+<span class="text-outline-variant">·</span>
+<span class="text-secondary font-medium">全队平均身高: 189.4cm / 平均年龄: 20.2岁</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface disabled:opacity-30">上一页</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-bold font-label-numeric">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">下一页</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 4 COLS (35% width equivalent) - AUDIT & MUTATION WORKBENCH -->
+<div class="lg:col-span-4 flex flex-col space-y-space-md">
+<!-- Active Case Audit Card -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-xl space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-tertiary to-secondary"></div>
+<!-- Header -->
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed font-label-caps text-[10px] font-bold uppercase">CASE #AUDIT-2026-0915-01</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide mt-1">名单变更与伤病替补审核</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PRD §九.9 team_roster_logs 审计流</p>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified</span>
+</div>
+<!-- Application Summary Pod -->
+<div class="bg-surface-container-low p-3.5 rounded-lg space-y-2.5">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">申报院系:</span>
+<span class="font-title-md text-on-surface font-bold">机械工程学院·重装机甲</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">提交领队:</span>
+<span class="text-on-surface">赵振华 (团委老师 / T2019088)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">申报类型:</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[11px] font-bold">因伤退出并替补补录 (INJURY REPLACEMENT)</span>
+</div>
+</div>
+<!-- Player Substitution Comparison Graphic -->
+<div class="space-y-2">
+<div class="font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">人员置换比对 (PRD 规则比对)</div>
+<!-- Outgoing Player -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded bg-error-container/30 text-error flex items-center justify-center font-label-caps font-bold text-[11px]">OUT</div>
+<div>
+<div class="font-title-md text-body-md text-on-surface font-bold">#09 孙昊 (前锋 SF)</div>
+<div class="text-[11px] text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">medical_services</span> 校医院二级踝关节骨折诊断
+                </div>
+</div>
+</div>
+<a class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-[11px] flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[13px]">attach_file</span> 证明.pdf
+            </a>
+</div>
+<!-- Incoming Replacement Player -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded bg-secondary-container/20 text-secondary flex items-center justify-center font-label-caps font-bold text-[11px]">IN</div>
+<div>
+<div class="font-title-md text-body-md text-on-surface font-bold">#19 郑凯文 (中锋/大前 C/PF)</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">school</span> 学号 2024040299 · 机械 2402 班
+                </div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary font-label-caps text-[10px] font-bold">CAS已核查</span>
+</div>
+</div>
+<!-- Automated Rule Validation Engine Status -->
+<div class="bg-surface-container-low p-3.5 rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">资格校验引擎自动化预审</span>
+<span class="font-label-caps text-secondary text-[11px] font-bold">4 / 4 通过</span>
+</div>
+<div class="space-y-1.5 text-body-sm">
+<div class="flex items-center justify-between text-[13px]">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                全日制在校在籍 (机械工程学院)
+              </span>
+<span class="text-secondary font-label-caps text-[10px]">VERIFIED</span>
+</div>
+<div class="flex items-center justify-between text-[13px]">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                跨院系/多队注册排查 (0场次/0注册)
+              </span>
+<span class="text-secondary font-label-caps text-[10px]">CLEAR</span>
+</div>
+<div class="flex items-center justify-between text-[13px]">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                球衣号码 #19 在本队及联赛中无重号
+              </span>
+<span class="text-secondary font-label-caps text-[10px]">NO CONFLICT</span>
+</div>
+<div class="flex items-center justify-between text-[13px]">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                常规赛第8轮窗口期时限
+              </span>
+<span class="text-secondary font-label-caps text-[10px]">WINDOW OPEN</span>
+</div>
+</div>
+</div>
+<!-- Decision Box & Annotations -->
+<div class="space-y-2 pt-1">
+<label class="block font-label-caps text-on-surface-variant text-[11px] uppercase">审批批注与复核结论</label>
+<div class="grid grid-cols-2 gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-left text-body-sm text-on-surface-variant truncate">
+              材料齐全，符合因伤补录规定
+            </button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-left text-body-sm text-on-surface-variant truncate">
+              病假证明需校医院重新盖章
+            </button>
+</div>
+<textarea class="w-full p-2 bg-surface-container-lowest rounded text-body-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="输入审批批注意见（将随通知同步抄送领队与教务系统）..." rows="2">材料齐全，校医院诊断证明有效，符合因伤补录规定。准予注册并分配 #19 球衣。</textarea>
+<label class="flex items-center gap-2 cursor-pointer pt-1">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest accent-primary-container" type="checkbox"/>
+<span class="text-body-sm text-on-surface-variant">审核后自动触发 NotifyService 向领队及球员推送短信与站内通知 (PRD §十七)</span>
+</label>
+</div>
+<!-- Action Execution Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<button class="px-4 py-2.5 rounded-DEFAULT bg-primary-container hover:bg-inverse-primary text-on-primary font-title-md text-body-sm font-bold flex items-center justify-center gap-1.5 shadow-md transition-all">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>审核通过并同步生效</span>
+</button>
+<button class="px-4 py-2.5 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container-highest text-error font-title-md text-body-sm font-bold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>驳回申报</span>
+</button>
+</div>
+<div class="pt-2 flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>当前审核权限人: 张主任 (超级管理员)</span>
+<span class="text-secondary font-label-numeric">API: /v2/roster/mutations/verify</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. BOTTOM SECTION: ROSTER MUTATION & AUDIT LOGS (PRD §九.9 & §九.41) -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-6 bg-tertiary rounded-DEFAULT"></span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide uppercase">名单变更与参赛资格审计流水</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PRD §九.9 team_roster_logs &amp; §九.41 全链路不可篡改审计日志</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-secondary text-[11px] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          REALTIME LOG SYNC ON
+        </span>
+<button class="px-3 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-body-sm text-on-surface">
+          导出审计日志
+        </button>
+</div>
+</div>
+<!-- Audit Timeline Table -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-caps text-[11px] tracking-wider uppercase">
+<th class="py-2.5 px-3">时间戳 (TIMESTAMP)</th>
+<th class="py-2.5 px-3">操作人 / 角色</th>
+<th class="py-2.5 px-3">动作类型</th>
+<th class="py-2.5 px-3">目标球队与球员</th>
+<th class="py-2.5 px-3">变更与处理详情 (MUTATION DETAILS)</th>
+<th class="py-2.5 px-3 text-right">状态与哈希凭证</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-md">
+<!-- Log Entry 1 -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/50 transition-colors">
+<td class="py-2.5 px-3 font-label-numeric text-on-surface">2026-09-15 10:15:22</td>
+<td class="py-2.5 px-3">
+<span class="text-on-surface font-semibold">张主任</span>
+<span class="text-on-surface-variant text-[11px]">(超管)</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary font-label-caps text-[10px] font-bold">审核通过</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="text-on-surface font-medium">计算机飞鹰 · #03 赵子强</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface-variant">
+              补交校际注册认证与体检合格回执，资格状态由 <span class="text-tertiary">pending</span> → <span class="text-secondary font-bold">eligible</span>.
+            </td>
+<td class="py-2.5 px-3 text-right">
+<span class="inline-flex items-center gap-1 text-secondary text-[11px] font-label-caps">
+<span class="material-symbols-outlined text-[13px]">task_alt</span> 已生效 · 0x8F9a...1C
+              </span>
+</td>
+</tr>
+<!-- Log Entry 2 -->
+<tr class="bg-surface-container hover:bg-surface-container-high/50 transition-colors">
+<td class="py-2.5 px-3 font-label-numeric text-on-surface">2026-09-14 18:30:10</td>
+<td class="py-2.5 px-3">
+<span class="text-on-surface font-semibold">李领队</span>
+<span class="text-on-surface-variant text-[11px]">(院系领队)</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[10px] font-bold">提交号码变更</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="text-on-surface font-medium">自动化战车 · 李牧</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface-variant">
+              提交球衣号码变更为 <span class="text-on-surface font-bold">#24</span>，附球员自愿更换申请单，进入管理员审批流.
+            </td>
+<td class="py-2.5 px-3 text-right">
+<span class="inline-flex items-center gap-1 text-tertiary text-[11px] font-label-caps">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 待超管审批
+              </span>
+</td>
+</tr>
+<!-- Log Entry 3 -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/50 transition-colors">
+<td class="py-2.5 px-3 font-label-numeric text-on-surface">2026-09-13 14:00:00</td>
+<td class="py-2.5 px-3">
+<span class="text-error font-semibold">赛事纪律委员会</span>
+<span class="text-on-surface-variant text-[11px]">(规则引擎)</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error font-label-caps text-[10px] font-bold">赛风赛纪处罚</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="text-error font-medium">自动化战车 · #15 钱博</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface-variant">
+              常规赛第7轮累计单场2次技术犯规驱逐，依据赛制总则第12条自动停赛1场 (生效区间: 第8轮).
+            </td>
+<td class="py-2.5 px-3 text-right">
+<span class="inline-flex items-center gap-1 text-error text-[11px] font-label-caps">
+<span class="material-symbols-outlined text-[13px]">gavel</span> 执行中 · 禁赛锁定
+              </span>
+</td>
+</tr>
+<!-- Log Entry 4 -->
+<tr class="bg-surface-container hover:bg-surface-container-high/50 transition-colors">
+<td class="py-2.5 px-3 font-label-numeric text-on-surface">2026-09-12 09:20:15</td>
+<td class="py-2.5 px-3">
+<span class="text-secondary font-semibold">教务CAS自动化校验</span>
+<span class="text-on-surface-variant text-[11px]">(CRON TASK)</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caps text-[10px]">批量学籍查重</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="text-on-surface font-medium">全联盟 192 名在册球员</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface-variant">
+              191 人全日制学籍验证通过，土木工程学院 #08 周天 学籍状态提示学分置换休学，已标为待复审.
+            </td>
+<td class="py-2.5 px-3 text-right">
+<span class="inline-flex items-center gap-1 text-secondary text-[11px] font-label-caps">
+<span class="material-symbols-outlined text-[13px]">done</span> 已完成入库
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-4 px-gutter-desktop shadow-[0_-1px_6px_rgba(0,0,0,0.2)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-body-sm text-on-surface-variant"><div class="flex items-center gap-3 font-body-sm"><span>Campus Basketball Association CBB-Live Administration System V2.0</span><span class="hidden md:inline-block w-1 h-1 rounded-full bg-on-surface-variant/40"></span><span class="hidden md:inline-block">Security Level 2</span></div><div class="flex items-center gap-2 font-label-caps text-[11px]"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-secondary">DB SYNC ACTIVE · 节点已就绪</span></div></div></footer></div></body></html>

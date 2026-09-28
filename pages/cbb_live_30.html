@@ -1,0 +1,727 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#dfe2eb","surface-bright":"#353940","secondary-container":"#00e3fd","surface-tint":"#ffb5a0","surface-container-lowest":"#0a0e14","on-surface":"#dfe2eb","surface-dim":"#10141a","on-tertiary-fixed-variant":"#633f00","primary-fixed-dim":"#ffb5a0","on-primary-fixed-variant":"#862200","on-surface-variant":"#e4beb4","surface-container":"#1c2026","primary-fixed":"#ffdbd1","on-secondary-container":"#00616d","tertiary-container":"#c68300","surface-container-low":"#181c22","on-secondary-fixed":"#001f24","secondary":"#bdf4ff","on-secondary":"#00363d","outline":"#ab8980","tertiary-fixed":"#ffddb4","surface-container-high":"#262a31","surface":"#10141a","primary":"#ffb5a0","background":"#10141a","secondary-fixed-dim":"#00daf3","on-primary-fixed":"#3b0900","on-secondary-fixed-variant":"#004f58","secondary-fixed":"#9cf0ff","error":"#ffb4ab","on-error-container":"#ffdad6","on-tertiary":"#452b00","tertiary":"#ffb952","on-tertiary-container":"#3c2500","tertiary-fixed-dim":"#ffb952","primary-container":"#ff5722","inverse-primary":"#b02f00","on-primary":"#5f1500","on-tertiary-fixed":"#291800","surface-variant":"#31353c","outline-variant":"#5b4039","inverse-surface":"#dfe2eb","surface-container-highest":"#31353c","inverse-on-surface":"#2d3137","on-error":"#690005","error-container":"#93000a","on-primary-container":"#541200"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem",gutter:"1rem",margin:"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem"},fontFamily:{"body-lg":["Space Grotesk"],"display-score-mobile":["Oswald"],"title-lg":["Space Grotesk"],"headline-md":["Oswald"],"body-sm":["Space Grotesk"],"headline-xl":["Oswald"],"body-md":["Space Grotesk"],"display-score":["Oswald"],"headline-xl-mobile":["Oswald"],"label-numeric":["Oswald"],"label-caps":["Space Grotesk"],"headline-lg":["Oswald"],"title-md":["Space Grotesk"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-score-mobile":["48px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"700"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-score":["80px",{lineHeight:"84px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"700"}],"label-numeric":["15px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"label-caps":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex items-center gap-space-sm"><span class="font-title-lg text-title-lg tracking-tight uppercase text-on-surface">CBB-Live 赛事管理中台</span><span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed text-body-sm font-label-caps uppercase tracking-wider">SUPER ADMIN / 赛事组委会</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-3 py-1 rounded bg-surface-container text-body-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-tertiary">calendar_month</span><span class="font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="hidden lg:flex items-center gap-3 px-3 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span><span class="font-label-caps text-body-sm text-secondary tracking-wider uppercase">WS PUSH: ACTIVE</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-1 font-label-numeric text-body-sm text-on-surface-variant"><span>延迟:</span><span class="text-secondary font-bold">18ms</span></div></div><div class="relative flex items-center justify-center w-9 h-9 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex items-center justify-center min-w-4 h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-numeric text-[10px] font-bold">4</span></div><div class="flex items-center gap-space-sm pl-2"><div class="hidden md:flex flex-col text-right"><span class="font-title-md text-body-md text-on-surface font-semibold leading-tight">张主任</span><span class="font-body-sm text-body-sm text-on-surface-variant">(超级管理员) · 体育教学部</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-40 flex flex-col py-space-md shadow-[1px_0_12px_rgba(0,0,0,0.3)]"><div class="px-space-md mb-3"><div class="px-3 py-1.5 rounded bg-surface-container text-body-sm text-on-surface-variant flex items-center justify-between"><span class="font-label-caps tracking-wider uppercase">CORE NAVIGATION</span><span class="material-symbols-outlined text-[14px]">tune</span></div></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="dashboard" href="cbb_live_0.1.html"><span class="font-body-md text-body-md">数据看板</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="season-config" href="cbb_live_2.html"><span class="font-body-md text-body-md">赛季赛制</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="schedule-management" href="cbb_live_g_finals_01.html"><span class="font-body-md text-body-md">赛程排期</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="team-player-roster-audit" href="cbb_live_5.html"><span class="font-body-md text-body-md">球队球员</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-console" href="cbb_live_30_live_ops.html"><span class="font-body-md text-body-md">比赛操控</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="live-and-media" href="cbb_live_30_live_ops.html"><span class="font-body-md text-body-md">直播与内容</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="audit-center" href="cbb_live_call_audit_reports.html"><span class="font-body-md text-body-md">审核中心</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="honors-and-awards" href="cbb_live_referee_evaluation_credit.html"><span class="font-body-md text-body-md">荣誉评选</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="export-reports" href="cbb_live_pdf.html"><span class="font-body-md text-body-md">报表中心</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="system-logs" href="cbb_live_2.html"><span class="font-body-md text-body-md">系统配置与日志</span></a></nav><div class="mt-auto px-space-md pt-space-sm border-t border-surface-container"><div class="p-3 rounded bg-surface-container flex items-center justify-between text-body-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary">shield</span><span>安全等级二级</span></div><span class="font-label-caps text-[10px] text-secondary">SECURED</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><main class="relative pt-16 bg-surface flex-1 w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- 顶部面包屑与全局快捷状态条 -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<!-- Breadcrumb Hierarchy -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-outline">
+<span>赛事运营中台</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>直播与融媒体中心</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-fixed font-title-md">信号推流、AI打点剪辑与 UGC 审核中台</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary text-[11px] font-label-caps tracking-wider ml-1">V2.4 PROD</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-body-sm">
+          全时段高可用流媒体监控 (HLS/WebRTC) · AI 视觉事件标记引擎 · 多级 UGC 内容合规状态机
+        </p>
+</div>
+<!-- Quick Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded bg-primary-container text-on-primary font-title-md text-body-md font-bold shadow-md hover:bg-inverse-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>新建转播推流任务</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all font-body-md text-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">tune</span>
+<span>鉴权与转码配置</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all font-body-md text-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">checklist</span>
+<span>批量审核 UGC (<span class="font-label-numeric text-primary-fixed">7</span>)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all font-body-md text-body-md" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>导出风控日志</span>
+</button>
+</div>
+</div>
+<!-- 顶部 3 大核心指标概览卡片 (HUD Bento) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: 实时推流大盘 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/5 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="flex h-2 w-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-caps text-body-sm text-secondary uppercase tracking-wider">LIVE STREAMS · 实时推流大盘</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">2 路活跃</span>
+<span class="font-label-caps text-body-sm text-primary-fixed bg-surface-container px-2 py-0.5 rounded">4K 60FPS</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">sensors</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-1 font-label-numeric text-on-surface-variant">
+<span>主源延迟:</span>
+<span class="text-secondary font-bold">1.2s</span>
+<span class="text-outline mx-1">/</span>
+<span>丢帧:</span>
+<span class="text-on-surface font-semibold">0.02%</span>
+</div>
+<div class="font-label-numeric text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">groups</span>
+<span class="text-tertiary font-bold">3,840</span>
+<span class="text-[10px] text-outline">峰值</span>
+</div>
+</div>
+</div>
+<!-- Card 2: AI打点与集锦生成 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="flex h-2 w-2 rounded-full bg-tertiary"></span>
+<span class="font-label-caps text-body-sm text-tertiary uppercase tracking-wider">AUTO HIGHLIGHTS · 智能精彩打点</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">18 锚点</span>
+<span class="font-body-sm text-on-surface-variant">今日自动捕获</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">auto_videocam</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm">
+<span>已渲染: <strong class="text-on-surface font-label-numeric font-semibold">4 部集锦</strong></span>
+<span class="text-outline">·</span>
+<span>待审发: <strong class="text-primary-fixed font-label-numeric font-semibold">2 部</strong></span>
+</div>
+<span class="text-[11px] font-label-caps text-secondary uppercase">CV-MODEL V3.8</span>
+</div>
+</div>
+<!-- Card 3: UGC 风控待审池 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-error-container/15 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="flex h-2 w-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-body-sm text-primary-fixed uppercase tracking-wider">MODERATION · 内容风控队列</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">7 件待审</span>
+<span class="px-2 py-0.5 rounded bg-error-container/40 text-error text-[11px] font-label-caps">2 违规举报</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">shield_with_heart</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-body-sm">
+<div class="text-on-surface-variant font-body-sm flex items-center gap-1.5">
+<span>DFA 词库实时拦截率</span>
+<span class="text-secondary font-label-numeric font-bold">99.4%</span>
+</div>
+<span class="text-[11px] font-label-caps text-outline uppercase">BULLMQ SYNCED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 核心主工作台：左右协同布局 (65% 多媒体与推流中台 + 35% UGC 风控审核工作台) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- 左侧工作台 (65% -> 8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- 工作台选项卡组 -->
+<div class="flex items-center justify-between bg-surface-container-low p-1.5 rounded">
+<div class="flex items-center gap-1 overflow-x-auto">
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded bg-surface-container-high text-primary-fixed font-title-md text-body-md font-semibold shadow-sm" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>实时推流监控与OBS配置</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-md text-body-md" type="button">
+<span>录像回放与点播管理</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-body-sm font-label-numeric text-outline">12</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-md text-body-md" type="button">
+<span>精彩集锦剪辑库</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-body-sm font-label-numeric text-tertiary">8</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-md text-body-md" type="button">
+<span>DFA敏感词与弹幕限流</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-2 pr-2 text-on-surface-variant font-label-caps text-[11px]">
+<span class="text-secondary">DUAL-CDN: ON</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>RTMP / WEBRTC</span>
+</div>
+</div>
+<!-- 实时推流监播 HUD 视窗 -->
+<div class="flex flex-col rounded bg-surface-container-low overflow-hidden shadow-xl">
+<!-- 监播顶部状态条 -->
+<div class="px-space-md py-2.5 bg-surface-container flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-caps text-body-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+              LIVE ON AIR
+            </span>
+<span class="font-title-md text-on-surface font-bold text-body-md">
+              【男子甲组总决赛 焦点对决】计算机飞鹰 vs 自动化战车
+            </span>
+<span class="text-outline font-body-sm hidden md:inline">| 邱德拔中央主球场</span>
+</div>
+<!-- 信号机位切换器 -->
+<div class="flex items-center bg-surface-container-low p-1 rounded gap-1">
+<button class="px-2.5 py-0.5 rounded bg-surface-container-high text-secondary text-body-sm font-label-caps font-semibold flex items-center gap-1" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              CAM-01 全景
+            </button>
+<button class="px-2.5 py-0.5 rounded text-on-surface-variant hover:text-on-surface text-body-sm font-label-caps transition-all" type="button">
+              CAM-02 超慢动作
+            </button>
+<button class="px-2.5 py-0.5 rounded text-on-surface-variant hover:text-on-surface text-body-sm font-label-caps transition-all" type="button">
+              CAM-03 飞猫俯拍
+            </button>
+</div>
+</div>
+<!-- 视频主监播屏幕 (使用真实的运动赛场画面背景) -->
+<div class="relative w-full aspect-video bg-surface-container-lowest overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-[1.01]" data-alt="A cinematic, wide-angle broadcast view of a high-stakes university basketball final game inside a grand stadium arena. Two collegiate teams in vibrant jerseys are locked in an intense offensive play under bright volumetric stadium floodlights. The stadium court has polished hardwood with collegiate court lines, cheering spectator grandstands visible in the blurred background, cinematic neon stadium atmosphere with deep sports broadcast drama." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYInYWmEiJh0SggUP3d_5iQ1EvQljNkmUX1DIUn5WValgK5V2UnF1hEeajZjRY2ZI7gZNTtA1IwSPeXvNDemO5UgFmZOu8dyI0gxU2BW7cGGgNNh5w5HtwHvTd53IK2WKFubu5sH9XTm65eZMW2eJusucIbpCiuVK0HYZNX5m8m_xVE9Fa0cCbjZuXtpbllkz61nTKQyAaUBNIKINEEIaFFZ_RIioLVGxqUVSa3cAiPlscj79vl4Hu1w"/>
+<!-- 监播浮层 HUD Overlay: 顶部技术指标 -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-2 bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1.5 rounded shadow">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-numeric text-error font-bold text-body-md tracking-wider">LIVE REC</span>
+<span class="w-px h-3.5 bg-surface-container-high"></span>
+<span class="font-label-numeric text-on-surface font-semibold text-body-md">01:42:18</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-[11px] font-label-caps text-secondary">3840×2160 @60FPS</span>
+<span class="text-on-surface-variant font-label-numeric text-body-sm">12.5 Mbps</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1.5 rounded shadow">
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-[10px] text-outline">AUDIO L/R</span>
+<div class="flex flex-col gap-0.5 w-14">
+<div class="w-full bg-surface-container h-1 rounded overflow-hidden">
+<div class="bg-secondary-container h-full w-[82%]"></div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded overflow-hidden">
+<div class="bg-secondary-container h-full w-[78%]"></div>
+</div>
+</div>
+</div>
+<span class="font-label-caps text-body-sm text-secondary font-bold">STEREO OK</span>
+</div>
+</div>
+<!-- 监播浮层 HUD: 底部实时比分挂角 -->
+<div class="absolute bottom-4 left-4 flex items-center gap-3 bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded shadow pointer-events-none">
+<div class="flex items-center gap-3 px-3 py-1 bg-surface-container-high rounded">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">计算机飞鹰</span>
+<span class="font-display-score-mobile text-display-score-mobile text-primary font-bold">78</span>
+</div>
+<div class="font-label-numeric text-body-md text-tertiary font-bold">
+              Q4 03:12
+            </div>
+<div class="flex items-center gap-3 px-3 py-1 bg-surface-container-high rounded">
+<span class="font-display-score-mobile text-display-score-mobile text-secondary font-bold">75</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">自动化战车</span>
+</div>
+</div>
+<!-- 监播浮层 HUD: 右下角控制全屏与缩放 -->
+<div class="absolute bottom-4 right-4 flex items-center gap-2">
+<button class="w-9 h-9 rounded bg-surface-container-lowest/80 backdrop-blur hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-all" title="切换画中画" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_in_picture_alt</span>
+</button>
+<button class="w-9 h-9 rounded bg-surface-container-lowest/80 backdrop-blur hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-all" title="全屏监看" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- OBS 推流鉴权配置与状态卡片 (PRD §九.18 live_streams) -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">router</span>
+<span class="font-title-md text-on-surface font-bold">OBS / 导播台推流配置专区</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-[11px] font-label-caps">PRIMARY CDN: ALIYUN + TENCENT</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="text-secondary font-label-caps text-body-sm font-semibold">推流信令: HEALTHY 极佳</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-body-sm">
+<!-- RTMP 服务器地址 -->
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-1">
+<span class="font-label-caps text-outline text-[11px] uppercase">RTMP PUSH SERVER URL</span>
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-on-surface text-body-sm truncate">rtmp://push-live.cbb.edu.cn/live/</span>
+<button class="text-secondary hover:text-secondary-fixed flex items-center gap-1 font-body-sm pl-2" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="text-body-sm">复制</span>
+</button>
+</div>
+</div>
+<!-- Stream Key 密匙 -->
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-outline text-[11px] uppercase">STREAM KEY (鉴权密钥)</span>
+<button class="text-outline hover:text-on-surface text-[11px] font-body-sm flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>重置</span>
+</button>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-primary-fixed text-body-sm tracking-wider">stream_ko_finals_2026_qdb?auth_key=9f8a******</span>
+<button class="text-secondary hover:text-secondary-fixed flex items-center gap-1 font-body-sm pl-2" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="text-body-sm">显示</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 分发回放与实时转录状态 -->
+<div class="flex flex-wrap items-center justify-between gap-2 pt-2 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cloud_sync</span>
+<span>云端自动录制同步中: <span class="font-label-numeric text-on-surface font-semibold">oss://cbb-recordings-2026/qdb_final_cam01.mp4</span></span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-outline">SLATE OVERLAY: DISABLED</span>
+<a class="text-primary hover:underline font-body-sm flex items-center gap-0.5" href="#">
+<span>打开 WebRTC 极速低延迟预览</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- 智能精彩打点剪辑工作台 (PRD §九.20~21 highlight_markers & highlight_videos) -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">content_cut</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">赛事精彩集锦打点与 AI 云端合成</h3>
+<p class="text-body-sm text-outline font-body-sm">实时标记精彩瞬间锚点，BullMQ 自动提取前后 15s 高光并渲染横竖屏集锦</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary font-title-md text-body-md font-bold hover:bg-inverse-primary transition-all flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>一键提交云端渲染并发布</span>
+</button>
+</div>
+</div>
+<!-- 快捷打点动作按钮阵列 (Hotkeys) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<button class="flex items-center justify-center gap-2 p-2.5 rounded bg-surface-container hover:bg-surface-container-high transition-all text-on-surface group" type="button">
+<span class="w-7 h-7 rounded bg-primary-container/20 text-primary-fixed flex items-center justify-center font-bold text-body-sm">F2</span>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-body-md font-bold group-hover:text-primary transition-colors">🔥 关键得分 (+2/+3)</span>
+<span class="text-[11px] text-outline font-label-caps">AUTO-CLIP 20S</span>
+</div>
+</button>
+<button class="flex items-center justify-center gap-2 p-2.5 rounded bg-surface-container hover:bg-surface-container-high transition-all text-on-surface group" type="button">
+<span class="w-7 h-7 rounded bg-secondary-container/20 text-secondary flex items-center justify-center font-bold text-body-sm">B</span>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-body-md font-bold group-hover:text-secondary transition-colors">🛡️ 绝杀大帽 / 抢断</span>
+<span class="text-[11px] text-outline font-label-caps">AUTO-CLIP 15S</span>
+</div>
+</button>
+<button class="flex items-center justify-center gap-2 p-2.5 rounded bg-surface-container hover:bg-surface-container-high transition-all text-on-surface group" type="button">
+<span class="w-7 h-7 rounded bg-tertiary-container/30 text-tertiary flex items-center justify-center font-bold text-body-sm">D</span>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-body-md font-bold group-hover:text-tertiary transition-colors">🏀 暴扣灌篮 (Dunk)</span>
+<span class="text-[11px] text-outline font-label-caps">SLOW-MO REPLAY</span>
+</div>
+</button>
+<button class="flex items-center justify-center gap-2 p-2.5 rounded bg-surface-container hover:bg-surface-container-high transition-all text-on-surface group" type="button">
+<span class="w-7 h-7 rounded bg-error-container/30 text-error flex items-center justify-center font-bold text-body-sm">T</span>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-body-md font-bold group-hover:text-error transition-colors">⚠️ 争议判罚 / 技犯</span>
+<span class="text-[11px] text-outline font-label-caps">VAR REVIEW CLIP</span>
+</div>
+</button>
+</div>
+<!-- 打点事件流微缩轨 (Timeline Markers) -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm text-outline">
+<span class="font-label-caps uppercase tracking-wider">TIMELINE ANCHOR LOGS (本场已打点 3 个核心事件)</span>
+<span class="font-body-sm">按最新时间倒序</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- Event 1 -->
+<div class="p-3 rounded bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-primary font-bold text-headline-md">01:38:12</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed text-[11px] font-label-caps">绝杀大帽</span>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-semibold">张峰终场前 0.8 秒惊天绝杀封盖，锁定胜局！</span>
+<span class="font-body-sm text-[12px] text-outline">标记人: 赛事录入组 (主裁协助确认) · 片段时长: 18s · 已生成 4K 60fps</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-bright text-secondary text-body-sm font-label-caps">已剪辑出片</span>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="p-3 rounded bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-tertiary font-bold text-headline-md">01:14:05</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary text-[11px] font-label-caps">双人暴扣</span>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-semibold">自动化战车 11 号空中接力隔人暴扣得分</span>
+<span class="font-body-sm text-[12px] text-outline">标记人: AI视觉模型自动捕获 (置信度 96.8%) · 时长: 24s</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-bright text-tertiary text-body-sm font-label-caps">AI渲染中 (84%)</span>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="p-3 rounded bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-numeric text-secondary font-bold text-headline-md">00:45:20</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary text-[11px] font-label-caps">三分雨狂潮</span>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md text-on-surface font-semibold">计算机飞鹰后场连贯传导，连续命中3记超远三分逆转比分</span>
+<span class="font-body-sm text-[12px] text-outline">标记人: 导播助理 (手动) · 时长: 45s · 横竖双画幅准备完毕</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-bright text-secondary text-body-sm font-label-caps">已发布到端</span>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-bright text-on-surface flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 右侧工作台 (35% -> 4 Cols)：UGC 内容风控审核审批专栏 (PRD §七.2.8 & §六.2 状态机) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- UGC 审核卡片头部 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">verified_user</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">内容风控与 UGC 审核</h3>
+<span class="text-[11px] font-label-caps text-outline">STATE MACHINE: PENDING → APPROVED/REJECTED</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-numeric font-bold text-body-sm">
+            7 待审
+          </span>
+</div>
+<!-- 细分子分类过滤器 -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded overflow-x-auto text-body-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-primary-fixed font-semibold font-body-sm flex-1 text-center" type="button">
+            全部 (7)
+          </button>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm whitespace-nowrap" type="button">
+            相册 (3)
+          </button>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm whitespace-nowrap" type="button">
+            海报 (2)
+          </button>
+<button class="px-2 py-1 rounded text-error hover:text-on-surface font-body-sm whitespace-nowrap flex items-center gap-0.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            弹幕 (2)
+          </button>
+</div>
+</div>
+<!-- 待审卡片队列 -->
+<div class="flex flex-col gap-space-md">
+<!-- 待审卡片 1：球员自制海报投稿 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary text-[11px] font-label-caps font-bold">
+              🎨 自制海报投稿
+            </span>
+<span class="text-outline font-label-numeric text-[12px]">10分钟前提交</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-md text-on-surface font-semibold text-body-md">《钢铁意志·装甲战车出击》4K 参赛海报</h4>
+<div class="flex items-center gap-1.5 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">badge</span>
+<span>投稿人: 机械工程学院 · 自动化美工组 (ID: 20240109)</span>
+</div>
+</div>
+<!-- 海报展示图 -->
+<div class="relative w-full h-44 rounded overflow-hidden bg-surface-container group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A striking graphic sports poster designed for a collegiate varsity basketball finals tournament. Features a high-contrast mechanical cybernetic basketball smashing through high-tech orange and deep slate armor plates with dynamic varsity typography reading IRON WILL. Clean neon lines, dark stadium background, and championship basketball energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP44p6Kb9IPF2UA8GsgprIJ3Z96WI8FYLrtGGJecI_RAsPIrY_5OPViu8sWMLPaJvlRN994oCEycOr4BSLYtcdvOvt8rx552ri3FkUUYZS4KDRA4qqa6FtJOZKws02kg2dYyvG-4jvSYpPc-xOx2rLXw3TUu0wb2TQt8FRCjJMLejf9V5DGFSBhtXz7MpoHmOtwXCtyvuMfUWSaeuHA9XaKXdYT9VDKqvWCuYGu96NQd5owtRTJHHZWw"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps text-secondary">
+              3840×2160 · 480KB (COMPRESSED)
+            </div>
+</div>
+<!-- 预检报告 -->
+<div class="p-2 rounded bg-surface-container text-body-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-[12px]">
+<span class="text-outline">版权水印检索</span>
+<span class="text-secondary font-semibold">PASS (无冲突)</span>
+</div>
+<div class="flex items-center justify-between text-[12px]">
+<span class="text-outline">DFA 敏感文本过滤</span>
+<span class="text-secondary font-semibold">0 命中 (合规)</span>
+</div>
+</div>
+<!-- 审核动作按钮 -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2 px-3 rounded bg-primary-container text-on-primary font-title-md text-body-md font-bold hover:bg-inverse-primary transition-all flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>入选官方展廊</span>
+</button>
+<button class="py-2 px-3 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all flex items-center justify-center gap-1 text-body-md font-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">cancel</span>
+<span>驳回修改</span>
+</button>
+</div>
+</div>
+<!-- 待审卡片 2：赛场相册抓拍 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary text-[11px] font-label-caps font-bold">
+              📸 赛场抓拍相册
+            </span>
+<span class="text-outline font-label-numeric text-[12px]">24分钟前提交</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-md text-on-surface font-semibold text-body-md">邱德拔体育馆 3800 名球迷山呼海啸现场大合影</h4>
+<div class="flex items-center gap-1.5 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">photo_camera</span>
+<span>投稿人: 学生摄影协会 · 周同学 (学号: 20230811)</span>
+</div>
+</div>
+<!-- 抓拍缩略图 -->
+<div class="relative w-full h-40 rounded overflow-hidden bg-surface-container group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An expansive, high-resolution photograph capturing the enthusiastic student crowd in a packed indoor university basketball arena. Thousands of cheering fans in varsity school colors waving foam fingers and banners under warm indoor arena lights, capturing the authentic emotion, youthfulness, and energy of campus sports culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKI6s2JoHO9EOZMuexK3yG1-qIq2GVwYfqhF0xfasnR6h4CersQgIzHfNxxYKevPDfXXVy1iHFjWH3kGY212xlwwKU_fCM7mpkgzzCXbGjCKFZnv5tsT31uWA4suwVqod7PHodO1cHXkup3bE4SLIBa4rHMMlPTc8uO-hZHa4AJmH56uGf1fOJQ99Tg_8vOofXPsomlCQClWIqQiSLVYfA-ef67N_i2X7QCs667buNQ9-p8sOqtebAdA"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps text-tertiary">
+              官方认证摄影师
+            </div>
+</div>
+<div class="text-[12px] text-outline font-body-sm">
+            关联相册目标: <span class="text-on-surface">【2026 男子半决赛 精彩全景瞬间】</span>
+</div>
+<!-- 审核动作按钮 -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2 px-3 rounded bg-surface-container-high text-secondary hover:bg-surface-bright font-title-md text-body-md font-bold transition-all flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>通过并发布</span>
+</button>
+<button class="py-2 px-3 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all flex items-center justify-center gap-1 text-body-md font-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">close</span>
+<span>退回</span>
+</button>
+</div>
+</div>
+<!-- 待审卡片 3：违规弹幕人工处置 -->
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-error-container text-error text-[11px] font-label-caps font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">report</span>
+              违规弹幕处置 (6 人举报)
+            </span>
+<span class="text-error font-label-numeric text-[12px] font-bold">高优先级</span>
+</div>
+<!-- 违规原句与拦截状态 -->
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] text-outline">
+<span>房间: game:KO-02 决赛预演</span>
+<span class="text-primary-fixed">触发词: 裁判收钱 / 黑哨</span>
+</div>
+<p class="font-body-md text-error bg-surface-container-low p-2 rounded text-body-sm">
+              “XX学院这裁判收钱了吧，黑哨xxxx！”
+            </p>
+<div class="flex items-center justify-between text-[12px] text-on-surface-variant">
+<span>违规用户: 学号 2025****44</span>
+<span class="text-secondary font-label-caps">已自动隐藏 (RECALLED)</span>
+</div>
+</div>
+<!-- 处置操作 -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2 px-3 rounded bg-error-container text-on-error font-title-md text-body-md font-bold hover:bg-on-error transition-all flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>拉黑禁言24小时</span>
+</button>
+<button class="py-2 px-3 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all flex items-center justify-center gap-1 text-body-md font-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">undo</span>
+<span>误报解除</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部模块：全网回放归档与流媒体操作审计流水 (PRD §九.19 & §九.41) -->
+<div class="flex flex-col p-space-md rounded bg-surface-container-low shadow-sm gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">流媒体分发与多媒体安全审计流水 (Audit Trails)</h3>
+<p class="text-body-sm text-outline font-body-sm">记录直播启停、推流密钥重置、AI打点渲染发布与 UGC 审核责任人操作日志</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-body-sm">
+<span class="font-label-caps text-outline text-[11px]">AUTO-SAVED TO AUDIT_LOGS</span>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high text-body-sm font-body-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>刷新日志</span>
+</button>
+</div>
+</div>
+<!-- 审计流水表格 -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">
+<th class="py-2.5 px-3">时间戳 (UTC+8)</th>
+<th class="py-2.5 px-3">操作主体 / 角色</th>
+<th class="py-2.5 px-3">业务模块</th>
+<th class="py-2.5 px-3">操作行为与对象</th>
+<th class="py-2.5 px-3">系统结果 / 影响</th>
+<th class="py-2.5 px-3 text-right">操作审计</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-3 font-label-numeric text-outline text-body-sm whitespace-nowrap">2026-09-15 11:40:00</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-6 h-6 rounded-full bg-primary-container/20 text-primary-fixed flex items-center justify-center font-bold text-[10px]">张</span>
+<span class="font-title-md text-body-md font-semibold text-on-surface">张主任 (超级管理员)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-[11px] font-label-caps">直播推流</span>
+</td>
+<td class="py-3 px-3 font-body-md text-body-md">
+              开启邱德拔中央馆男子总决赛备用拉流测试，双线正常 (CAM-01 / CAM-02)
+            </td>
+<td class="py-3 px-3">
+<span class="text-secondary font-semibold font-body-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                推流节点已预热
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<a class="text-outline hover:text-on-surface text-body-sm" href="#">查看详情</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-3 font-label-numeric text-outline text-body-sm whitespace-nowrap">2026-09-15 10:15:33</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-[10px]">李</span>
+<span class="font-title-md text-body-md font-semibold text-on-surface">李老师 (审核员)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-tertiary text-[11px] font-label-caps">UGC 审核</span>
+</td>
+<td class="py-3 px-3 font-body-md text-body-md">
+              审核通过《计算机飞鹰78-75险胜》官方认证图文打卡投稿 (入选官方相册)
+            </td>
+<td class="py-3 px-3">
+<span class="text-primary-fixed font-semibold font-body-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                已同步至 APP 首页
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<a class="text-outline hover:text-on-surface text-body-sm" href="#">凭证</a>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-3 font-label-numeric text-outline text-body-sm whitespace-nowrap">2026-09-14 21:50:12</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">smart_toy</span>
+<span class="font-title-md text-body-md font-semibold text-on-surface">BullMQ 集群渲染引擎</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary text-[11px] font-label-caps">视频剪辑</span>
+</td>
+<td class="py-3 px-3 font-body-md text-body-md">
+              男子半决赛《0.8秒绝杀封盖》自动渲染完成并分发至 CDN (m3u8 规格)
+            </td>
+<td class="py-3 px-3">
+<span class="text-secondary font-semibold font-body-sm">
+                4K/1080P 双分辨率就绪
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<a class="text-outline hover:text-on-surface text-body-sm" href="#">播放</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3 px-3 font-label-numeric text-outline text-body-sm whitespace-nowrap">2026-09-14 19:42:01</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">gavel</span>
+<span class="font-title-md text-body-md font-semibold text-on-surface">纪律风控组</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error text-[11px] font-label-caps">弹幕风控</span>
+</td>
+<td class="py-3 px-3 font-body-md text-body-md">
+              用户 2025****12 因刷屏与辱骂裁判触发 DFA 词库，执行 24 小时禁言
+            </td>
+<td class="py-3 px-3">
+<span class="text-error font-semibold font-body-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                禁言状态已生效
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<a class="text-outline hover:text-on-surface text-body-sm" href="#">解封</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>
+  // 侧边栏高亮定位激活【直播与内容】模块
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('aside nav a');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'live-and-media') {
+        item.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+        item.classList.remove('text-on-surface-variant');
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-4 px-gutter-desktop shadow-[0_-1px_6px_rgba(0,0,0,0.2)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-body-sm text-on-surface-variant"><div class="flex items-center gap-3 font-body-sm"><span>Campus Basketball Association CBB-Live Administration System V2.0</span><span class="hidden md:inline-block w-1 h-1 rounded-full bg-on-surface-variant/40"></span><span class="hidden md:inline-block">Security Level 2</span></div><div class="flex items-center gap-2 font-label-caps text-[11px]"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-secondary">DB SYNC ACTIVE · 节点已就绪</span></div></div></footer></div></body></html>

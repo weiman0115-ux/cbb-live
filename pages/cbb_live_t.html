@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#5f1500", "outline-variant": "#5b4039", "surface-container-highest": "#31353c", "secondary": "#bdf4ff", "inverse-on-surface": "#2d3137", "tertiary-container": "#c68300", "on-tertiary-fixed-variant": "#633f00", "inverse-primary": "#b02f00", "on-secondary-fixed": "#001f24", "surface-tint": "#ffb5a0", "surface-container-low": "#181c22", "on-background": "#dfe2eb", "surface-bright": "#353940", "surface-container-lowest": "#0a0e14", "primary-fixed": "#ffdbd1", "surface-dim": "#10141a", "primary-fixed-dim": "#ffb5a0", "on-primary-fixed-variant": "#862200", "on-tertiary-fixed": "#291800", "tertiary-fixed": "#ffddb4", "error": "#ffb4ab", "on-surface": "#dfe2eb", "on-tertiary": "#452b00", "secondary-container": "#00e3fd", "error-container": "#93000a", "surface": "#10141a", "on-error": "#690005", "on-primary-fixed": "#3b0900", "on-secondary-container": "#00616d", "surface-variant": "#31353c", "surface-container-high": "#262a31", "tertiary": "#ffb952", "secondary-fixed-dim": "#00daf3", "on-secondary": "#00363d", "tertiary-fixed-dim": "#ffb952", "primary": "#ffb5a0", "outline": "#ab8980", "on-error-container": "#ffdad6", "on-surface-variant": "#e4beb4", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "on-primary-container": "#541200", "background": "#10141a", "inverse-surface": "#dfe2eb", "primary-container": "#ff5722", "surface-container": "#1c2026", "on-tertiary-container": "#3c2500" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "2.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "display-score": ["Oswald"], "headline-xl-mobile": ["Oswald"], "headline-lg": ["Oswald"], "label-numeric": ["Oswald"], "label-caps": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "title-lg": ["Space Grotesk"], "body-md": ["Space Grotesk"], "headline-md": ["Oswald"], "body-sm": ["Space Grotesk"], "display-score-mobile": ["Oswald"], "title-md": ["Space Grotesk"], "headline-xl": ["Oswald"] }, "fontSize": { "display-score": ["80px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-numeric": ["15px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-score-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/20 bg-surface-container-lowest/50"><div class="flex items-center gap-space-sm"><img alt='A sleek, dynamic modern sports logo for "CBB-Live" (Campus Basketball Live). Features an energetic basketball silhouette integrated with clean geometric lightning or live broadcast signal arcs, vibrant neon basketball orange (#FF5500) and crisp white accents, collegiate varsity sports emblem aesthetic, flat vector design on transparent background.. Design context: - Primary color: #ff5722
+- Font: oswald
+- Mode: dark
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens.' class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1L6jWIejbr4W7f4zkskMPNX_Z0jf66wz-g57XLMn6mhhFub3seKH3M2NPy37HhfUpv21s5QHbLlLyKK-K6XMd3x-7kIQkvP0DlH8wu6bOF7dBHfYlfw-vyqwnhcIQRsxH9OHvLR4TsRpd2B1Gaw6bTYaB64Q6cAmjqWq7Y8ojqQr9bIFooFEqJd9hgJ8z-lE27rynLiDUbrLKQ9bVy8CDgHPpQyhBPev_5-Yem7scJz7t6yugaJNvoc"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase leading-none font-bold">CBB-LIVE</span><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">赛事中台 ADMIN</span></div></div></div><div class="px-space-md py-space-sm"><span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-space-xs">核心导航 CORE MENU</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(255,87,34,0.35)]"><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="dashboard" href="cbb_live_0.1.html"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md tracking-tight">数据看板</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="seasons-rules" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">emoji_events</span><span class="font-body-md text-body-md tracking-tight">赛季赛制</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="schedules" href="cbb_live_28.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md tracking-tight">赛程排期</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="teams-players" href="cbb_live_5.html"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md tracking-tight">球队球员</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="live-court-ops" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sports_basketball</span><span class="font-body-md text-body-md tracking-tight">比赛操控</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="stream-content" href="cbb_live_30_live_ops.html"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-body-md text-body-md tracking-tight">直播与内容</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="review-center" href="cbb_live_call_audit_reports.html"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-body-md text-body-md tracking-tight">审核中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="awards-selection" href="cbb_live_referee_evaluation_credit.html"><span class="material-symbols-outlined text-[20px]">military_tech</span><span class="font-body-md text-body-md tracking-tight">荣誉评选</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="analytics-reports" href="cbb_live_pdf.html"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-body-md text-body-md tracking-tight">报表中心</span></a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm" data-path="system-settings-logs" href="cbb_live_2.html"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-body-md text-body-md tracking-tight">系统配置与日志</span></a></nav><div class="p-space-md border-t border-outline-variant/20 bg-surface-container-lowest/80"><div class="flex items-center justify-between p-2 rounded bg-surface-container border border-outline-variant/30"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">shield</span><div class="flex flex-col"><span class="font-label-caps text-label-caps text-on-surface font-semibold">等保二级认证</span><span class="font-body-sm text-body-sm text-outline">SECURED 256-BIT</span></div></div><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#00e3fd]"></div></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container px-space-sm py-1 rounded border border-outline-variant/40"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">SUPER ADMIN / 赛事组委会</span></div><div class="h-4 w-px bg-outline-variant/40 hidden lg:block"></div><div class="items-center gap-2 bg-surface-container-high/60 px-space-sm py-1 rounded border border-outline-variant/20 hidden lg:flex"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-body-sm text-body-sm text-on-surface font-medium">2026学年秋季联赛 · 进行中</span><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer">arrow_drop_down</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 bg-surface-container-low rounded border border-secondary-container/20 text-secondary"><span class="material-symbols-outlined text-[16px]">wifi_tethering</span><span class="font-label-numeric text-label-numeric tracking-wider">WS PUSH: ACTIVE | 18ms</span></div><button class="relative p-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container text-on-primary-container font-label-caps text-[9px] font-bold ring-2 ring-surface-container-lowest">4</span></button><div class="flex items-center gap-space-sm pl-2 border-l border-outline-variant/30"><div class="text-right hidden sm:block"><div class="font-title-md text-title-md text-on-surface leading-tight font-semibold">张主任</div><div class="font-body-sm text-body-sm text-outline leading-tight">超级管理员 · 体育教学部</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full p-gutter-desktop space-y-gutter-desktop bg-surface select-none">
+<!-- TOP EXAM HUD & SCENARIO CARD -->
+<div class="flex flex-col space-y-space-sm">
+<!-- Top System Subheader & Status Toggles -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low px-space-md py-2.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-error-container/40 text-on-error-container">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">隔离沙箱环境 · 正式数据只读保护</span>
+</div>
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant font-label-caps text-label-caps pl-2">
+<span>INSTANCE: #SANDBOX-REF-EXAM-10</span>
+<span>·</span>
+<span>DISCIPLINE PROTOCOL: ART-36.3.4</span>
+</div>
+</div>
+<!-- Scenario Selection Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto">
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm whitespace-nowrap">
+          常规考核
+        </button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm whitespace-nowrap">
+          极限压哨
+        </button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm whitespace-nowrap">
+          技术与违体纠纷
+        </button>
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-semibold shadow-md whitespace-nowrap flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+<span class="font-body-sm text-body-sm">主帅驱逐与终局争议 (EXAM #10)</span>
+</button>
+</div>
+<!-- Quick Execution Controls -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">shuffle</span>
+<span>随机突发题库</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">restart_alt</span>
+<span>重置沙箱画布</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">speed</span>
+<span>盲打反应报告</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all">
+<span>退出 (ESC)</span>
+</button>
+</div>
+</div>
+<!-- Exam Scenario Banner & Dynamic Telemetry Strip -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl p-space-lg">
+<div class="absolute -right-16 -top-16 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-error/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row gap-space-lg justify-between items-start xl:items-center">
+<!-- Scenario Statement -->
+<div class="space-y-space-xs max-w-4xl">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-caps text-label-caps bg-error-container text-on-error-container font-bold tracking-widest uppercase">
+              EXAM SCENARIO #10 · 裁判高级实操
+            </span>
+<span class="px-2 py-0.5 rounded font-label-caps text-label-caps bg-primary text-on-primary font-bold">
+              DIFFICULTY 9.8 / S+ 级极速压力
+            </span>
+<span class="text-tertiary font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+              终局压哨 00:04.1 倒计时临界仲裁
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-wide uppercase font-bold">
+            第四节 00:04.1 · 客队绝杀争议主帅连续两T被直接驱逐演练
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-error font-semibold">【考题情境】</strong>
+            比分 76-75 主队领先1分。客队后卫突入禁区上篮不中，主裁未响哨。客队主帅暴怒冲向主裁辱骂推搡，被判第1次直接技术犯规 (<span class="text-tertiary font-medium">Coach C1</span>)；随后向技术台怒摔战术板咆哮，主裁判立即追加第2次技术犯规 (<span class="text-error font-medium">Coach C2</span>) 并自动触发驱逐出场 (<span class="text-error font-semibold">Ejection</span>)！要求执裁席在 5 秒内精准录入双T、驱逐、两罚一掷与14秒前场发球复位。
+          </p>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 pt-1 font-label-caps text-label-caps text-on-surface-variant">
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-secondary font-bold">①</span> 冻结时钟 00:04.1
+            </div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-tertiary font-bold">②</span> 判录 Coach C1
+            </div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-error font-bold">③</span> 追加 Coach C2
+            </div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-error font-bold">④</span> 驱逐令生效进通道
+            </div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-primary font-bold">⑤</span> 主队执行 2 罚 1 掷
+            </div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded">
+<span class="text-secondary font-bold">⑥</span> 复位 14s 并播报
+            </div>
+</div>
+</div>
+<!-- Telemetry HUD Card -->
+<div class="flex flex-row xl:flex-col gap-3 w-full xl:w-auto shrink-0 bg-surface-container p-space-md rounded-lg shadow-lg">
+<div class="flex items-center justify-between gap-6">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">处置倒计时 REMAINING</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-score text-headline-xl text-error font-bold tracking-tight animate-pulse leading-none" id="countdown-val">00:05.2</span>
+<span class="font-label-caps text-label-caps text-error">SEC</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">录入时延 LATENCY</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">0.33</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ms (S+ 99.9%)</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary via-tertiary to-error h-full w-4/5 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              连招判定: 4/5 步骤锁定
+            </span>
+<span>累计演练录入: 52 场次</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MIDDLE 3-COLUMN PLAY-BY-PLAY EXECUTION CONSOLE -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- LEFT COLUMN: 2D Incident Spotlight Radar & IRS Video Sync (col-span-3) -->
+<div class="lg:col-span-3 flex flex-col space-y-space-md">
+<!-- 2D Incident Radar -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-error">swipe_right_alt</span>
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider">事发区域雷达 2D RADAR</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container/60 text-on-error-container font-label-caps text-[10px] font-bold">
+            ART. 36.3.4 DISQUALIFIED
+          </span>
+</div>
+<!-- Half-Court Schematic SVG -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center">
+<svg class="w-full h-full opacity-70" viewbox="0 0 400 300">
+<!-- Court Baseline & Sidelines -->
+<rect fill="none" height="260" stroke="#31353c" stroke-width="2" width="360" x="20" y="20"></rect>
+<!-- Center Line -->
+<line stroke="#31353c" stroke-dasharray="4 4" stroke-width="2" x1="200" x2="200" y1="20" y2="280"></line>
+<!-- 3-Point Arc -->
+<path d="M 60 20 L 60 80 A 130 130 0 0 0 60 220 L 60 280" fill="none" stroke="#262a31" stroke-width="2"></path>
+<!-- Key Area -->
+<rect fill="#181c22" height="120" stroke="#31353c" stroke-width="1.5" width="110" x="20" y="90"></rect>
+<!-- Free Throw Circle -->
+<circle cx="130" cy="150" fill="none" r="40" stroke="#31353c" stroke-width="1.5"></circle>
+<!-- Technical Table Sideline Zone (Incident Area) -->
+<rect fill="rgba(255, 87, 34, 0.15)" height="35" stroke="#ff5722" stroke-dasharray="3 3" stroke-width="1.5" width="130" x="240" y="250"></rect>
+<text fill="#ffb5a0" font-family="Space Grotesk" font-size="10" font-weight="700" x="245" y="272">客队技术台边线违规禁区</text>
+<!-- Referee Path & Incident Impact Arc -->
+<path d="M 120 160 Q 230 200 290 260" fill="none" stroke="#ffb952" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<!-- Heat Circle for Coach Aggressive Movement -->
+<circle class="animate-ping" cx="295" cy="265" fill="rgba(239, 68, 68, 0.25)" r="24"></circle>
+<circle cx="295" cy="265" fill="#ff5722" r="14"></circle>
+<!-- Flash Icon for Tactical Board Drop -->
+<polygon fill="#00e3fd" points="320,255 330,240 322,240 326,228 312,245 320,245"></polygon>
+</svg>
+<!-- Floating Pin Data Badge -->
+<div class="absolute bottom-2 left-2 bg-surface-container-high/90 backdrop-blur px-2 py-1 rounded text-on-surface font-label-caps text-[10px] space-y-0.5">
+<div>COORD: X:74% | Y:28%</div>
+<div class="text-error font-bold">侵入裁判执裁安全走廊</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant bg-surface-container px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+            战术板碎裂位置已拍照保全
+          </span>
+<span class="font-label-numeric text-label-numeric text-on-surface">LOC#T-SIDE-04</span>
+</div>
+</div>
+<!-- IRS Multi-Cam Frame Clip -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">videocam</span>
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider">IRS 逐帧裁切片</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-secondary bg-surface-container-high px-1.5 py-0.5 rounded">
+            FRAME #3892 · 120 FPS
+          </span>
+</div>
+<!-- Frame Snapshot Container -->
+<div class="relative w-full aspect-video bg-surface-container-lowest rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500" data-alt="High-resolution sports referee review frame, high contrast basketball arena courtside technical table in deep shadows, furious college basketball coach in navy suit aggressively shouting near orange glowing boundary line, clipboard shards on hardwood floor, referee blowing whistle with urgent hand signal, 4k broadcast monitor style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnJiUTLpbg4xN24JjqdPp5I9RoR7tT6ZlUw8yQrt6JOQvHOJk97cpvfQKBrYUMI5lmoXgzhmVdXLX_WsAkoIETIXgDrQOZsgMt-Rgp1rOeceqEf_TDBJkpJNh0lveXqkApHeQti4y_NNRNdoqxVhS6ilJ3Rsp7eiKLyqWpaKzxv6Y1sz6B0uX0GOqph-R9WosIZ0DeYrt5keZeWQJhTDwJY7temel4YDWH4IAg0wsddPCErSClM9s3rA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Video Badges Overlay -->
+<div class="absolute top-2 left-2 flex items-center gap-1.5 bg-error/90 text-on-error px-2 py-0.5 rounded font-label-caps text-[10px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-ping"></span>
+<span>2x C-FOUL VERIFIED</span>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-container/80 backdrop-blur px-2 py-0.5 rounded">
+              00:04.1 Q4 REC-SYNC
+            </span>
+<span class="font-label-caps text-label-caps text-tertiary bg-surface-container/80 backdrop-blur px-2 py-0.5 rounded font-bold">
+              驱逐事实完整
+            </span>
+</div>
+</div>
+<!-- Camera Angle Switcher -->
+<div class="grid grid-cols-3 gap-1">
+<button class="py-1 px-1 rounded bg-primary-container text-on-primary-container font-label-caps text-[10px] font-bold text-center">
+            CAM 01 替补席边线 (主)
+          </button>
+<button class="py-1 px-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[10px] text-center transition-colors">
+            CAM 02 技术台全景
+          </button>
+<button class="py-1 px-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[10px] text-center transition-colors">
+            CAM 03 主裁第一视角
+          </button>
+</div>
+</div>
+</div>
+<!-- MIDDLE COLUMN: Scoreboard, 5-Step Pipeline, & FIBA Rapid Keypad (col-span-6) -->
+<div class="lg:col-span-6 flex flex-col space-y-space-md">
+<!-- Game Clock & Scoreboard HUD Module -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col space-y-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="absolute top-0 right-0 bottom-0 w-1 bg-secondary-container"></div>
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-caps text-label-caps text-error uppercase font-bold tracking-widest">
+              DEAD BALL · 终局死球状态 (时钟已硬件级冻结)
+            </span>
+</div>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container px-2 py-0.5 rounded">
+            第 4 节 FINAL Q4 · DECIDING MOMENT
+          </span>
+</div>
+<!-- Team Score Matrix -->
+<div class="grid grid-cols-11 items-center py-2 bg-surface-container-lowest/80 rounded-lg px-space-md">
+<!-- Home Team -->
+<div class="col-span-4 flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[24px]">sports_basketball</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">计算机飞鹰 (主队)</span>
+<span class="font-label-caps text-label-caps text-primary">TEAM FOULS: 4 · BONUS ON</span>
+</div>
+</div>
+<!-- Score & Time Centerpiece -->
+<div class="col-span-3 flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-3">
+<span class="font-display-score text-display-score text-on-surface font-bold tracking-tighter leading-none">76</span>
+<span class="font-headline-lg text-headline-lg text-outline">:</span>
+<span class="font-display-score text-display-score text-on-surface font-bold tracking-tighter leading-none">75</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<div class="bg-surface-container-high px-2 py-0.5 rounded">
+<span class="font-label-numeric text-headline-md text-tertiary tracking-wider font-bold">00:04.1</span>
+</div>
+<div class="bg-surface-container-high px-2 py-0.5 rounded">
+<span class="font-label-numeric text-label-numeric text-secondary font-bold">14.0s</span>
+</div>
+</div>
+</div>
+<!-- Away Team -->
+<div class="col-span-4 flex items-center justify-end gap-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md text-on-surface font-bold">自动化战车 (客队)</span>
+<span class="font-label-caps text-label-caps text-error">COACH FOULS: 2C (EJECTED)</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+</div>
+</div>
+<!-- Clock Rapid Triggers -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-caps text-label-caps flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">pause_circle</span>
+<span>冻结 [SPACE]</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-secondary font-label-caps text-label-caps flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">rotate_left</span>
+<span>复位14秒 [F14]</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">
+            球权仲裁: 主队拥有前场边线掷球入界权 (已确认)
+          </span>
+</div>
+</div>
+<!-- 5-Step Coach Ejection & Technical Pipeline -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider">
+              五段式主帅驱逐与技术仲裁管线 (EXAM PIPELINE)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-[10px] font-bold">
+            STEP 4 OF 5 IN PROGRESS
+          </span>
+</div>
+<!-- Pipeline Steps Stack -->
+<div class="flex flex-col space-y-2">
+<!-- Step 1 Done -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 text-secondary-container flex items-center justify-center font-bold text-xs">
+                ✓
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">1. 客队主教练辱骂裁判</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">判罚第1次直接技术犯规 [COACH C1 · 1罚]</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-caps text-label-caps font-bold">
+              RECORDED · 记入底册
+            </span>
+</div>
+<!-- Step 2 Done -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container/20 text-secondary-container flex items-center justify-center font-bold text-xs">
+                ✓
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">2. 客队主教练怒摔战术板咆哮技术台</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">追加第2次直接技术犯规 [COACH C2]</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-caps text-label-caps font-bold">
+              RECORDED · 记入底册
+            </span>
+</div>
+<!-- Step 3 Done -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-bold text-xs">
+                ✓
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-error font-medium">3. 触发自动取消比赛资格并驱逐</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">累计 2C 驱逐离场 (Coach Disqualified &amp; Ejected)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-caps text-label-caps font-bold">
+              EJECTED · 离场指令下达
+            </span>
+</div>
+<!-- Step 4 ACTIVE -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-high shadow-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">4. 主队执行 2 次技术罚球 (不可对冲)</span>
+<span class="font-body-sm text-body-sm text-on-surface">指定主队罚球手: #23 张峰 (SF) · 依 FIBA 规则依次执行</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps font-bold uppercase animate-pulse">
+                WAITING KEYBOARD [1]
+              </span>
+</div>
+<!-- Free Throw Mini Tracker -->
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<div class="flex items-center justify-between bg-surface-container p-2 rounded">
+<span class="font-body-sm text-body-sm text-on-surface-variant">第1次罚球 (C1)</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-caps text-label-caps font-bold">
+                  ✓ 已命中 (+1分)
+                </span>
+</div>
+<div class="flex items-center justify-between bg-primary-container/20 p-2 rounded">
+<span class="font-body-sm text-body-sm text-primary font-bold">第2次罚球 (C2)</span>
+<span class="flex items-center gap-1 text-on-surface font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[15px] text-tertiary">keyboard</span>
+                  等待按键 [1] 命中
+                </span>
+</div>
+</div>
+</div>
+<!-- Step 5 Pending -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/30 opacity-75">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold text-xs">
+                5
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">5. 罚球后球权归属与复位</span>
+<span class="font-body-sm text-body-sm text-outline">主队前场中线延长线掷球入界 · 24秒复位至14秒 (00:04.1)</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase">
+              PENDING EXEC
+            </span>
+</div>
+</div>
+<!-- Big Glow Action Button -->
+<button class="w-full mt-2 py-3 px-space-md rounded-lg bg-gradient-to-r from-primary-container via-error to-primary-container hover:brightness-110 text-on-primary font-headline-md text-title-lg font-bold tracking-wider uppercase transition-all shadow-xl flex items-center justify-center gap-2" id="commit-verdict-btn">
+<span class="material-symbols-outlined text-[22px]">publish</span>
+<span>确认主帅驱逐与双T技术裁决 · 写入审计底单并通报全馆 (ENTER)</span>
+</button>
+</div>
+<!-- FIBA Keypad Matrix (裁判高频执裁盲打按键矩阵) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">dialpad</span>
+            FIBA 裁判高频执裁盲打键位矩阵 (KEYPAD MATRIX)
+          </span>
+<span class="font-label-caps text-label-caps text-outline">快捷键支持物理键盘实时按键映射</span>
+</div>
+<div class="grid grid-cols-4 md:grid-cols-6 gap-2">
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">F2</span>
+<span class="font-label-numeric text-label-numeric font-bold">两分投中</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">F3</span>
+<span class="font-label-numeric text-label-numeric font-bold">三分投中</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-secondary font-bold">KEY 1</span>
+<span class="font-label-numeric text-label-numeric font-bold text-secondary">罚球命中</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">KEY 0</span>
+<span class="font-label-numeric text-label-numeric font-bold">罚球偏出</span>
+</button>
+<button class="p-2.5 rounded bg-tertiary-container/30 text-tertiary hover:bg-tertiary-container/50 text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-tertiary font-bold">C-TF</span>
+<span class="font-label-numeric text-label-numeric font-bold">主帅技犯</span>
+</button>
+<button class="p-2.5 rounded bg-error-container text-on-error-container hover:brightness-120 text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-on-error-container font-bold">EJECT</span>
+<span class="font-label-numeric text-label-numeric font-bold text-error">驱逐出场</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">KEY F</span>
+<span class="font-label-numeric text-label-numeric font-bold">普通犯规</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">KEY U</span>
+<span class="font-label-numeric text-label-numeric font-bold">违体犯规</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">KEY T</span>
+<span class="font-label-numeric text-label-numeric font-bold">队员技犯</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">KEY TO</span>
+<span class="font-label-numeric text-label-numeric font-bold">请求暂停</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-secondary text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-secondary font-bold">IRS</span>
+<span class="font-label-numeric text-label-numeric font-bold">录像回放</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-outline text-center flex flex-col items-center justify-center transition-all">
+<span class="font-label-caps text-[10px] text-outline font-bold">CTRL+Z</span>
+<span class="font-label-numeric text-label-numeric font-bold">撤销留痕</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Immutable Audit Log & FIBA Rule Diagnostic (col-span-3) -->
+<div class="lg:col-span-3 flex flex-col space-y-space-md">
+<!-- Immutable Audit Log -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider">
+              演练录入流 (SHA-256)
+            </span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary">IMMUTABLE</span>
+</div>
+<div class="flex flex-col space-y-2 max-h-[380px] overflow-y-auto pr-1">
+<!-- Log 1: Ejection -->
+<div class="p-2 rounded bg-error-container/30 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-error font-bold">00:04.1 · Q4 COACH EJECTION</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">HASH: 9b2d..8f1a</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+              客队主教练接连被吹罚第1次(辱骂裁判)与第2次(摔战术板)技犯，累计2T驱逐离场！判给主队两次单罚并保留前场球权。
+            </p>
+</div>
+<!-- Log 2: Coach C2 -->
+<div class="p-2 rounded bg-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">00:04.1 · COACH C2 RECORDED</span>
+<span class="font-label-caps text-[10px] text-outline">HASH: 3c7e..419c</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              客队主帅摔碎战术板并严重干扰技术台正常工作，追加第2次技术犯规记入技术统计簿。
+            </p>
+</div>
+<!-- Log 3: Coach C1 -->
+<div class="p-2 rounded bg-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">00:04.1 · COACH C1 RECORDED</span>
+<span class="font-label-caps text-[10px] text-outline">HASH: a812..590e</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              客队教练席跨越限制区辱骂当值主裁判，触发第1次教练席直接技术犯规。
+            </p>
+</div>
+<!-- Log 4: IRS Sync -->
+<div class="p-2 rounded bg-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-numeric text-label-numeric text-secondary font-bold">00:04.1 · IRS 4K SYNC</span>
+<span class="font-label-caps text-[10px] text-outline">HASH: dd02..18fa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              技术台边线视频与裁判麦克风音频同步存证归档完成，无死角记录违纪全过程。
+            </p>
+</div>
+</div>
+</div>
+<!-- FIBA Rule §36/§38 Diagnostic Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">rule</span>
+            FIBA §36/§38 执裁诊断器
+          </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-caps text-[10px] font-bold">
+            CERT-A+ 标准
+          </span>
+</div>
+<div class="space-y-2.5">
+<!-- Metric 1 -->
+<div class="space-y-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">主帅连续违纪响应时延</span>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold">0.32s (标准 ≤ 1.0s)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[96%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="space-y-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">2C 驱逐判定合规率</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">100.0% (精准判定)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-full rounded-full"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="space-y-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">终局两罚一掷裁决准确度</span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">100.0% (零失误)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-full rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Grade Banner -->
+<div class="bg-surface-container p-2.5 rounded-lg flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">本次模拟综合评级</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">FIBA 国际级/国家级主裁水准</span>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">99.9</span>
+<span class="font-label-caps text-label-caps text-outline">/ 100 PTS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM ROSTER & COACH DISCIPLINARY MATRIX -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">badge</span>
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wider">
+          涉案涉纪人员档案卡与现场管控状态 (DISCIPLINARY MATRIX)
+        </span>
+</div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant">
+<span>FIBA DISCIPLINARY CODE 2026 EDITION</span>
+<span>·</span>
+<span class="text-error font-bold">STATUS: OFFICIAL EJECTION ISSUED</span>
+</div>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md pt-1">
+<!-- Card 1: Ejected Head Coach -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between space-y-space-sm border-l-4 border-error">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-error text-on-error font-label-caps text-[10px] font-bold">
+              EJECTED / 驱逐离场
+            </span>
+<span class="font-label-numeric text-label-numeric text-error font-bold">2x C-FOUL</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">客队主教练 · 周建华</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            连续两次严重违纪 (Coach C1 言语辱骂 + Coach C2 摔掷战术板)，累计两次直接主帅技犯触发取消比赛资格，即刻强制离开赛场并返回更衣室。
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-label-caps text-label-caps">
+<span class="text-error font-bold">DISQUALIFIED</span>
+<span class="text-on-surface-variant">启动赛后纪委会追加听证</span>
+</div>
+</div>
+<!-- Card 2: Interim Assistant Coach -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between space-y-space-sm border-l-4 border-tertiary">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary font-label-caps text-[10px] font-bold">
+              INTERIM HC / 临时代理
+            </span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">FOULS: 0</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">客队第一助教 · 李维</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            主帅驱逐后依 FIBA 规则由第一助理教练接管战术暂停及终局换人指挥权。已受主裁口头纪律告诫，须维持客队替补席秩序。
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-label-caps text-label-caps">
+<span class="text-tertiary font-bold">COMMAND ACTIVE</span>
+<span class="text-on-surface-variant">指挥权限已转交</span>
+</div>
+</div>
+<!-- Card 3: Free Throw Designated Shooter -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between space-y-space-sm border-l-4 border-primary">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-caps text-[10px] font-bold">
+              FT SHOOTER / 技罚执行人
+            </span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">#23 SF</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">主队核心队长 · 张峰</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            由主队指定场上球员执行客队主帅2次直接技术犯规罚球。第1罚已稳健命中，正站在罚球线准备执行第2罚。
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-label-caps text-label-caps">
+<span class="text-primary font-bold">29 PTS · 8 REB</span>
+<span class="text-secondary">FT: 6/7 (本次1中1)</span>
+</div>
+</div>
+<!-- Card 4: Arena Security & Floor Escort -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between space-y-space-sm border-l-4 border-secondary">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-secondary text-on-secondary font-label-caps text-[10px] font-bold">
+              SECURITY &amp; CONTROL
+            </span>
+<span class="font-label-numeric text-label-numeric text-secondary font-bold">FLOOR SECURE</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">现场执勤与安全秩序</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            安保人员已按规程介入，护送被驱逐客队主教练进入球员通道隔离更衣室；边线冲突完全平息，比赛随时恢复。
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-label-caps text-label-caps">
+<span class="text-secondary font-bold">CHANNEL CLEAR</span>
+<span class="text-on-surface-variant">发球权锁定主队前场</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive micro-interactions for the Referee Sandbox
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('commit-verdict-btn');
+    const countdown = document.getElementById('countdown-val');
+    
+    if (btn) {
+      btn.addEventListener('click', () => {
+        btn.classList.add('opacity-80', 'scale-[0.99]');
+        btn.innerHTML = `
+          <span class="material-symbols-outlined text-[22px] animate-spin">sync</span>
+          <span>审计指令已上链 · 驱逐通报全馆成功 (TRANSACTION COMPLETE)</span>
+        `;
+        setTimeout(() => {
+          btn.classList.remove('opacity-80', 'scale-[0.99]');
+          btn.innerHTML = `
+            <span class="material-symbols-outlined text-[22px]">check_circle</span>
+            <span>已归档至纪律档案 · 终场两罚一掷恢复执行</span>
+          `;
+          btn.classList.remove('from-primary-container', 'via-error');
+          btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        }, 800);
+      });
+    }
+
+    // Gentle countdown ticker simulation
+    let timeLeft = 5.2;
+    setInterval(() => {
+      if (timeLeft > 0.4) {
+        timeLeft -= 0.1;
+        if (countdown) {
+          countdown.innerText = `00:0${timeLeft.toFixed(1)}`;
+        }
+      }
+    }, 1000);
+  });
+</script></main></div></body></html>
